@@ -1,0 +1,1242 @@
+hs92,eff_num_exp,travelled_distance,5yr_growth,above_median,product_name_short,sector,green_product
+0101,12.09,3245.08,0.41761983987416607,1,Horses,Agriculture,False
+0102,17.92,2831.28,0.1806561141934547,0,Bovine,Agriculture,False
+0103,12.1,933.95,0.10827468287006917,0,Swine,Agriculture,False
+0104,6.26,1623.25,1.3291221055295994,1,Sheep,Agriculture,False
+0105,21.37,1648.53,0.24157079846669371,0,Fowl,Agriculture,False
+0106,45.27,3565.89,0.3608653927315145,1,Other live animals,Agriculture,False
+0201,36.8,4057.57,0.3385117319834891,1,Beef,Agriculture,False
+0202,16.16,11695.03,0.28794328157677834,1,Beef (frozen),Agriculture,False
+0203,51.36,6222.27,0.015964105718783088,0,Pork,Agriculture,False
+0204,17.86,7657.61,0.6497543922337014,1,Lamb,Agriculture,False
+0205,20.58,5634.86,-0.10981363206299372,0,Horse meat,Agriculture,False
+0206,42.26,7958.45,0.05193545285609724,0,Edible offal,Agriculture,False
+0207,64.11,6276.34,0.484471587793779,1,Poultry,Agriculture,False
+0208,62.54,3761.71,0.26115532052136653,1,Other meat,Agriculture,False
+0209,51.6,4645.48,-0.25262922601086857,0,Pig and poultry fat,Agriculture,False
+0210,42.93,3830.86,0.46837646440304065,1,Preserved meat,Agriculture,False
+0301,16.64,2883.11,-0.03220282564689011,0,Live Fish,Agriculture,False
+0302,46.65,2343.57,0.26352225996423323,1,"Fish, excluding fillets",Agriculture,False
+0303,92.4,6119.67,0.07950677338156731,0,"Frozen fish, excluding fillets",Agriculture,False
+0304,88.4,6102.38,0.1265380870572805,0,Fish fillets,Agriculture,False
+0305,79.92,3958.51,0.02465194736117826,0,Preserved fish,Agriculture,False
+0306,33.81,7418.24,0.14618258912800766,0,Crustaceans,Agriculture,False
+0307,69.38,5006.62,0.14905358647098904,0,Molluscs,Agriculture,False
+0401,46.01,2109.96,0.3831666904335035,1,Milk,Agriculture,False
+0402,76.63,4914.73,-0.03714801023432022,0,"Milk, concentrated",Agriculture,False
+0403,75.02,1719.48,0.24217814872530452,0,Fermented milk products,Agriculture,False
+0404,88.37,5345.21,0.05623914504663844,0,Whey,Agriculture,False
+0405,50.14,2861.35,0.4184977650406106,1,Butter,Agriculture,False
+0406,95.71,2518.41,0.3357603892610407,1,Cheese,Agriculture,False
+0407,60.94,2201.77,0.46796039350883195,1,"Eggs, in shell",Agriculture,False
+0408,65.08,2677.52,0.7434884402324323,1,Egg yolks,Agriculture,False
+0409,64.53,5604.72,-0.06653277843650185,0,Honey,Agriculture,False
+0410,4.4,4203.78,-0.039479777364095664,0,"Edible animal products, n.e.c.",Agriculture,False
+0501,1.98,2886.53,1.8881850189169476,1,"Human hair, unworked",Agriculture,False
+0502,15.64,5739.24,-0.5704101471749351,0,Brushmaking hair,Agriculture,False
+0503,61.37,5080.61,0.17752334656139515,0,Horsehair,Agriculture,False
+0504,56.94,6797.79,-0.03726836929220839,0,"Animal guts, except fish",Agriculture,False
+0505,27.64,4780.27,0.41434922571162724,1,Feathers and down,Agriculture,False
+0506,37.05,5923.49,-0.14466256633791424,0,"Bones, simply prepared",Agriculture,False
+0507,23.25,5350.88,0.33837374484956734,1,Whalebone & horns,Agriculture,False
+0508,18.15,5089.41,0.12844900322428482,0,Coral and shells,Agriculture,False
+0509,62.42,5096.96,0.17871655718229387,0,Sponges of animal origin,Agriculture,False
+0510,7.55,11381.9,0.8641469899000074,1,Animal products used in pharmaceuticals,Agriculture,False
+0511,94.34,5060.46,0.20600121869350357,0,Animal products n.e.c.,Agriculture,False
+0601,39.94,3102.23,0.2642340582492296,1,Flower bulbs,Agriculture,False
+0602,45.32,1952.1,0.1791668585054215,0,Other live plants,Agriculture,False
+0603,13.17,4644.24,0.36561863791449156,1,Cut flowers,Agriculture,False
+0604,36.0,3068.95,0.19582161300371223,0,Other parts of plants,Agriculture,False
+0701,40.6,1660.19,0.48975551043068044,1,Potatoes,Agriculture,False
+0702,8.02,2015.49,-0.31327279024962934,0,Tomatoes,Agriculture,False
+0703,40.28,3839.41,0.16314758862253395,0,"Onions, shallots, garlic",Agriculture,False
+0704,13.54,1996.7,-0.02108747706582771,0,"Cabbages, cauliflowers, broccoli",Agriculture,False
+0705,10.71,1667.78,0.07346285546135374,0,Lettuce,Agriculture,False
+0706,30.52,2011.02,0.2129577774609978,0,Carrots & turnips,Agriculture,False
+0707,6.62,1747.53,-0.09005329862934168,0,Cucumbers,Agriculture,False
+0708,18.81,2452.97,-0.03509561611173869,0,Legumes,Agriculture,False
+0709,13.59,2368.66,-0.07183072480060061,0,Other vegetables,Agriculture,False
+0710,41.55,3363.55,-0.03694695503586161,0,Frozen vegetables,Agriculture,False
+0711,38.03,4047.25,0.17150104968877442,0,"Vegetables, provisionally preserved",Agriculture,False
+0712,30.44,5220.69,-0.0693928165035121,0,"Vegetables, dried",Agriculture,False
+0713,67.82,5504.76,0.47644855007806874,1,"Legumes, dried",Agriculture,False
+0714,6.45,2554.11,0.31675206026940295,1,Tubers,Agriculture,False
+0801,39.19,7361.59,0.14773321939304887,0,Cashew nuts & coconuts,Agriculture,False
+0802,53.08,6144.85,0.1627829792881457,0,Other nuts,Agriculture,False
+0803,43.7,5922.3,0.0047489509710112714,0,Bananas and plantains,Agriculture,False
+0804,16.19,4048.25,0.01629112117112335,0,"Avocados, pineapples, mangos, etc.",Agriculture,False
+0805,66.08,4236.66,-0.03014890664981358,0,Citrus fruit,Agriculture,False
+0806,53.37,4823.42,0.12170104932881622,0,Grapes,Agriculture,False
+0807,25.33,2953.39,-0.06676224637637575,0,Melons and papayas,Agriculture,False
+0808,66.54,3798.41,-0.008630759703030365,0,Apples & pears,Agriculture,False
+0809,44.69,3228.27,0.18594575913315345,0,Peaches & cherries,Agriculture,False
+0810,13.02,3262.49,0.5211220634111209,1,Other fresh fruit,Agriculture,False
+0811,41.92,3825.04,0.2588134999259938,1,"Fruits and nuts, frozen",Agriculture,False
+0812,29.5,3846.91,0.10096026973837155,0,"Fruits and nuts, provisionally preserved",Agriculture,False
+0813,56.29,4389.21,0.21732087202346403,0,"Fruits, dried",Agriculture,False
+0814,13.0,5764.73,-0.14599868386875112,0,Peel of citrus fruit or melons,Agriculture,False
+0901,92.12,6437.88,0.6721471109043544,1,Coffee,Agriculture,False
+0902,62.3,5401.07,-0.07235016265451927,0,Tea,Agriculture,False
+0903,4.93,3435.02,-0.044027531241379016,0,Mate,Agriculture,False
+0904,45.38,6040.94,0.3665802996346293,1,Pepper,Agriculture,False
+0905,8.32,9346.9,-0.5545810983817041,0,Vanilla,Agriculture,False
+0906,21.4,8584.88,-0.2499043340127905,0,Cinnamon,Agriculture,False
+0907,23.52,6088.03,0.6616955508569878,1,Cloves,Agriculture,False
+0908,18.16,7548.2,-0.32153748863527093,0,Nutmeg,Agriculture,False
+0909,27.27,4422.43,0.3419468921953199,1,"Anise, fennel, etc.",Agriculture,False
+0910,119.4,4688.04,0.0012057829464627164,0,Spices,Agriculture,False
+1001,117.55,5315.85,0.08843680375683477,0,Wheat and meslin,Agriculture,False
+1002,17.33,2906.65,0.16938456149664716,0,Rye,Agriculture,False
+1003,40.31,5955.74,0.25972550305493786,1,Barley,Agriculture,False
+1004,4.99,3132.81,0.25488248848311634,1,Oats,Agriculture,False
+1005,40.65,7187.33,0.3149311415899659,1,Corn,Agriculture,False
+1006,88.94,5316.37,0.519217221156098,1,Rice,Agriculture,False
+1007,4.32,9622.2,1.4500576583060905,1,Grain sorghum,Agriculture,False
+1008,79.13,4683.47,-0.09862909083699065,0,Other cereals,Agriculture,False
+1101,28.02,1862.75,0.22710160807424462,0,Wheat or meslin flour,Agriculture,False
+1102,39.16,3289.86,0.08288457536137003,0,Cereal flours,Agriculture,False
+1103,34.1,2861.89,0.1743718059800421,0,Cereal meals,Agriculture,False
+1104,21.57,2610.2,0.24302449968898776,0,Worked cereal grains,Agriculture,False
+1105,53.42,5050.15,0.3345228235254853,1,Potato flour,Agriculture,False
+1106,66.03,4550.24,0.3315680768006292,1,Flour of dried legumes,Agriculture,False
+1107,49.19,4320.94,0.4366253011980108,1,Malt,Agriculture,False
+1108,12.79,3418.13,0.28728256083812914,1,Starches,Agriculture,False
+1109,36.65,5583.95,0.3207460324336756,1,Wheat gluten,Agriculture,False
+1201,4.54,13438.69,0.3433885352595585,1,Soya beans,Agriculture,False
+1202,34.78,6777.18,0.0758295270756632,0,Peanuts,Agriculture,False
+1203,8.09,3660.33,-0.1162973915928249,0,Copra,Agriculture,False
+1204,13.46,3916.45,0.19887731315632384,0,Linseed,Agriculture,False
+1205,17.62,7694.8,0.2748659145126574,1,Rape or colza seeds,Agriculture,False
+1206,86.79,3065.61,-0.035148740037877706,0,Sunflower seeds,Agriculture,False
+1207,79.78,6085.39,0.37473858208813676,1,Other oil seeds,Agriculture,False
+1208,25.95,6337.32,0.5647360564432489,1,Flours of oil seeds,Agriculture,False
+1209,107.84,4811.01,0.17446568652313285,0,Seeds used for sowing,Agriculture,False
+1210,36.99,5904.23,0.18866737418029153,0,Hop cones,Agriculture,False
+1211,68.25,4419.78,0.187100892755409,0,"Plants used in perfumery, pharmacy or insecticide",Agriculture,False
+1212,42.2,5256.38,0.33111385369097635,1,Seaweeds & edible vegetable products,Agriculture,False
+1213,23.6,4128.16,0.2645692019553647,1,Cereal straw and husks,Agriculture,False
+1214,12.69,7989.7,-0.06609174124195612,0,Forage products,Agriculture,False
+1301,36.32,4940.68,0.4327572688698695,1,Lac,Agriculture,False
+1302,106.91,6373.11,0.18862831945689423,0,Vegetable saps and extracts,Agriculture,False
+1401,40.25,5765.69,-0.06961311479755573,0,Vegetable materials used for plaiting,Agriculture,False
+1402,7.64,4683.18,0.4582311836656341,1,Vegetable materials used as stuffing,Agriculture,False
+1403,7.66,4682.36,0.4529232899384931,1,Vegetable materials used for brooms,Agriculture,False
+1404,8.84,4950.94,0.42483919338494397,1,Vegetable products n.e.c.,Agriculture,False
+1501,18.47,3713.98,-0.13087649809727459,0,"Pig and poultry fat, rendered",Agriculture,False
+1502,18.57,5373.45,0.5594223085651123,1,"Bovine, sheep and goat fats",Agriculture,False
+1503,3.07,3878.34,10.03472760518461,1,"Lard oil, tallow oil etc.",Agriculture,False
+1504,56.82,6150.83,0.7722334948686108,1,Fish oils,Agriculture,False
+1505,45.74,6258.97,0.06726919305615908,0,Wool grease,Agriculture,False
+1506,23.21,2659.44,-0.2130100130740761,0,Other animal fats and oils,Agriculture,False
+1507,24.6,8723.39,0.21771406654635125,0,Soybean oil,Agriculture,False
+1508,5.34,8561.4,0.06281947746018977,0,Peanut oil,Agriculture,False
+1509,16.54,4272.9,1.102007378000723,1,Olive oil,Agriculture,False
+1510,22.12,3500.64,1.4842131859883942,1,"Olive oil, blended",Agriculture,False
+1511,32.83,6221.48,0.22660083505795683,0,Palm oil,Agriculture,False
+1512,50.0,3316.59,0.33903460475025626,1,Sunflower seed oil,Agriculture,False
+1513,29.7,7666.62,0.5265788419600369,1,Coconut & palm kernel oil,Agriculture,False
+1514,8.41,2527.94,0.519716327889695,1,"Rapeseed, colza or mustard oil,",Agriculture,False
+1515,41.86,5282.48,0.10645685492622121,0,Other vegetable fats and oils,Agriculture,False
+1516,29.02,5243.69,0.4888834283977248,1,"Vegetable fats, hydrogenated",Agriculture,False
+1517,38.25,3412.74,0.5099781090907708,1,Margarine,Agriculture,False
+1518,45.8,5045.48,1.0882285275534531,1,"Animal or vegetable fats and oils, processed",Agriculture,False
+1519,31.02,5788.11,0.5743278614419448,1,Stearic acid,Agriculture,False
+1520,22.62,5632.08,0.4337257243120243,1,Glycerol,Agriculture,False
+1521,41.29,8741.45,0.10314349280644083,0,Vegetable waxes and beeswax,Agriculture,False
+1522,19.44,7099.01,3.5674572365440578,1,Degras and wax residues,Agriculture,False
+1601,56.45,2017.66,0.4154974231826896,1,Sausages,Agriculture,False
+1602,41.07,3273.62,0.18139407056527126,0,Other prepared or preserved meat,Agriculture,False
+1603,38.17,4053.26,-0.32913731871297736,0,Extracts and juices of meat or fish,Agriculture,False
+1604,87.55,6035.16,0.043286046922673356,0,Prepared or preserved fish,Agriculture,False
+1605,31.63,6468.72,-0.003750764553593536,0,Prepared aquatic invertibrates,Agriculture,False
+1701,84.77,7021.88,0.6388869774442251,1,Sugarcane & sucrose,Agriculture,False
+1702,39.47,3863.96,0.6220790270709569,1,Other sugars,Agriculture,False
+1703,79.52,3852.41,0.0019307878625427163,0,Molasses,Agriculture,False
+1704,77.23,3263.68,0.4214869588301589,1,Confectionery sugar,Agriculture,False
+1801,40.4,7268.2,1.220986779095615,1,Cocoa beans,Agriculture,False
+1802,8.8,7239.94,2.6840563958475077,1,Cocoa residues,Agriculture,False
+1803,49.23,4040.17,1.2578270428989073,1,Cocoa paste,Agriculture,False
+1804,57.66,4998.13,1.3570253280696005,1,Cocoa butter,Agriculture,False
+1805,103.07,4241.61,0.9045161349250965,1,Cocoa powder,Agriculture,False
+1806,75.37,2446.37,0.42845489506486806,1,Chocolates,Agriculture,False
+1901,138.47,3791.12,0.19206241986708403,0,Malt extract,Agriculture,False
+1902,89.65,4161.7,0.4470816742435723,1,Pasta,Agriculture,False
+1903,62.86,5316.7,0.28341423264609844,1,Tapioca,Agriculture,False
+1904,57.64,2492.92,0.1931516399665569,0,Cereal foods,Agriculture,False
+1905,41.52,2328.93,0.4605542941389282,1,Bakery products,Agriculture,False
+2001,65.51,3706.06,0.18082847278637704,0,Pickled fruits and vegetables,Agriculture,False
+2002,75.18,4684.67,0.5187383545533324,1,"Tomatoes, prepared or preserved",Agriculture,False
+2003,11.44,3924.27,-0.34337475269961887,0,"Mushrooms, prepared or preserved",Agriculture,False
+2004,21.62,3232.38,0.7303751934801357,1,"Other vegetables, frozen",Agriculture,False
+2005,108.31,3503.0,0.1721358472952414,0,"Other vegetables, prepared or preserved",Agriculture,False
+2006,23.88,6030.06,0.4087511252733797,1,"Vegetables, fruits and nuts, preserved by sugar",Agriculture,False
+2007,133.44,3325.73,0.24431255312037795,1,"Jams, jellies and marmalades",Agriculture,False
+2008,94.37,4933.99,0.1713052997194668,0,"Fruits and nuts, otherwise prepared",Agriculture,False
+2009,85.39,5498.77,0.5124005448578023,1,Fruit juices,Agriculture,False
+2101,144.66,4371.35,0.3798895271501521,1,Coffee extracts,Agriculture,False
+2102,106.96,4366.07,0.21744683923786548,0,Yeasts,Agriculture,False
+2103,88.97,3703.84,0.33524446425713444,1,Sauces and seasonings,Agriculture,False
+2104,29.11,2412.35,0.26716098537722494,1,Soups and broths,Agriculture,False
+2105,132.86,2610.32,0.3507133542034408,1,Ice cream,Agriculture,False
+2106,182.71,4019.14,0.40432143113181546,1,Food preparations n.e.c.,Agriculture,False
+2201,16.13,2948.87,0.6313871853762653,1,Waters,Agriculture,False
+2202,113.95,2472.26,0.4227059434755296,1,"Waters, flavored or sweetened",Agriculture,False
+2203,5.99,3261.13,-0.3552670215182606,0,Beer,Agriculture,False
+2204,45.93,4859.52,0.239086914986352,0,Wine,Agriculture,False
+2205,23.5,3468.06,0.5911232611480675,1,"Wine, flavored",Agriculture,False
+2206,27.47,3552.32,0.04795448467026262,0,Other fermented beverages,Agriculture,False
+2207,32.85,4765.25,0.22541383156568448,0,Ethyl alcohol > 80%,Agriculture,False
+2208,49.58,4542.63,0.3063657363477486,1,Spirits < 80% alcohol,Agriculture,False
+2209,21.16,4175.83,0.4641369910788328,1,Vinegars,Agriculture,False
+2301,96.05,6483.91,0.30568395934488796,1,"Flours of fish, for animal feed",Agriculture,False
+2302,47.05,4202.43,0.2886620936947637,1,Cereal residues,Agriculture,False
+2303,25.32,6077.63,0.18731403033504485,0,Starch residues,Agriculture,False
+2304,62.76,9185.67,0.2570333586760198,1,Solid soybean residues,Agriculture,False
+2305,13.53,3828.9,0.8209932303163345,1,Solid peanut residues,Agriculture,False
+2306,28.83,3999.38,0.3529882339716177,1,Solid vegetable oil and fat residues,Agriculture,False
+2307,13.23,5597.25,-0.03458019538342618,0,Wine lees,Agriculture,False
+2308,38.05,7654.08,-0.0032782146614145275,0,Vegetable materials for animal feeding,Agriculture,False
+2309,137.47,3500.28,0.3774496261310546,1,Animal feed,Agriculture,False
+2401,113.19,7143.4,0.7201714032618,1,Unmanufactured tobacco,Agriculture,False
+2402,84.52,2627.04,-0.17499157266000964,0,Cigars and cigarettes,Agriculture,False
+2403,96.89,2836.16,0.27232565751290033,1,Other manufactured tobacco,Agriculture,False
+2501,62.71,3639.01,0.31412106055788747,1,Salt,Minerals,False
+2502,7.03,7033.4,3.0980244391631127,1,Unroasted iron pyrites,Minerals,False
+2503,55.7,5489.46,0.9548497432995159,1,"Sulphur, crude",Minerals,True
+2504,15.62,5777.51,-0.03527846337915542,0,Natural graphite,Minerals,True
+2505,26.51,3488.85,0.5199602473143119,1,Natural sands,Minerals,True
+2506,31.03,5357.19,0.5821324967987238,1,Quartz,Minerals,True
+2507,82.35,5141.54,0.22096249056768882,0,Kaolin,Minerals,True
+2508,99.17,4280.56,0.0874388258254009,0,Clays,Minerals,False
+2509,35.33,2157.66,0.10549269925579469,0,Chalk,Minerals,False
+2510,24.71,5626.8,0.5914410668163502,1,Natural calcium phosphates,Minerals,False
+2511,54.59,5573.89,0.6494136625418194,1,Natural barium sulfate,Minerals,False
+2512,72.46,4941.24,0.439873944732174,1,Siliceous fossil meals and earths,Minerals,False
+2513,50.49,7309.61,0.241962920954461,0,Natural abrasives,Minerals,False
+2514,40.08,4992.58,-0.47332148018212983,0,Slate,Minerals,False
+2515,9.59,7015.97,0.09297769963307875,0,Marble,Minerals,False
+2516,8.34,6001.09,-0.14487357103353526,0,Granite,Minerals,False
+2517,41.98,1318.14,-0.1412409968405662,0,Gravel,Minerals,False
+2518,34.45,2785.31,0.7673923000123909,1,Dolomite,Minerals,False
+2519,50.58,5682.42,0.17672119619706378,0,Natural magnesia,Minerals,False
+2520,46.74,2543.9,0.18292784487128966,0,Gypsum,Minerals,False
+2521,4.26,2483.55,0.7187448222383123,1,Limstone,Minerals,False
+2522,54.43,1870.29,0.40466463204618575,1,Quicklime,Minerals,False
+2523,98.6,2769.47,0.04457421815398569,0,Cements,Minerals,False
+2524,10.99,6595.37,0.35137920137070083,1,Asbestos,Minerals,False
+2525,12.51,5312.23,0.18649359104627372,0,Mica,Minerals,True
+2526,66.38,3655.8,0.18458815109227197,0,Natural steatite,Minerals,True
+2527,1.52,8013.14,4.460545542856331,1,Natural cryolite,Minerals,False
+2528,10.13,5450.32,0.42140135014833235,1,Natural borates,Minerals,False
+2529,34.83,4470.24,0.1119770787700293,0,Feldspar,Minerals,True
+2530,1.58,7900.92,3.2914888091695227,1,Mineral substances n.e.c.,Minerals,False
+2601,4.22,9295.05,1.0423295482133426,1,Iron ores and concentrates,Minerals,True
+2602,14.82,8566.68,0.4705413884534686,1,Manganese > 47% by weight,Minerals,True
+2603,37.89,9134.64,0.6035573208610019,1,Copper ore,Minerals,True
+2604,8.38,5064.4,0.44875832071817245,1,Nickel ore,Minerals,True
+2605,7.51,5534.81,-0.28294390276066506,0,Cobalt ore,Minerals,True
+2606,2.91,10631.53,1.3291411784219302,1,Aluminum ore,Minerals,False
+2607,21.08,8671.34,0.10792933242142103,0,Lead ore,Minerals,True
+2608,37.06,7681.88,0.6246887194742294,1,Zinc ore,Minerals,False
+2609,12.82,8504.93,1.0408452742587104,1,Tin ore,Minerals,False
+2610,3.69,3568.02,2.4725837769421504,1,Chromium ore,Minerals,True
+2611,30.82,6655.53,1.5376340245240805,1,Tungsten ore,Minerals,True
+2612,6.07,10540.36,1.1566611418831916,1,Uranium ore,Minerals,True
+2613,19.58,8187.54,1.0906523599409572,1,Molybdenum ore,Minerals,True
+2614,48.97,8499.95,0.31987742388794177,1,Titanium ore,Minerals,False
+2615,67.48,7685.53,0.4898820622509409,1,Zirconium ore,Minerals,True
+2616,34.63,8219.78,0.4113161478492195,1,Precious metal ores,Minerals,False
+2617,20.41,8130.79,2.799289347280025,1,Other ores,Minerals,True
+2618,23.85,5762.39,0.3449075344969873,1,Granulated iron or steel slag,Minerals,False
+2619,36.98,3804.47,0.5014371094008615,1,Iron or steel slag,Minerals,False
+2620,66.65,5009.7,0.11552008991238821,0,"Slag, ash and residues containing metals",Minerals,False
+2621,33.27,4204.04,-0.30609932301521486,0,Other slag and ash,Minerals,False
+2701,29.92,6914.1,0.8850991758316672,1,Coal,Minerals,False
+2702,1.6,4382.03,1.8075294370309611,1,Lignite,Minerals,False
+2703,7.27,2352.01,0.11313469023004889,0,Peat,Minerals,False
+2704,64.13,5711.22,0.8414167618133503,1,Coke,Minerals,False
+2705,3.82,1880.65,-0.9199214189148486,0,Non-petroleum gases,Minerals,False
+2706,29.44,2334.43,0.8601336954659173,1,"Tar distilled from coal, lignite etc.",Minerals,False
+2707,60.71,2862.52,0.7213083839869472,1,Oils etc. from high temperature coal tar,Minerals,False
+2708,31.25,5356.44,0.2786308193916789,1,Pitch and pitch coke,Minerals,False
+2709,43.51,5710.3,0.9538106716174277,1,"Petroleum oils, crude",Minerals,False
+2710,130.38,3988.3,0.9614210608588935,1,"Petroleum oils, refined",Minerals,False
+2711,77.92,4168.37,1.0107081910580122,1,Petroleum gases,Minerals,False
+2712,70.68,5699.14,0.366489554071244,1,Petroleum jelly,Minerals,False
+2713,69.33,4328.12,0.7150245551738288,1,Petroleum coke,Minerals,False
+2714,28.55,2771.22,-0.47217567882833733,0,"Bitumen and asphalt, natural",Minerals,False
+2715,25.68,6963.1,0.47633478789249,1,Bituminous mixtures,Minerals,False
+2716,56.65,666.7,1.0096711097332083,1,Electrical energy,Minerals,False
+2801,26.22,6131.41,0.5680560240806455,1,Iodine,Chemicals,False
+2802,13.96,6434.73,1.2092182205123474,1,"Sulfur, sublimed or precipitated",Chemicals,False
+2803,76.29,3423.98,0.8497869322645877,1,Carbon,Chemicals,True
+2804,52.25,5758.53,0.46653921217664857,1,Silicon & rare gases,Chemicals,True
+2805,35.05,5870.4,0.2222056041140775,0,Rare-earth metals,Chemicals,True
+2806,34.84,2223.32,0.79355383726323,1,Hydrochloric acid,Chemicals,True
+2807,34.11,4588.85,0.5068125949215168,1,"Sulfiric acid, oleum",Chemicals,True
+2808,32.77,2323.8,0.5441845059518189,1,Sulfonitric acids,Chemicals,False
+2809,22.7,5237.17,0.6378783060118518,1,Phosphoric acid etc.,Chemicals,False
+2810,24.41,6623.65,0.23726510958437133,0,Oxides of boron; boric acids,Chemicals,True
+2811,101.93,4207.55,0.36721401959673766,1,Other inorganic acids,Chemicals,True
+2812,22.44,3737.58,0.26042102733225075,1,Halides of nonmetals,Chemicals,True
+2813,27.33,3783.76,0.3091495714691998,1,Sulfides of nonmetals,Chemicals,False
+2814,52.82,4073.51,0.42148542623926954,1,Ammonia,Chemicals,False
+2815,50.98,4730.17,0.4040865954394471,1,Sodium hydroxide,Chemicals,True
+2816,38.98,5064.35,0.29376442218847243,1,Hydroxides or peroxides of magnesium,Chemicals,False
+2817,37.6,3454.14,0.02964539495447636,0,Zinc oxide or peroxide,Chemicals,False
+2818,39.52,6434.68,0.6967475652826919,1,Aluminum oxide,Chemicals,True
+2819,25.21,6165.56,0.44844226910831175,1,Chromium oxides and hydroxides,Chemicals,False
+2820,57.48,5294.25,0.1620540469739398,0,Manganese oxides,Chemicals,False
+2821,41.86,5960.21,0.05519755902678901,0,Iron oxides and hydroxides,Chemicals,False
+2822,14.04,4080.27,-0.5376380316408668,0,Cobalt oxides and hydroxides,Chemicals,False
+2823,67.72,5181.76,-0.07012816787947941,0,Titanium oxides,Chemicals,False
+2824,51.1,4070.49,0.11739724300649754,0,Lead oxides,Chemicals,True
+2825,6.11,4977.61,1.1014652237227902,1,"Metal base oxides, n.e.c.",Chemicals,True
+2826,42.25,6284.28,0.1820029902446713,0,Flourides,Chemicals,False
+2827,112.34,5078.41,0.3662094415459685,1,"Chlorides, bromides, iodides etc.",Chemicals,True
+2828,68.73,4260.06,0.15400204119270347,0,Hyopchlorites,Chemicals,False
+2829,12.53,4552.02,0.359975545867382,1,Sodium chlorate,Chemicals,False
+2830,40.89,5965.46,0.8703913330737146,1,Sulfides; polysulfides,Chemicals,False
+2831,42.73,5087.28,0.05530803094671471,0,Dithionites and sulfoxylates,Chemicals,False
+2832,81.96,6097.71,0.3457790823512041,1,Sulfites,Chemicals,False
+2833,81.53,5556.04,0.32232558255924815,1,Sulfates,Chemicals,True
+2834,91.21,5977.55,0.20734551170588322,0,"Nitrites, nitrates",Chemicals,True
+2835,146.33,5397.87,0.29678573832113003,1,Phosphates,Chemicals,False
+2836,67.65,7053.53,0.3455759708114607,1,Carbonates,Chemicals,True
+2837,50.58,6988.02,0.2523556837676307,1,Cyanides,Chemicals,False
+2838,3.14,3546.59,1.727206562009317,1,"Fulminates, cyanates and thiocyanates",Chemicals,False
+2839,94.66,3724.93,0.23496879700957557,0,Silicates,Chemicals,False
+2840,11.36,6479.44,0.9042287051010247,1,Borates,Chemicals,False
+2841,6.39,6093.54,0.8420087696379093,1,Salts of oxometallic acids,Chemicals,False
+2842,5.31,4030.96,1.0498522555635577,1,Other salts of acids,Chemicals,False
+2843,26.38,4370.25,-0.13509577095356165,0,Compounds of precious metals,Chemicals,False
+2844,29.02,5365.66,1.7099406360338234,1,Uranium,Chemicals,True
+2845,7.16,5375.33,4.218438138501849,1,Non-radioactive isotopes,Chemicals,False
+2846,7.6,4094.12,0.6886491189074911,1,Compounds of rare-earth metals,Chemicals,True
+2847,77.63,2443.49,0.15761507707531308,0,Hydrogen peroxide,Chemicals,False
+2848,2.01,2504.65,-0.004638009473551777,0,Phosphides,Chemicals,False
+2849,50.5,5253.79,0.26707061779443053,1,Carbides,Chemicals,True
+2850,33.78,6151.43,0.08847738181291434,0,"Hydrides, nitrides, azides, silicides and borides",Chemicals,True
+2851,1.98,2471.38,0.0023949798541997337,0,"Inorganic compounds, liquid or compressed air",Chemicals,False
+2901,29.31,3522.36,0.5502561677957669,1,Acyclic hydrocarbons,Chemicals,False
+2902,18.57,2902.44,0.42422150430082456,1,Cyclic hydrocarbons,Chemicals,False
+2903,58.51,4715.49,0.06733012750367233,0,Halogenated derivatives of hydrocarbons,Chemicals,True
+2904,24.29,4479.07,0.3451269183514844,1,"Sulfonated, nitrated derivatives of hydrocarbons",Chemicals,False
+2905,123.62,4992.15,0.30704985636637744,1,Acyclic alcohols,Chemicals,True
+2906,33.64,5634.54,-0.005191938808271506,0,Cyclic alcohols,Chemicals,False
+2907,65.74,3976.66,-0.07999929924554158,0,"Phenols, phenol-alcohols",Chemicals,False
+2908,13.71,6901.52,-0.1599653676253124,0,Derivatives of phenols,Chemicals,False
+2909,32.06,4997.73,0.7002763689832149,1,Ethers,Chemicals,False
+2910,25.55,3179.11,0.05674926048813561,0,Epoxides,Chemicals,False
+2911,69.13,5363.79,0.2604773926925706,1,Acetals and hemiacetals,Chemicals,False
+2912,88.47,6181.04,0.13979033914941472,0,Aldehydes,Chemicals,False
+2913,6.15,5178.8,-0.252087551047474,0,Derivatives of aldehydes,Chemicals,False
+2914,83.26,5491.22,0.0747843270769643,0,Ketones and quinones,Chemicals,True
+2915,108.47,4988.9,0.31494518460861826,1,Saturated acyclic monocarboxylic acids,Chemicals,False
+2916,96.43,5169.49,0.16553872945684053,0,Unsaturated acyclic monocarboxylic acids,Chemicals,False
+2917,74.38,5001.8,0.6008313214265147,1,Polycarboxylic acids,Chemicals,False
+2918,106.58,6547.49,0.17941654277171862,0,Carboxylic acids with additional oxygen function,Chemicals,False
+2919,30.45,6402.09,-0.003929072539647664,0,Phosporic esters,Chemicals,False
+2920,69.92,5772.8,0.20202560139783213,0,Esters of other inorganic acids of nonmetals,Chemicals,False
+2921,70.06,5193.97,0.3592134753281089,1,Amine-function compounds,Chemicals,False
+2922,81.68,5945.41,0.10109452428011943,0,Oxygen-function amino-compounds,Chemicals,False
+2923,103.46,5572.12,0.24592413759252432,1,Quaternary ammonium salts and hydroxides,Chemicals,False
+2924,47.24,6394.02,0.19131551802763613,0,Carboxyamide-function compounds,Chemicals,False
+2925,51.03,7562.18,0.602930965724848,1,Carboxyimide-function compounds,Chemicals,False
+2926,40.22,6029.64,-0.18895872416063308,0,Nitrile-function compounds,Chemicals,False
+2927,42.19,5895.63,0.3210901466929109,1,"Diazo-, azo-, or azoxy-compounds",Chemicals,False
+2928,20.5,5841.38,0.1976848064486847,0,Organix derivatives of hydrazine,Chemicals,False
+2929,102.84,5348.27,0.273139619968479,1,Isocyanates,Chemicals,False
+2930,82.65,7024.9,0.15352881315760689,0,Organo-sulfur compounds,Chemicals,True
+2931,37.34,8132.75,0.22008846933291767,0,Other organo-inorganic compounds,Chemicals,False
+2932,35.73,6559.3,0.15954483968647273,0,Heterocyclic compounds with oxygen hetero-atom(s) only,Chemicals,False
+2933,31.81,4556.33,0.01058807338418791,0,Heterocyclic compounds with nitrogen hetero-atom(s) only,Chemicals,False
+2934,17.82,5345.57,0.15493085296939102,0,Nucleic acids and their salts,Chemicals,False
+2935,11.39,5039.85,-0.32832649356037386,0,Sulfonamides,Chemicals,False
+2936,44.52,6767.71,0.03575764866918055,0,Vitamins,Chemicals,False
+2937,8.08,5007.0,1.1035604954743137,1,Hormones,Chemicals,False
+2938,31.89,6900.02,-0.0339256659555741,0,Glycosides,Chemicals,False
+2939,96.95,6217.48,0.2358608498923553,0,Vegetable alkaloids,Chemicals,False
+2940,85.8,5728.77,0.2540054342786117,1,"Other sugars, chemically pure",Chemicals,False
+2941,40.09,6037.74,-0.009252129608012298,0,Antibiotics,Chemicals,False
+2942,58.18,6026.96,-0.09337364586624011,0,Other organic compounds,Chemicals,False
+3001,33.16,6343.98,-0.25545019519978807,0,Heparin for therapeutic use,Chemicals,False
+3002,52.63,4555.88,0.636783413308446,1,Serums and vaccines,Chemicals,False
+3003,28.01,3933.65,0.6966765353650377,1,"Medicaments, not packaged",Chemicals,False
+3004,110.43,4021.95,0.2949853296016146,1,"Medicaments, packaged",Chemicals,False
+3005,67.26,5599.75,0.24417589103822454,1,"Wadding, gauze and bandages",Chemicals,False
+3006,106.19,5478.13,0.2914901622720309,1,Pharmaceutical goods,Chemicals,False
+3101,65.56,3766.72,0.3256637461885274,1,Animal or vegetable fertilizers,Chemicals,False
+3102,144.44,5292.8,0.4344857715822567,1,Nitrogenous fertilizers,Chemicals,False
+3103,26.46,8033.03,2.2210983481833586,1,Phosphatic fertilizers,Chemicals,False
+3104,21.86,6792.04,0.311676255344487,1,Potassic fertilizers,Chemicals,False
+3105,79.59,6111.29,0.6346568567565609,1,Mixed fertilizers,Chemicals,False
+3201,24.64,7505.76,0.44170078500221266,1,Vegetable tanning extracts,Chemicals,False
+3202,114.51,6257.28,-0.01581195978747561,0,Synthetic tanning substances,Chemicals,False
+3203,79.87,4882.72,0.21359008197107962,0,Coloring matter of animal or vegetable origin,Chemicals,False
+3204,136.94,5306.49,-0.01455490621266261,0,Synthetic organic coloring matter,Chemicals,False
+3205,36.24,5492.63,0.6242520647943144,1,Color lakes,Chemicals,False
+3206,100.69,5207.27,0.18680414469468937,0,Other coloring matter,Chemicals,False
+3207,48.45,3706.97,0.009928350578321638,0,Prepared pigments,Chemicals,False
+3208,115.9,3090.19,0.2663800262211594,1,"Paints and varnishes, nonaqueous",Chemicals,False
+3209,54.61,2279.36,0.221668205816371,0,"Paints and varnishes, aqueous",Chemicals,False
+3210,122.12,3193.78,0.2457108936316628,1,Other paints and varnishes,Chemicals,False
+3211,152.64,4165.37,0.03022676566862925,0,Prepared driers,Chemicals,False
+3212,125.35,4401.98,0.15570655441018988,0,"Pigments, nonaqueous",Chemicals,False
+3213,37.88,6543.84,-0.06553800712147703,0,Artists' colors,Chemicals,False
+3214,115.47,2960.35,0.3564239537734379,1,Glaziers' putty,Chemicals,False
+3215,126.69,3958.98,0.19717497732705397,0,Ink,Chemicals,False
+3301,143.16,6500.84,0.17462238017873513,0,Essential oils,Chemicals,False
+3302,31.75,3757.24,0.3752100499895047,1,Mixtures of odoriferous subtances,Chemicals,False
+3303,109.24,3894.18,0.6992175433537415,1,Perfumes,Chemicals,False
+3304,83.02,4317.19,0.2444868151012449,1,Make-up preparations,Chemicals,False
+3305,133.27,3257.2,0.23125359386825095,0,Hair products,Chemicals,False
+3306,139.46,3613.55,0.13970319008575297,0,Dental hygiene products,Chemicals,False
+3307,122.59,3489.45,0.06942852303442748,0,Toiletries,Chemicals,False
+3401,153.08,4275.58,-0.022031480655101684,0,Soap,Chemicals,False
+3402,144.62,3206.82,0.21652612491699438,0,Cleaning products,Chemicals,False
+3403,92.66,4164.05,0.3674749505293379,1,Lubricants,Chemicals,True
+3404,125.94,4939.53,0.534659582547293,1,Artificial and prepared waxes,Chemicals,True
+3405,66.8,4017.21,0.34912080799465306,1,Polishes and creams,Chemicals,False
+3406,39.64,5521.44,0.3624231874174101,1,Candles,Chemicals,False
+3407,59.81,6318.39,0.3567878256333262,1,Modeling pastes,Chemicals,False
+3501,56.68,5747.35,0.10982587905023664,0,Casein,Chemicals,False
+3502,58.01,5515.26,1.1650855239994327,1,Albumins,Chemicals,False
+3503,106.87,4956.2,0.038784360202349134,0,Gelatin,Chemicals,False
+3504,87.11,5592.46,0.40753374799104025,1,Peptones,Chemicals,False
+3505,66.84,4105.7,0.41589773011105835,1,Dextrins and other modified starches,Chemicals,False
+3506,105.54,4124.13,0.3091637787599442,1,Glues and adhesives,Chemicals,False
+3507,103.68,5504.41,0.2521326979660438,1,Enzymes,Chemicals,False
+3601,33.38,4721.87,3.078990298136542,1,Propellant powders,Chemicals,True
+3602,86.66,5108.08,1.0931349855482357,1,"Prepared explosives, except gunpowder",Chemicals,True
+3603,77.68,5399.11,0.5311594528091056,1,Detonators,Chemicals,False
+3604,9.43,8253.19,0.5724935760991594,1,Fireworks,Chemicals,False
+3605,63.66,5168.68,0.022245087766391933,0,Matches,Chemicals,False
+3606,113.88,4512.33,0.014606363640629305,0,Ferrocerium and other pyrophoric alloys,Chemicals,False
+3701,78.11,5168.55,0.23453204753028192,0,Photographic plates,Chemicals,False
+3702,50.78,4693.97,0.27445733089073343,1,Photographic film in rolls,Chemicals,False
+3703,65.21,5288.02,0.027416714459684136,0,Photographic paper,Chemicals,False
+3704,19.91,6106.71,0.3215521347244314,1,"Photographic film, not developed",Chemicals,False
+3705,9.22,4164.55,0.2776961062100075,1,"Photographic film, developed",Chemicals,False
+3706,22.14,4664.69,-0.36702027438626555,0,Motion-picture film,Chemicals,False
+3707,15.45,4341.86,0.25534304171814615,1,Chemical preparations for photographic uses,Chemicals,False
+3801,24.96,6214.98,0.3351587472589851,1,Artificial graphite,Chemicals,True
+3802,128.48,5078.74,0.2841879753281925,1,Activated carbon,Chemicals,True
+3803,12.86,5052.56,-0.2711362137634938,0,Tall oil,Chemicals,False
+3804,63.75,4551.08,0.3275369345904933,1,Residual lyes,Chemicals,False
+3805,21.7,7226.19,-0.08126365714798031,0,Turpentines,Chemicals,False
+3806,82.88,4980.26,0.2508121379825393,1,Rosin and resin acids,Chemicals,False
+3807,13.86,3157.89,-0.2314979891979812,0,Wood tar and oils,Chemicals,False
+3808,111.67,6247.89,0.022229580900112015,0,"Insecticides, rodenticides, fungicides, etc.",Chemicals,False
+3809,122.36,3152.47,0.10015513190281418,0,Finishing agents,Chemicals,False
+3810,76.05,4071.55,0.401830456587478,1,Pickling preparations for metal surfaces,Chemicals,True
+3811,59.0,4596.12,0.32281144456098926,1,Anti-knock,Chemicals,True
+3812,114.81,4611.73,0.29828774516917417,1,Stabilizers for rubber or plastic,Chemicals,False
+3813,84.19,4563.94,0.5296844050296945,1,Preparations for fire extinguishers,Chemicals,False
+3814,143.23,3084.15,0.30362281626995247,1,Organic composite solvents and thinners,Chemicals,False
+3815,43.26,4508.88,0.06222520077593264,0,Catalytic preparations,Chemicals,True
+3816,58.61,3351.62,0.1689401113483563,0,Refractory cements,Chemicals,True
+3817,45.9,4404.44,0.09071055410938736,0,Mixed alkylbenzenes,Chemicals,False
+3818,26.72,4754.25,0.41233554344566625,1,Chemical elements for electronics,Chemicals,True
+3819,93.49,4043.23,0.6101012722051827,1,Hydraulic fluids,Chemicals,False
+3820,68.2,2296.25,0.4776943252952024,1,Antifreezing preparation,Chemicals,True
+3821,84.7,5302.85,0.17599999319847703,0,Prepared culture media for micro-organisms,Chemicals,False
+3822,94.71,5719.24,-0.0801286002024234,0,Diagnostic or laboratory reagents,Chemicals,False
+3823,99.05,4127.51,0.592280809990461,1,Industrial monocarboxylic fatty acids,Chemicals,False
+3901,72.58,3817.49,0.2033651613944759,0,Polymers of ethylene,Chemicals,True
+3902,100.94,3434.93,0.1800063591403414,0,Polymers of propylene,Chemicals,True
+3903,60.37,3645.84,0.04757430434629443,0,Polymers of styrene,Chemicals,False
+3904,102.95,4298.82,0.22361571780655565,0,Polymers of vinyl chloride,Chemicals,True
+3905,131.56,4795.7,0.37458006081501893,1,Polymers of vinyl acetate,Chemicals,False
+3906,110.06,4208.68,0.2660837497277273,1,Acrylic polymers,Chemicals,False
+3907,140.09,4552.57,0.2964327297961056,1,Polyacetals,Chemicals,True
+3908,88.1,3980.8,0.3981196025666104,1,Polyamides,Chemicals,True
+3909,111.38,3792.98,0.3926609133937495,1,Amino-resins,Chemicals,False
+3910,95.07,4952.82,0.28648218366004513,1,Silicones in primary forms,Chemicals,False
+3911,113.27,5207.14,0.31956964306150926,1,Petroleum resins,Chemicals,False
+3912,131.96,6119.53,0.3228333559353063,1,Cellulose n.e.c.,Chemicals,False
+3913,75.8,6371.5,0.6132900472103037,1,Natural polymers,Chemicals,False
+3914,69.71,5522.2,0.4732055180852399,1,Ion-exchangers based on polymers,Chemicals,True
+3915,98.03,4350.93,0.10143381245830817,0,Plastic waste,Chemicals,True
+3916,57.88,3078.4,0.3227084862664991,1,Monofilament,Chemicals,False
+3917,114.04,4051.8,0.31241991191822144,1,Plastic tubes and fittings,Chemicals,True
+3918,12.88,8247.18,0.11675017917894595,0,Plastic floor coverings,Chemicals,False
+3919,105.4,4689.83,0.3536347462508705,1,Self-adhesive plastic sheets,Chemicals,False
+3920,137.28,3980.59,0.19337401107031568,0,"Other plates of plastics, noncellular and not reinforced",Chemicals,True
+3921,114.17,3747.33,0.2039050958803882,0,"Other plastic plates, sheets etc.",Chemicals,True
+3922,71.98,4695.19,0.19578637627787251,0,"Baths, sinks etc.",Chemicals,False
+3923,70.62,4149.83,0.14771603366858416,0,Packing lids,Chemicals,True
+3924,16.56,7140.34,0.23528818662226778,0,Plastic household articles,Chemicals,False
+3925,69.26,3837.12,0.32085694317773134,1,Plastic builders' ware,Chemicals,True
+3926,50.76,5691.26,0.15245123681173772,0,Other articles of plastic,Chemicals,True
+4001,32.29,6592.69,0.373725586884875,1,Natural rubber,Chemicals,True
+4002,38.93,4454.71,0.2739555203585436,1,Synthetic rubber,Chemicals,True
+4003,25.08,4604.69,0.31411022201845923,1,Reclaimed rubber,Chemicals,False
+4004,36.39,4289.57,0.5072760085120064,1,Scrap of rubber,Chemicals,False
+4005,49.25,3100.65,0.3487973931698246,1,Compounded rubber,Chemicals,True
+4006,91.96,3645.3,-0.06591964709556104,0,Unvulcanized rubber rods,Chemicals,False
+4007,7.68,5396.72,0.12422149359846717,0,Vulcanized rubber thread and cord,Chemicals,False
+4008,138.31,3905.6,0.1452284746530109,0,Vulcanized rubber plates,Chemicals,False
+4009,82.39,4987.24,0.2476691964134579,1,Vulcanized rubber tubes,Chemicals,True
+4010,138.01,5332.24,0.24953391048820314,1,Conveyor belts of vulcanized rubber,Chemicals,False
+4011,130.54,6661.65,0.35567792847728796,1,New pneumatic tires of rubber,Chemicals,True
+4012,120.47,4544.64,0.1812826059551897,0,Used pneumatic tires of rubber,Chemicals,False
+4013,106.59,8257.3,0.04570468976068491,0,Rubber inner tubes,Chemicals,False
+4014,132.28,5893.19,-0.0068072043657237645,0,Rubber hygenic or pharmeceutical items,Chemicals,False
+4015,14.51,10088.95,-0.5514404115654946,0,Vulcanized rubber articles of apparel,Chemicals,False
+4016,117.34,4832.73,0.2606641039550292,1,Other articles of vulcanized rubber,Chemicals,True
+4017,76.01,5248.73,0.1667152084289025,0,Hard rubber,Chemicals,False
+4101,29.57,5714.8,0.46985306768970503,1,Raw hides of bovines or equines,Agriculture,False
+4102,5.19,6598.89,1.2540918397483922,1,Raw skins of sheep or lambs,Agriculture,False
+4103,19.62,7493.48,0.626354798724369,1,Other raw hides and skins,Agriculture,False
+4104,95.14,5905.36,0.1261723383994534,0,Tanned hides of bovines or equines,Agriculture,True
+4105,32.47,4204.03,0.10470244660664127,0,Tanned sheepskins,Agriculture,False
+4106,36.96,4629.22,-0.16506186898337452,0,Tanned skins of other animals,Agriculture,False
+4107,50.84,5135.11,0.21683789407131623,0,Bovine leather further prepared,Agriculture,False
+4108,41.39,4068.05,-0.035996591763254905,0,Chamois leather,Agriculture,False
+4109,26.09,4696.64,-0.14672832721637818,0,Patent leather,Agriculture,False
+4110,10.21,4683.89,-0.6353204363763003,0,Waste of leather,Agriculture,False
+4111,34.21,3846.45,0.6326465928330215,1,Composition leather,Agriculture,False
+4201,19.33,7294.73,0.23364172839554062,0,Saddlery and harnesses,Agriculture,False
+4202,57.36,7236.44,0.5606725479102045,1,Trunks or cases,Agriculture,False
+4203,95.42,5949.37,0.1612313870108779,0,Leather apparel,Agriculture,False
+4204,55.43,4834.21,-0.18984172998416438,0,Articles of leather for technical uses,Agriculture,False
+4205,53.81,4808.56,-0.18875489181594446,0,Other articles of leather,Agriculture,False
+4206,16.4,7952.46,-0.12544547751156554,0,Articles of gut,Agriculture,False
+4301,15.31,6354.71,-0.013550771923810987,0,Other raw furskins,Agriculture,False
+4302,7.45,3628.23,0.6063103594230843,1,Other tanned furskins,Agriculture,False
+4303,4.51,4986.51,-0.7533182065418589,0,Furskin apparel,Agriculture,False
+4304,23.26,5281.5,0.6217739560104995,1,Artificial fur,Agriculture,False
+4401,19.42,4185.85,0.4518550128071307,1,Fuel wood,Agriculture,True
+4402,86.73,5121.0,0.10905852775322852,0,Wood charcoal,Agriculture,False
+4403,53.57,5610.06,-0.10005909439476435,0,Wood in the rough,Agriculture,False
+4404,55.85,2284.93,-0.05336139625496885,0,Strips and other pieces of wood,Agriculture,False
+4405,41.41,3550.81,-0.12777008725737632,0,Wood wool or flour,Agriculture,False
+4406,7.72,1691.38,0.13576607408052857,0,Wooden railway ties,Agriculture,False
+4407,15.7,3949.66,-0.006126059022215777,0,Wood sawn lengthwise,Agriculture,False
+4408,45.5,3730.37,0.24982585228838133,1,Sheets for veneering for plywood,Agriculture,False
+4409,37.09,5087.12,-0.03804795210352902,0,Wood shaped along its edges,Agriculture,False
+4410,10.31,1802.79,0.26748428057743984,1,Particle board and similar board,Agriculture,False
+4411,112.59,3380.08,0.16649253805237899,0,Fiberboard of wood,Agriculture,False
+4412,83.45,6114.43,0.1655890756034828,0,Plywood,Agriculture,False
+4413,80.21,4772.7,0.2916117090216231,1,Densified wood,Agriculture,False
+4414,12.22,7955.18,-0.017441755126422712,0,Wooden frames,Agriculture,False
+4415,90.64,1689.23,0.33111222213332203,1,Packing boxes,Agriculture,False
+4416,18.54,5523.73,0.2604483419625194,1,"Casks, barrels, etc. of wood",Agriculture,False
+4417,81.82,5773.2,-0.391760515367045,0,Wooden tools,Agriculture,False
+4418,35.69,3448.02,0.2200204439182406,0,Wood carpentry for construction,Agriculture,False
+4419,22.72,7073.59,0.4140952958482046,1,Wooden kitchenware,Agriculture,False
+4420,7.45,8536.78,-0.15092182636885101,0,"Wood marquetry, ornaments, etc.",Agriculture,False
+4421,22.88,6158.31,0.11475586021236542,0,Other articles of wood,Agriculture,False
+4501,2.45,1969.7,0.21912009875654864,0,"Natural cork, raw",Agriculture,False
+4502,3.47,2458.86,0.1342802124676472,0,"Natural cork, debacked",Agriculture,False
+4503,31.29,4706.97,-0.34236056860798797,0,Articles of natural cork,Agriculture,False
+4504,48.27,4547.86,0.06316950420051093,0,Agglomerated cork,Agriculture,False
+4601,23.29,6739.8,-0.2276912056234048,0,Products of plaiting materials,Agriculture,False
+4602,20.26,8621.47,-0.08057172691324184,0,Basketwork,Agriculture,False
+4701,26.17,6273.16,-0.1805593495835866,0,Mechanical woodpulp,Agriculture,False
+4702,18.99,7695.89,0.5193117427660381,1,"Chemical woodpulp, dissolving grade",Agriculture,False
+4703,30.79,8473.02,0.44358395415368773,1,"Chemical woodpulp, soda or sulfate",Agriculture,False
+4704,5.58,4052.82,0.5347369786074069,1,"Chemical woodpulp, sulfite",Agriculture,False
+4705,7.39,8470.5,0.08797035672941525,0,Semichemical woodpulp,Agriculture,False
+4706,9.54,4388.78,0.6319297499433826,1,Pulps of recovered paper fibers,Agriculture,False
+4707,39.37,5787.75,0.43091233510716326,1,Paper waste,Agriculture,False
+4801,20.49,3401.7,0.13044464643907785,0,Newsprint,Agriculture,False
+4802,58.31,3578.71,0.13492038532142525,0,Paper used for graphic purposes,Agriculture,False
+4803,95.24,3721.8,0.17973676003234906,0,Tissue,Agriculture,False
+4804,60.6,3657.3,0.2819163292569106,1,Uncoated kraft paper and paperboard,Agriculture,False
+4805,79.36,2667.47,0.25995456063483197,1,Other uncoated paper and paperboard,Agriculture,True
+4806,90.84,3875.25,0.2442741711083059,1,Transparent paper,Agriculture,False
+4807,63.54,3007.78,0.22962556624977973,0,Uncoated composite paper,Agriculture,False
+4808,22.24,2208.31,0.14268368959370892,0,Corrugated paper and paperboard,Agriculture,False
+4809,88.69,6755.53,-0.022403669041149717,0,Carbon paper,Agriculture,False
+4810,117.46,3943.35,0.21257981909115756,0,"Paper and paperboard, coated with kaolin",Agriculture,False
+4811,134.72,3976.43,0.22643846594651013,0,"Cellulose wadding, coated",Agriculture,False
+4812,64.22,4110.11,0.2453922699480951,1,Filter blocks of paper pulp,Agriculture,False
+4813,127.79,4096.16,0.17394449824768066,0,Cigarette paper,Agriculture,False
+4814,78.91,3942.17,-0.05427672323741018,0,Wallpaper,Agriculture,False
+4815,151.72,3713.68,0.24017231398741629,0,Floor coverings of paper,Agriculture,False
+4816,39.7,5579.45,-0.27573150579199573,0,Other carbon paper,Agriculture,False
+4817,36.01,4132.3,-0.02637925381561856,0,Letterstock,Agriculture,False
+4818,77.24,2925.44,0.15078088549702462,0,Toilet paper,Agriculture,False
+4819,72.19,3565.37,0.1512134049451926,0,Cardboard packing containers,Agriculture,False
+4820,48.31,6737.06,0.34089796553952606,1,Notebooks,Agriculture,False
+4821,76.24,3344.32,0.22309249720056484,0,Paper labels,Agriculture,False
+4822,95.16,2716.86,0.16782958802819944,0,"Bobbins, spools, cops of paper",Agriculture,False
+4823,86.67,4951.0,0.2527314606763209,1,Other paper cut to size,Agriculture,False
+4901,52.34,3876.34,-0.007992185600412335,0,"Books, brochures etc.",Agriculture,False
+4902,18.76,2415.06,-0.006629852108465893,0,"Newspapers, journals and periodicals",Agriculture,False
+4903,10.65,7053.72,-0.011821301842345242,0,Children's books,Agriculture,False
+4904,37.21,4388.77,0.0867811651117913,0,"Music, printed or in manuscript",Agriculture,False
+4905,74.58,5000.9,-0.0013293961441770178,0,Maps,Agriculture,False
+4906,71.06,4833.24,0.3486819357841052,1,"Architectural, engineering, etc. drawings",Agriculture,False
+4907,14.82,5462.96,-0.016992062851515406,0,Unused stamps,Agriculture,False
+4908,79.49,4828.91,0.10965130953887679,0,Transfers (decalcomanias),Agriculture,False
+4909,8.71,7634.66,-0.03577783984753212,0,Printed or illustrated postcards,Agriculture,False
+4910,25.1,5530.38,-0.009948166500810896,0,Calendars,Agriculture,False
+4911,76.55,3721.32,0.12886287512850847,0,Other printed matter,Agriculture,False
+5001,19.77,5794.84,0.054039931281604885,0,Silkworm cocoons,Textiles,False
+5002,8.67,5494.83,0.6385695443287085,1,Raw silk,Textiles,False
+5003,7.54,5984.86,0.12461574468471676,0,Silk waste,Textiles,False
+5004,21.04,7551.87,0.7828455868517288,1,Silk yarn,Textiles,False
+5005,6.56,7047.86,0.412683994741648,1,Yarn from silk waste,Textiles,False
+5006,33.58,7230.99,0.51146246710984,1,"Silk yarn, for retail sale",Textiles,False
+5007,28.52,5082.84,0.22278286515134268,0,Woven silk fabrics,Textiles,False
+5101,2.09,8748.61,2.769317981743214,1,Wool,Textiles,False
+5102,5.22,7884.17,-0.5855903941818167,0,Animal hair,Textiles,False
+5103,29.22,5373.23,-0.06645604320255112,0,Wool or animal hair waste,Textiles,False
+5104,20.4,4567.18,0.5443758294677269,1,Garnetted stock of wool or animal hair,Textiles,False
+5105,13.67,6304.79,0.07444915442423687,0,"Wool, combed",Textiles,False
+5106,32.02,3597.93,0.13234779196726568,0,"Yarn of carded wool, not for retail sale",Textiles,False
+5107,51.86,3467.17,0.08332573690019342,0,"Yarn of combed wool, not for retail sale",Textiles,False
+5108,18.48,5855.7,-0.14941113452401225,0,"Yarn of animal hair, not for retail sale",Textiles,False
+5109,39.69,3786.45,0.3765951508958206,1,"Yarn of wool or animal hair, for retail sale",Textiles,False
+5110,15.4,3588.29,-0.29636041807399055,0,Yarn of coarse animal hair or of horsehair,Textiles,False
+5111,41.85,3822.22,0.09523719905110027,0,Woven fabrics of carded wool,Textiles,False
+5112,34.65,4701.96,0.4148866236247315,1,Woven fabrics of combed wool,Textiles,False
+5113,31.28,4857.32,-0.437474843051688,0,Woven fabrics of coarse animal hair,Textiles,False
+5201,31.88,9533.4,0.2575688678649514,1,Raw cotton,Textiles,False
+5202,56.36,4402.96,0.08408328826176457,0,Cotton waste,Textiles,False
+5203,6.61,7690.98,-0.6022147333209131,0,"Cotton, carded or combed",Textiles,False
+5204,150.84,5206.14,0.06181145931364312,0,Cotton sewing thread,Textiles,False
+5205,18.38,3792.02,0.05736806042507946,0,Cotton yarn of > 85%,Textiles,False
+5206,34.08,4501.02,0.22244403801002574,0,Cotton yarn of < 85%,Textiles,False
+5207,43.86,3686.92,0.5012122764399012,1,Cotton yarn for retail sale,Textiles,False
+5208,50.72,5736.12,-0.14477622882244925,0,Woven fabrics of cotton of > 85% weighing < 200 g/m2,Textiles,False
+5209,31.98,4060.5,0.24782973556587262,1,Woven fabrics of cotton of < 85% weighing > 200 g/m2,Textiles,False
+5210,31.75,4993.13,-0.05402092851905011,0,Woven fabrics of cotton of < 85% weighing < 200 g/m2,Textiles,False
+5211,16.79,5421.78,0.21920064405874182,0,Woven fabrics of cotton of < 85% weighing > 200 g/m2,Textiles,False
+5212,18.09,3497.9,0.19516205269291576,0,Other woven cotton fabrics,Textiles,False
+5301,4.8,5722.83,1.2744017514108337,1,"Flax, raw or processed",Textiles,False
+5302,45.62,3226.44,0.2704702826605453,1,Hemp fiber,Textiles,False
+5303,6.53,3951.71,0.18342656915190045,0,Textile bast fibers,Textiles,False
+5304,23.07,7451.98,-0.03654936983816435,0,Sisal and agave fibers,Textiles,False
+5305,23.06,7450.76,-0.03666966441000729,0,Vegetable textile fibers,Textiles,False
+5306,17.32,5215.32,0.8395715887030504,1,Flax yarn,Textiles,False
+5307,5.58,4905.66,-0.33298777863979817,0,Yarn of textile bast fibers,Textiles,False
+5308,52.45,5200.83,0.10714510883454036,0,Yarn of other vegetable textile fibers,Textiles,False
+5309,15.04,4451.34,1.3570226307573137,1,Woven fabrics of flax,Textiles,False
+5310,10.92,4321.68,0.09134361284148873,0,Woven fabrics of jute or of other textile bast fibers,Textiles,False
+5311,9.42,4100.88,-0.41118329398649006,0,Woven fabrics of vegetable textile fibers,Textiles,False
+5401,74.3,4345.11,0.12692082489896597,0,Synthetic sowing thread,Textiles,False
+5402,83.22,5916.21,0.26228964995982323,1,Synthetic filament yarn,Textiles,False
+5403,13.89,5575.62,0.7099208799146691,1,Artificial filament yarn,Textiles,False
+5404,80.62,5674.16,0.1261968565299622,0,"Synthetic monofilament >67 dtex, thickness < 1mm",Textiles,False
+5405,26.71,6466.67,0.7232888824195454,1,"Artificial monofilament >67dtex t<1mm, strip, straws t<5mm",Textiles,False
+5406,19.73,7554.77,0.1539926208432789,0,Synthetic filament yarn for retail sale,Textiles,False
+5407,58.09,5863.81,0.417598785046397,1,Woven fabrics of synthetic filament yarn,Textiles,True
+5408,64.64,4320.03,0.289338640331063,1,Woven fabrics of artificial filament yarn,Textiles,False
+5501,54.08,6982.73,-0.11323913715185677,0,Synthetic filament tow,Textiles,True
+5502,70.08,6419.57,0.4284215885481641,1,Artificial filament tow,Textiles,True
+5503,142.49,5994.59,0.14207247790729138,0,Synthetic staple fibers,Textiles,True
+5504,43.38,5807.59,0.3185819771782945,1,"Artificial staple fibers, not processed for spinning",Textiles,False
+5505,70.06,3476.48,0.26605168285689557,1,Waste of man-made fibers,Textiles,False
+5506,50.25,5372.33,-0.06760502033070873,0,"Synthetic staple fibers, processed",Textiles,False
+5507,32.16,3800.86,0.19298934584041502,0,"Artificial staple fibers, processed",Textiles,False
+5508,69.11,6274.24,0.07241425540181404,0,Synthetic staple fibers sewing thread,Textiles,False
+5509,46.79,5761.65,0.18272409282246865,0,"Yarn of synthetic staple fibers, not for retail sale",Textiles,False
+5510,25.84,6300.51,0.05439934855760924,0,"Yarn of artificial staple fibers, not for retail sale",Textiles,False
+5511,43.68,4283.91,0.13214798402528985,0,"Yarn of synthetic staple fibers, for retail sale",Textiles,False
+5512,59.56,5087.63,0.24152610830820753,0,Woven fabrics of > 85% synthetic staple fibers,Textiles,False
+5513,27.02,5594.66,-0.17892696341187617,0,Woven fabrics of < 85% synthetic staple fibers weighing < 170 g/m2,Textiles,False
+5514,39.91,4717.3,-0.015852349023590603,0,Woven fabrics of < 85% synthetic staple fibers weighing > 170 g/m2,Textiles,False
+5515,65.68,5026.1,0.434904736556121,1,Other woven fabrics of synthetic staple fibers,Textiles,False
+5516,40.22,6764.44,0.33445367945092863,1,Woven fabrics of artificial staple fibers,Textiles,False
+5601,201.55,3731.12,0.18788957786644883,0,Wadding of textile materials,Textiles,False
+5602,74.06,4005.59,0.30304219498665996,1,Felt,Textiles,False
+5603,115.99,4450.16,-0.10584885735460449,0,Nonwoven textiles,Textiles,False
+5604,63.97,5868.15,0.004728885445373224,0,Rubber textiles,Textiles,True
+5605,32.54,5990.99,-0.15370293469582275,0,Metallised yarn,Textiles,False
+5606,41.35,4133.04,0.36107214025349776,1,Gimp yarn,Textiles,False
+5607,114.65,5829.62,0.138624070747769,0,Twine and ropes of baste fibers,Textiles,False
+5608,101.12,6229.31,0.10301188246061059,0,Nets,Textiles,False
+5609,32.84,6779.69,0.3450895830228225,1,"Articles of yarn, rope etc not elsewhere clasified",Textiles,False
+5701,65.97,5340.81,-0.10872367888132921,0,"Carpets, knotted",Textiles,False
+5702,94.74,4143.54,0.12501356255063859,0,Woven carpets and rugs,Textiles,False
+5703,66.72,4649.33,0.025222407584936185,0,"Carpets, tufted",Textiles,False
+5704,43.83,2460.79,0.19227668379490578,0,Carpets of felt,Textiles,False
+5705,24.61,7241.74,0.47830166174339256,1,Other carpets,Textiles,False
+5801,38.44,5275.89,0.20212075544452987,0,Woven pile fabrics,Textiles,False
+5802,38.72,4408.71,0.39136198502175507,1,Terry cloth,Textiles,False
+5803,54.25,6572.27,0.3761751333760789,1,Gauze,Textiles,False
+5804,47.04,5400.09,0.10219652731916903,0,Lace and net fabrics,Textiles,False
+5805,52.61,5491.41,0.17065265280691194,0,Hand-woven tapestries,Textiles,False
+5806,64.1,4641.68,0.2359461481705999,0,Narrow woven fabrics,Textiles,False
+5807,34.32,3785.45,0.15539344893715493,0,Labels and badges of textiles,Textiles,False
+5808,90.23,4722.42,0.15723001091988767,0,Braids in piece,Textiles,False
+5809,84.91,5471.32,-0.020974350819299666,0,Woven fabric incorporating metal threads,Textiles,False
+5810,54.94,7293.62,0.575346541389515,1,Embroidery in the piece,Textiles,False
+5811,63.8,4727.9,0.22192461795287452,0,Quilted textile products,Textiles,False
+5901,47.73,7202.29,-0.025160409995190824,0,Stiffened textiles,Textiles,False
+5902,44.05,6006.59,0.312952738167487,1,Tire cord fabric,Textiles,False
+5903,53.33,5069.82,0.3299805864850453,1,Textile fabrics impregnated with plastics,Textiles,False
+5904,34.18,3396.27,-0.21416876254842543,0,Linoleum,Textiles,False
+5905,32.35,5830.23,0.572391321154703,1,Textile wall coverings,Textiles,False
+5906,62.0,4218.4,0.24402862051847315,1,Rubberized textile fabrics,Textiles,True
+5907,84.67,6414.21,0.23569968858928406,0,"Other textile fabrics impregnated, coated or covered",Textiles,False
+5908,42.37,4948.39,0.053229108528163496,0,Textile wicks,Textiles,False
+5909,67.09,5483.66,0.3041615903187761,1,Textile hosepiping and similar tubing,Textiles,False
+5910,136.73,5294.28,0.3466130937872487,1,"Transmission belts or belting, of textile material",Textiles,False
+5911,113.57,4649.34,0.20512260059345558,0,Textile articles for technical use,Textiles,True
+6001,24.02,5737.3,0.29126267815243256,1,"Pile fabrics, knit",Textiles,False
+6002,32.36,4397.54,0.2733440506754061,1,Other knitted fabrics,Textiles,False
+6101,75.38,7083.73,0.3797590598999657,1,"Men's overcoats, knit",Textiles,False
+6102,72.84,6444.45,0.5607657888341416,1,"Women's overcoats, knit",Textiles,False
+6103,68.48,7293.68,0.22826732987753823,0,"Men's suits, knit",Textiles,False
+6104,41.17,7301.0,0.2512395324221514,1,"Women's suits, knit",Textiles,False
+6105,86.99,6602.84,0.6142497750633964,1,"Men's shirts, knit",Textiles,False
+6106,54.48,5796.12,0.38199522933752295,1,"Women's shirts, knit",Textiles,False
+6107,46.17,7588.11,0.2936320985051744,1,"Men's undergarments, knit",Textiles,False
+6108,36.1,7727.15,0.23640690236640544,0,"Women's undergarments, knit",Textiles,False
+6109,102.41,5672.6,0.3563365763514357,1,"T-shirts, knit",Textiles,False
+6110,48.77,6880.48,0.28310685082924025,1,"Sweaters, pullovers, sweatshirts etc., knit",Textiles,False
+6111,56.02,7598.31,0.08494921778080437,0,"Babies' garments, knit",Textiles,False
+6112,38.85,7240.67,0.3039223342974463,1,"Activewear, knit",Textiles,False
+6113,68.44,6824.83,-0.007946713358597517,0,Garments knit with impregnated fibers,Textiles,False
+6114,33.01,6873.38,0.5712444229556752,1,"Other garments, knit",Textiles,False
+6115,32.98,6415.02,0.2590565238723059,1,"Socks, stockings, etc., knit",Textiles,False
+6116,34.72,7543.7,0.2099826611585038,0,"Gloves, knit",Textiles,False
+6117,47.98,6209.93,0.13042182815109907,0,"Other clothing accesories, knit",Textiles,False
+6201,85.53,6966.04,0.2489610701610777,1,"Men's overcoats, not knit",Textiles,False
+6202,69.96,6304.23,0.28381702302199596,1,"Womens overcoats, not knit",Textiles,False
+6203,93.53,6251.36,0.2864698311239944,1,Men's suits and pants,Textiles,False
+6204,60.45,6440.51,0.32529948852027407,1,Women's suits and pants,Textiles,False
+6205,75.42,6996.82,0.33932337792317696,1,Men's shirts,Textiles,False
+6206,92.64,5840.55,0.3335177245384074,1,Women's shirts,Textiles,False
+6207,64.55,6406.24,0.19070399162563026,0,Men's undergarments,Textiles,False
+6208,49.58,6753.49,0.5065589206756327,1,Women's undergarments,Textiles,False
+6209,78.67,6827.34,0.016278931447282673,0,Babies' garments,Textiles,False
+6210,41.66,7375.29,-0.5514251560285146,0,Garments made of textile felts and nonwoven fabric,Textiles,False
+6211,57.41,6534.6,0.15501655601994885,0,Activewear,Textiles,False
+6212,53.19,6843.07,0.28849536828934064,1,Brassieres,Textiles,False
+6213,22.39,7379.75,0.1349503104222149,0,Handkerchiefs,Textiles,False
+6214,49.7,6046.83,0.28798541001722244,1,"Shawls, scarves, etc.",Textiles,False
+6215,23.25,6841.98,0.4805783607720331,1,"Ties, bow ties and cravats",Textiles,False
+6216,26.85,8228.45,0.16105270396486512,0,Gloves,Textiles,False
+6217,33.63,4851.08,0.19797361642178787,0,Other clothing accesories,Textiles,False
+6301,8.73,8482.33,0.2559787966544007,1,Blankets,Textiles,False
+6302,26.6,6702.95,0.2294976222864227,0,House linen,Textiles,False
+6303,15.94,7045.58,-0.05634176956341445,0,Curtains,Textiles,False
+6304,22.75,7478.19,0.12588357298912875,0,Other furnishing articles,Textiles,False
+6305,122.34,5293.2,0.06924288172202997,0,Bags for packing goods,Textiles,False
+6306,17.76,7514.48,0.21292408591133088,0,"Tents, tarpaulins, etc.",Textiles,False
+6307,16.32,7809.27,-0.7891747292902618,0,Other made up articles,Textiles,False
+6308,56.01,5440.33,-0.1020942244720949,0,Needlecraft sets of woven fabric and yarn,Textiles,False
+6309,138.96,5154.05,0.3695631343057622,1,Used clothes and textiles,Textiles,False
+6310,25.22,3966.18,0.1560228818591901,0,Used or new rags textile scraps,Textiles,False
+6401,32.29,6222.22,0.15731309459953283,0,Waterproof footwear,Textiles,False
+6402,45.54,7374.63,0.540001755090815,1,Other footwear of rubber or plastics,Textiles,False
+6403,64.34,6561.77,0.37749552665713615,1,Leather footwear,Textiles,False
+6404,39.06,7576.98,0.27760939226630704,1,Textile footwear,Textiles,False
+6405,51.58,6117.11,0.1345665551813573,0,Other footwear,Textiles,False
+6406,30.18,4728.0,0.34192204061744524,1,Parts of footwear,Textiles,False
+6501,21.54,6707.75,0.8581920950953934,1,Hat forms,Textiles,False
+6502,7.92,8916.74,0.48388232084048804,1,Hat shapes,Textiles,False
+6503,28.84,7814.98,0.6884285911311074,1,Felt hats,Textiles,False
+6504,18.37,8039.36,0.22649258932103672,0,Hats,Textiles,False
+6505,28.56,7815.98,0.6859437125558836,1,"Hats, knit",Textiles,False
+6506,47.47,7056.28,0.17352958262728557,0,Other headgear,Textiles,False
+6507,47.65,5548.16,0.48859650197737303,1,Headbands,Textiles,False
+6601,20.2,7602.01,0.36375544848947267,1,Umbrellas,Textiles,False
+6602,18.51,7529.42,0.5083946164300668,1,Walking sticks,Textiles,False
+6603,18.44,5881.22,0.16376521214257955,0,Parts of umbrellas or walking sticks,Textiles,False
+6701,22.38,7039.92,-0.3624495968777184,0,Feathers or down,Textiles,False
+6702,6.29,9335.26,-0.059103302418735966,0,Artificial flowers,Textiles,False
+6703,3.35,4501.99,1.4051600386491512,1,Human animal hair prepared for use in wigs,Textiles,False
+6704,5.51,10551.46,0.3129162864932706,1,Wigs,Textiles,False
+6801,7.04,2888.17,-0.659513406358229,0,"Flagstones, of natural stone",Stone,False
+6802,20.39,4711.02,0.006429881100877417,0,Worked building stone,Stone,False
+6803,12.98,5695.77,-0.22982773721634875,0,Worked slate,Stone,False
+6804,119.26,5143.42,0.2364636729837364,0,Grindstones,Stone,False
+6805,103.34,4239.19,0.11148372708772655,0,Natural or artificial abrasive powder,Stone,False
+6806,116.9,3240.12,0.2687549424625978,1,Mineral wools and insulating materials,Stone,False
+6807,17.48,1993.61,0.2801647472559656,1,Asphalt,Stone,False
+6808,53.03,4000.74,0.30980499966537767,1,Panels of vegetable fibers,Stone,False
+6809,56.89,2017.96,0.16033064213367543,0,Plaster articles,Stone,False
+6810,54.27,4880.13,-0.06279781508210133,0,"Articles of cement, of concrete or of artificial stone",Stone,True
+6811,44.04,2615.85,0.2290372873825494,0,Asbestos-cement or cellulose fiber-cement,Stone,False
+6812,79.83,4455.9,-0.15413514112650537,0,Asbestos fibres,Stone,False
+6813,99.68,6119.21,0.3183215118445199,1,Friction material and articles thereof,Stone,True
+6814,69.59,5534.18,1.0308789249004167,1,Mica articles,Stone,True
+6815,106.96,5133.96,0.27246704377070735,1,Articles of stone or of other mineral substances,Stone,True
+6901,45.54,4185.62,-0.21405413663890063,0,"Bricks, blocks, and other ceramic goods",Stone,False
+6902,84.45,5264.77,0.2424483518589139,0,"Bricks, tiles and similar refractory ceramic constructional goods",Stone,False
+6903,99.02,4779.27,0.219330317310007,0,Other refractory ceramic goods,Stone,False
+6904,35.82,4847.12,0.002386324985816688,0,Ceramic building bricks,Stone,False
+6905,38.77,1588.95,-0.09352100901532821,0,Architectural ceramic ornaments,Stone,False
+6906,39.31,3696.32,-0.08186067179395852,0,Ceramic pipes,Stone,False
+6907,94.93,4371.97,0.16155180285262014,0,Unglazed ceramic flags and pavers,Stone,False
+6908,89.48,3992.1,-0.06684829187458252,0,Glazed ceramic flags and pavers,Stone,False
+6909,59.39,5653.82,0.3041898211527359,1,Ceramic wares for technical ware,Stone,True
+6910,39.53,6303.54,-0.3650728651787052,0,"Ceramic sinks, washbasins, and similar sanitary fixtures",Stone,False
+6911,28.39,7699.94,0.13236246048243122,0,Porcelain or china household articles,Stone,False
+6912,44.28,5963.36,0.17252916882046387,0,Ceramic household articles,Stone,False
+6913,14.34,8005.39,-0.1258476629608527,0,Ornamental ceramic articles,Stone,False
+6914,26.69,6387.01,-0.1664747346506895,0,Other ceramic articles,Stone,True
+7001,32.93,4261.79,0.6211670350892503,1,Cullet and other scraps of glass,Stone,True
+7002,44.1,5989.7,0.06529164789614662,0,Glass balls,Stone,False
+7003,7.33,2753.32,-0.3725260252481414,0,"Glass, cast or rolled",Stone,False
+7004,10.69,4404.76,3.0909468403208615,1,Drawn and blown glass,Stone,False
+7005,129.0,3749.22,0.1550500695430609,0,Float glass,Stone,False
+7006,20.47,3359.59,-0.13585243800065191,0,Worked glass,Stone,False
+7007,75.98,4329.82,0.20498847410335827,0,Safety glass,Stone,True
+7008,37.82,2305.55,0.07885003195825716,0,Multiple-walled insulating glass,Stone,False
+7009,29.23,6861.47,0.2558863205624534,1,Glass mirrors,Stone,False
+7010,95.35,3838.49,0.17670218178975902,0,Glass containers for conveyance,Stone,False
+7011,79.3,5456.74,-0.28914587713769013,0,Glass envelopes,Stone,False
+7012,29.52,4257.83,-0.009521391038476839,0,Glass inners for vacuum flasks,Stone,False
+7013,55.81,6142.41,0.36367694265575606,1,Glassware for interior decorative use,Stone,False
+7014,26.62,5076.06,0.4583058862305117,1,Signaling glassware,Stone,False
+7015,14.94,7165.56,0.20731416681756726,0,Clock or watch glasses and similar glasses,Stone,False
+7016,22.65,6780.71,0.024896884799093525,0,Glass paving blocks or other molded products,Stone,False
+7017,79.85,5728.96,0.09769328854299524,0,"Laboratory, hygienic or pharmaceutical glassware",Stone,True
+7018,16.42,6437.75,0.78583779308155,1,Glass beads,Stone,False
+7019,100.24,4325.25,0.15118940025837735,0,Glass fibers,Stone,True
+7020,29.14,4247.22,-0.009552736034744694,0,Other articles of glass,Stone,False
+7101,10.98,5280.95,1.9699452443651895,1,Pearls,Stone,False
+7102,29.15,5830.43,0.024114696141552698,0,Diamonds,Stone,False
+7103,22.76,7174.17,1.5637613487922903,1,Precious stones,Stone,False
+7104,17.44,5352.5,0.6739716782883275,1,Synthetic precious stones,Stone,False
+7105,33.28,6164.88,0.14594874874085317,0,Diamond dust,Stone,False
+7106,25.71,3821.31,0.23222418071731368,0,Silver,Stone,True
+7107,44.66,4056.67,0.0568255563898591,0,Silver clad metals,Stone,False
+7108,63.47,5313.28,0.6216267620819111,1,Gold,Stone,False
+7109,5.25,7378.09,-0.1042972661304413,0,Gold clad metals,Stone,False
+7110,34.3,6888.56,-0.3106746579483446,0,Platinum,Stone,True
+7111,2.24,4070.69,-0.9134478598978604,0,Platinum clad metals,Stone,False
+7112,29.64,4394.59,-0.09321028758673706,0,Scrap of precious metal,Stone,False
+7113,41.58,4982.26,0.756983299941274,1,Jewelry of precious metal,Stone,False
+7114,7.22,3384.88,-0.28833172797407014,0,Goldsmith and silversmith wares,Stone,False
+7115,13.07,5803.16,0.2173485847357536,0,Other articles of precious metals,Stone,True
+7116,15.37,5410.79,0.8462023551524372,1,Articles of precious stones,Stone,False
+7117,43.48,6744.5,0.8357936175589383,1,Imitation jewelry,Stone,False
+7118,21.28,6487.79,0.39596311017474534,1,Coin,Stone,False
+7201,17.7,6262.5,-0.05321143469067886,0,Pig iron,Metals,False
+7202,11.53,5986.46,0.6248713650982995,1,Ferroalloys,Metals,False
+7203,25.2,3576.54,0.30910668251351625,1,Ferrous products from the reduction of iron ore,Metals,True
+7204,80.61,4097.56,0.35791490019822664,1,Ferrous waste and scrap,Metals,False
+7205,85.25,4004.41,0.20595616987132834,0,Powders of iron or steel,Metals,False
+7206,17.89,5046.16,-0.33638081185919916,0,Iron and nonalloy steel,Metals,True
+7207,60.64,5419.44,0.1122498799758337,0,Semifinished products of iron or nonalloy steel,Metals,True
+7208,122.83,4174.18,0.7446498921267666,1,"Flat-rolled iron, width > 600mm, hot-rolled, not clad",Metals,True
+7209,95.06,4675.53,0.3822218311002192,1,"Flat-rolled iron, width > 600mm, cold-rolled, not clad",Metals,False
+7210,131.64,5343.56,0.3546828133832154,1,"Flat rolled iron, width > 600mm, clad",Metals,True
+7211,60.94,2127.8,0.3438547672756571,1,"Flat-rolled iron, width < 600mm, not clad",Metals,False
+7212,22.67,3311.56,0.37488540300402085,1,"Flat-rolled iron, width < 600mm, clad",Metals,False
+7213,195.42,3963.48,0.23866896880666616,0,Hot rolled bars of iron,Metals,False
+7214,97.82,2740.81,0.2868742770738903,1,"Other bars of iron, not further worked than forged",Metals,False
+7215,113.02,2833.44,0.32676016005997,1,Other bars and rods of iron or nonalloy steel,Metals,False
+7216,154.62,3258.44,0.38337665691744227,1,Angles of iron or nonalloy steel,Metals,False
+7217,113.65,4601.8,-0.020461837803079287,0,Wire of iron or nonalloy steel,Metals,False
+7218,4.92,4313.2,0.6713297983782761,1,Stainless steel in ingots,Metals,True
+7219,59.11,3986.35,0.3194189687161643,1,Flat-rolled products of stainless steel of a width > 600 mm,Metals,True
+7220,71.0,4329.86,0.20300139943893267,0,Flat-rolled products of stainless steel of a width < 600 mm,Metals,True
+7221,37.84,3801.29,0.24422052450569032,1,"Bars of stainless steel, hot-rolled",Metals,False
+7222,100.71,4321.85,0.477785980659419,1,Other bars and rods of stainless steel,Metals,False
+7223,120.43,5048.21,0.3058472420800457,1,Wire of stainless steel,Metals,False
+7224,17.11,4880.69,0.39819249239066346,1,Other alloy steel in primary form,Metals,True
+7225,98.23,4371.78,0.3874140791681925,1,"Flat-rolled products of other alloy steel, width > 600 mm",Metals,True
+7226,74.37,3390.38,0.5683064180751947,1,"Flat-rolled products of other alloy steel, width < 600 mm",Metals,True
+7227,47.84,4070.83,-0.008056261912302014,0,Bars of other alloy steel,Metals,False
+7228,117.7,4312.17,0.09950348727346403,0,Other bars and rods of other alloy steel,Metals,True
+7229,120.76,4650.16,0.23060196264746202,0,Wire of other alloy steel,Metals,False
+7301,21.59,3201.14,0.3142647280193405,1,Sheet piling of iron or steel,Metals,False
+7302,84.05,4599.68,0.5147907870679277,1,Railway construction material of iron or steel,Metals,False
+7303,94.94,3835.83,0.16335947381005866,0,Tubes of cast iron,Metals,False
+7304,158.78,5754.99,0.47918918153129353,1,"Tubes, seamless, of iron or steel",Metals,True
+7305,108.93,5679.81,0.5138402308165922,1,"Other tubes and pipes, diameter > 406.4 mm, of iron or steel",Metals,True
+7306,92.85,4333.65,0.20182023283780862,0,"Other tubes, pipes and hollow profiles of iron or steel",Metals,True
+7307,128.67,5457.04,0.21344128404832446,0,Tube or pipe fittings of iron or steel,Metals,True
+7308,127.02,4181.13,0.4486551554014822,1,"Structures and their parts, of iron or steel",Metals,True
+7309,105.28,4019.44,0.43722558967017405,1,"Tanks etc. > 300 liters, iron or steel",Metals,True
+7310,76.51,3555.85,0.16056300415538996,0,"Tanks etc. < 300 liters, iron or steel",Metals,True
+7311,131.07,5113.28,0.17189398891393132,0,Containers for compressed or liquified gas,Metals,True
+7312,116.95,5962.35,0.36285312490409455,1,"Wire of iron or steel, not insulated",Metals,False
+7313,69.67,6803.2,-0.11776027908080842,0,Barbed wire of iron or steel,Metals,False
+7314,89.77,4568.91,-0.013649320849247571,0,Cloth of iron or steel wire,Metals,True
+7315,100.54,6575.24,0.24702639331977028,1,Chain of iron or steel,Metals,False
+7316,54.63,6975.36,0.2487438212267067,1,Anchors of iron or steel,Metals,False
+7317,52.54,7420.03,-0.059983377913690225,0,Nails and similar articles of iron or steel,Metals,False
+7318,105.16,5521.67,0.3353764473410145,1,Screws and similar articles of iron or steel,Metals,True
+7319,76.48,6642.19,0.2876283953075839,1,Articles for sewing of iron or steel,Metals,False
+7320,51.34,4215.8,0.1640000042082077,0,Springs of iron or steel,Metals,True
+7321,19.02,6795.23,-0.06254190854191903,0,Stoves and similar non-electric appliances of iron or steel,Metals,False
+7322,25.16,2621.08,-0.0912531253329705,0,Radiators for central heating of iron or steel,Metals,False
+7323,25.08,7208.08,0.03566347423740604,0,Household articles of iron or steel,Metals,False
+7324,28.35,7005.63,0.1710976385376302,0,Sanitary ware and parts of iron or steel,Metals,False
+7325,147.4,4179.71,0.2173289515755311,0,Other cast articles of iron or steel,Metals,True
+7326,80.43,4916.48,0.4188803176851322,1,Other articles of iron or steel,Metals,True
+7401,9.39,6097.63,-0.06781195931724485,0,Copper mattes,Metals,False
+7402,15.37,6674.78,0.7193516284351863,1,Unrefined copper,Metals,False
+7403,74.1,4738.11,0.47722362512351846,1,Refined copper and copper alloys,Metals,True
+7404,117.1,5087.11,0.9047189781053523,1,Copper waste and scrap,Metals,False
+7405,14.97,3635.07,0.0710752707050585,0,Master alloys of copper,Metals,True
+7406,5.05,5036.96,-0.07149775732640702,0,Copper powders and flakes,Metals,False
+7407,126.92,2992.02,0.3510890907687349,1,"Copper bars, rods and profiles",Metals,True
+7408,66.13,2335.96,0.678758884160078,1,Copper wire,Metals,True
+7409,78.35,3591.96,0.5888228420196278,1,"Copper plates, sheets and strip > 0.15 mm",Metals,False
+7410,13.5,3078.99,0.2339698854866343,0,Copper foil < 0.15 mm thick,Metals,True
+7411,75.44,4960.5,0.614959888049424,1,Copper tubes and pipes,Metals,False
+7412,84.42,5331.14,0.3143067704851705,1,Copper tube or pipe fittings,Metals,True
+7413,34.46,2133.51,0.69011783041002,1,"Copper wire, uninsulated",Metals,False
+7414,117.22,4043.34,0.3239583093388694,1,Endless bands of copper wire for machinery,Metals,False
+7415,80.34,4088.94,0.3674408976319903,1,Screws and similar articles of copper,Metals,False
+7416,116.1,4052.77,0.3125675086351974,1,Copper springs,Metals,False
+7417,124.91,4082.82,0.3029418154014112,1,Copper cooking products,Metals,False
+7418,32.45,7010.74,0.2969781035408347,1,Household articles of copper,Metals,False
+7419,127.33,4529.34,0.34965151792131893,1,Other articles of copper,Metals,False
+7501,5.94,4927.81,1.4563272483595533,1,Nickel mattes,Metals,False
+7502,48.38,5528.88,0.3834402850062953,1,Nickel unwrought,Metals,True
+7503,5.22,3485.84,-0.20283987458967942,0,Nickel waste and scrap,Metals,False
+7504,19.01,6240.54,0.3205784218648206,1,Nickel powders,Metals,False
+7505,50.3,5012.18,0.9513959837192372,1,"Nickel bars, wire etc.",Metals,True
+7506,54.21,5823.54,0.6039664504064954,1,Nickel plates,Metals,False
+7507,80.95,5704.92,0.9575773627326498,1,Nickel tubes and pipes,Metals,False
+7508,63.47,6323.77,1.0060954907385806,1,Other articles of nickel,Metals,False
+7601,46.85,4558.94,0.6459201743553836,1,Unwrought aluminum,Metals,True
+7602,69.05,5624.05,1.0233576488761902,1,"Waste or scrap, aluminium",Metals,False
+7603,17.87,6596.9,0.9457225737080077,1,Aluminum powders,Metals,False
+7604,146.35,3588.07,0.3699196959684037,1,Aluminum bars,Metals,True
+7605,41.49,3385.45,0.5541645957436245,1,Aluminum wire,Metals,False
+7606,90.59,4584.64,0.529085924500674,1,Aluminum plates > 0.2 mm,Metals,True
+7607,96.32,5004.27,0.3231852989380151,1,Aluminum foil < 0.2 mm,Metals,False
+7608,53.65,4747.68,0.20643678670021115,0,Aluminum tubes and pipes,Metals,True
+7609,47.05,6247.76,0.5051350698428138,1,Aluminum tube or pipe fittings,Metals,False
+7610,69.49,4314.24,0.4487443250691475,1,"Aluminum structures (bridges, towers etc)",Metals,True
+7611,57.67,4261.35,0.6722923573686176,1,"Aluminum containers, >300 liters",Metals,False
+7612,71.78,2510.06,0.21069976358951353,0,"Aluminum containers, <300 liters",Metals,False
+7613,88.36,5138.73,0.3156405727932908,1,Aluminum containers for compressed or liquefied gas,Metals,False
+7614,87.97,5657.51,0.26716925874485553,1,"Aluminum wire, not insulated",Metals,False
+7615,20.73,7857.8,0.1578083819940626,0,Household articles of aluminum,Metals,False
+7616,82.82,4743.09,0.3906497823119117,1,Other articles of aluminum,Metals,True
+7801,80.54,3835.66,0.44364054918405493,1,Lead refined unwrought,Metals,True
+7802,35.44,4453.06,0.5254659799462387,1,Lead waste or scrap,Metals,False
+7803,65.99,5054.44,-0.12823157576226826,0,"Lead bars, rods, profiles and wire",Metals,False
+7804,70.52,3881.03,0.08487860407183585,0,Lead foil <2mm,Metals,True
+7805,68.75,5035.99,-0.13091096313307043,0,"Lead tubes, pipes and fittings",Metals,False
+7806,65.77,5051.57,-0.12834307999263064,0,Other articles of lead,Metals,False
+7901,50.33,3869.16,0.1694608988326812,0,Unwrought zinc,Metals,True
+7902,47.46,4625.15,0.3770330615104799,1,Zinc waste and scrap,Metals,False
+7903,55.98,3674.19,0.2633152491068612,1,Zinc powders,Metals,True
+7904,52.9,3786.3,-0.2696080604450356,0,Zinx bars and wire,Metals,False
+7905,20.47,3041.74,0.19377132253096616,0,Zinc plates and foil,Metals,False
+7906,100.6,3765.26,-0.008449183558130178,0,"Zinc tubes, pipes and tube or pipe fittings",Metals,False
+7907,100.39,3762.39,-0.008453359278577812,0,Other articles of zinc,Metals,False
+8001,41.22,5761.57,0.6004143970464834,1,Unwrought tin,Metals,False
+8002,38.46,4908.97,1.1572808693756482,1,Tin waste and scrap,Metals,False
+8003,58.02,3589.8,0.02718010995593732,0,Tin bars and wire,Metals,False
+8004,50.88,4302.52,0.5825990430492787,1,"Tin plates, sheets and strips, thickness > 0.2 mm",Metals,False
+8005,50.04,4284.82,0.580813432335869,1,"Tin foil, thickness < 0.2 mm",Metals,False
+8006,52.5,4369.0,0.5913606484371104,1,Tin pipes or tubes and pipe fittings,Metals,False
+8007,49.3,4271.73,0.5785482211314639,1,Other articles of tin,Metals,False
+8101,51.53,4728.31,0.5484864115676299,1,Tungsten (wolfram),Metals,False
+8102,50.06,5430.22,1.1066946237298636,1,Molybdenum,Metals,False
+8103,25.34,7672.56,-0.03863110201148287,0,Tantalum,Metals,True
+8104,29.79,6846.71,0.20168335881005828,0,Magnesium,Metals,False
+8105,82.56,6389.75,-0.032922823854149436,0,Cobalt,Metals,True
+8106,22.61,6279.63,0.24278125673728723,0,Bismuth,Metals,False
+8107,20.63,4810.28,0.49485770324158956,1,Cadmium,Metals,True
+8108,60.85,5516.59,0.8460560278910113,1,Titanium,Metals,True
+8109,23.74,6521.95,0.6696789315303486,1,Zirconium,Metals,True
+8110,25.21,5398.63,3.41005641689981,1,Antimony,Metals,False
+8111,16.63,6868.46,0.13643418359554774,0,Manganese,Metals,True
+8112,47.01,6373.48,1.831095067154344,1,Other metals,Metals,True
+8113,19.6,4008.44,0.6081237291200728,1,Cermets,Metals,False
+8201,52.29,6800.67,0.11007322322579115,0,Handtools for gardening,Metals,False
+8202,77.72,6132.1,0.2519956196193545,1,Handsaws,Metals,False
+8203,41.55,6572.15,0.38632274129940963,1,"Pliers, pincers and other metal handtools",Metals,False
+8204,42.92,6873.45,0.408244715156107,1,Wrenches,Metals,False
+8205,43.57,6801.37,0.3206725245863426,1,Hand tools n.e.c.,Metals,False
+8206,28.8,7560.32,0.33142639698761117,1,Retail tool sets,Metals,False
+8207,106.69,5566.96,0.1658103284128928,0,Interchangeable tools for hand tools,Metals,False
+8208,108.33,4928.07,0.35949586493896907,1,Knives and blades for machines,Metals,False
+8209,61.99,4965.62,0.2814415374828868,1,"Articles for utensils, of cermet",Metals,False
+8210,39.32,6329.46,0.39650311201540206,1,"Hand-operated appliances, food preparation, <10kg",Metals,False
+8211,20.85,7448.09,0.1228128746002086,0,Knife sets,Metals,False
+8212,53.17,4296.01,-0.03337578171534417,0,Razors,Metals,False
+8213,26.73,7306.34,0.14184418990364558,0,Scissors,Metals,False
+8214,30.7,7351.63,0.4154744744153014,1,Other cutlery,Metals,False
+8215,25.02,8094.64,0.29112551383863694,1,Cutlery,Metals,False
+8301,51.21,5784.36,0.17217070443267782,0,Padlocks and locks,Metals,False
+8302,73.5,5491.74,0.2046144981222209,0,"Base metal mountings, fittings and similar articles",Metals,False
+8303,13.59,6648.15,0.09867460859617079,0,Safes,Metals,False
+8304,11.65,7734.01,0.2055478730457696,0,"Paper trays and similar office equipment, of base metal",Metals,False
+8305,45.34,6551.97,0.11210405758942006,0,"Paper clips and similar office articles, of metal",Metals,False
+8306,10.09,7828.53,0.24758438650717532,1,"Ornaments, statuettes, etc. of metal",Metals,False
+8307,115.22,5308.37,0.6897063221883908,1,Flexible tubing of base metal,Metals,False
+8308,86.32,4353.85,0.5126623503106384,1,"Clasps, buckles etc. of metal",Metals,False
+8309,106.76,3217.63,0.19965321341859552,0,"Stoppers, caps and lids of metal",Metals,False
+8310,58.18,4985.09,0.5020930458627967,1,Sign plates and similar plates of base metal,Metals,False
+8311,146.94,5129.85,0.3240025269116978,1,Wire etc. used for welding,Metals,False
+8401,28.12,3976.62,0.6488622887975518,1,Nuclear reactors and related equipment,Machinery,True
+8402,119.94,5600.7,-0.1101829448560865,0,Steam boilers,Machinery,True
+8403,68.45,2410.7,0.08892250104823018,0,Central heating boilers,Machinery,False
+8404,53.65,5047.5,-0.1162264705292536,0,Auxiliary parts for use with boilers,Machinery,False
+8405,144.12,5494.72,0.5072494463527826,1,Water gas generators,Machinery,False
+8406,95.06,5380.49,-0.03089286299770777,0,Steam turbines,Machinery,True
+8407,41.85,4544.87,0.21163489964796758,0,Spark-ignition reciprocating internal combustion piston engines,Machinery,False
+8408,36.54,4713.83,0.24542431228721803,1,Compression-ignition internal combustion piston engines,Machinery,True
+8409,76.1,5403.28,0.21872421394856148,0,Parts suitable for use with spark-ignition engines,Machinery,True
+8410,113.9,5351.84,0.09911705461645014,0,"Hydraulic turbines, water wheels and regulators",Machinery,True
+8411,87.82,5769.3,0.3628941920660087,1,Gas turbines,Machinery,False
+8412,117.17,5592.11,0.2947279989605815,1,Other engines and motors,Machinery,False
+8413,118.41,5483.53,0.2453836333783371,1,Pumps for liquids,Machinery,True
+8414,94.91,5869.65,0.3184920505945733,1,"Pumps, compressors, fans, etc.",Machinery,True
+8415,55.16,6144.33,0.25458678371895,1,Air conditioners,Machinery,True
+8416,115.54,4638.0,-0.05153253658025006,0,Furnace burners,Machinery,False
+8417,78.09,5404.76,0.42008184607085486,1,Industrial furnaces,Machinery,True
+8418,49.84,5450.48,0.12082404986478472,0,"Refrigerators, freezers",Machinery,True
+8419,126.33,5372.97,0.3056731832955491,1,Equipment for temperature change of materials,Machinery,True
+8420,55.71,4632.63,0.5203844752566352,1,"Calendering or other rolling machines, other than for metals or glass",Machinery,False
+8421,109.37,5186.13,0.18123649597116845,0,Centrifuges,Machinery,True
+8422,107.11,4867.52,0.2852019679926556,1,Dish washing machines,Machinery,False
+8423,62.07,6416.07,0.05267715052591623,0,Weighing machinery,Machinery,True
+8424,100.79,5964.2,0.1470558054722121,0,Sprays and powder dispersers,Machinery,False
+8425,42.34,6163.82,0.3336807857488994,1,Pulleys and winches,Machinery,False
+8426,132.06,5405.02,0.541466264480385,1,Ships' derricks; cranes,Machinery,True
+8427,84.16,5300.2,0.9518863340257964,1,Fork-lift trucks,Machinery,False
+8428,117.1,4690.83,0.37439497987776654,1,Other lifting machinery,Machinery,True
+8429,49.26,6568.97,0.5976716371574121,1,"Self-propelled bulldozers, excavators and road rollers",Machinery,False
+8430,110.78,5900.92,0.43414030473452214,1,"Other moving, excavating or boring machinery",Machinery,False
+8431,113.14,5319.3,0.362751050569239,1,Parts for use with hoists and excavation machinery,Machinery,False
+8432,70.87,3792.94,0.16741031221160055,0,Machinery for soil preparation or cultivation,Machinery,False
+8433,67.53,4848.88,0.26100929281179924,1,Harvesting or agricultural machinery,Machinery,False
+8434,82.57,3641.09,0.2722977626197557,1,Dairy machinery,Machinery,False
+8435,149.88,4560.02,0.1752671660161004,0,Machines for wine and juice production,Machinery,False
+8436,75.4,4311.95,0.2964623690956053,1,Other agricultural machinery,Machinery,False
+8437,126.46,5152.22,0.18721796295848794,0,Machinery for processing grain,Machinery,False
+8438,161.57,5183.3,0.4699038185887984,1,Machinery for the industrial preparation of food or drink,Machinery,False
+8439,77.8,5911.8,0.07438374698528132,0,Machinery for making paper,Machinery,False
+8440,76.68,5505.39,0.41272335748445665,1,Bookbinding machinery,Machinery,False
+8441,108.39,5761.72,0.25846165981999797,1,Other machinery for making paper,Machinery,False
+8442,149.95,4386.79,0.11154359043872634,0,Machinery for making printing components,Machinery,False
+8443,117.53,5343.7,0.22886490416730887,0,Printers and copiers,Machinery,False
+8444,10.07,6475.44,0.10573752172076671,0,"Machines to extrude, cut manmade textile fibres",Machinery,False
+8445,58.71,5908.92,-0.05375173996259805,0,Machines for preparing textile fibers,Machinery,False
+8446,19.66,5199.88,0.07356043018516778,0,Looms,Machinery,False
+8447,34.98,6433.95,0.3779932099128969,1,Knitting machines,Machinery,False
+8448,84.19,5485.97,0.15001682272702604,0,Auxiliary machinery for use with knitting and textile machines,Machinery,False
+8449,34.2,6026.58,-0.7200200049152323,0,Machinery to manufacture felt,Machinery,False
+8450,121.5,6047.7,0.23676084817303375,0,Household- or laundry-type washing machines,Machinery,False
+8451,45.62,5246.85,-0.03634767065106814,0,Machinery for processing fabrics,Machinery,False
+8452,81.46,6213.08,0.0995924829640017,0,Sewing machines,Machinery,False
+8453,20.65,4952.79,0.19591112927578333,0,Machinery for preparing leather,Machinery,False
+8454,83.56,5607.44,0.41898543227415297,1,Machines used in metallurgy,Machinery,False
+8455,88.72,5902.65,0.5323065689892188,1,Metal-rolling mills,Machinery,False
+8456,35.75,6211.85,1.2483687152282152,1,Machines for working materials by laser and similar means,Machinery,False
+8457,57.86,5985.43,0.32611470749615884,1,Machining centers for working metal,Machinery,False
+8458,67.96,6466.62,0.39276626393590836,1,Lathes for removing metal,Machinery,False
+8459,107.18,5474.78,0.24815088358617857,1,Machine tools for drilling by removing metal,Machinery,False
+8460,69.48,5671.32,0.34848792412446405,1,Machines with grinding stones for finishing metal,Machinery,False
+8461,36.24,6086.27,0.6014418055235594,1,Other machine tools for planing and cutting metals,Machinery,False
+8462,124.2,5452.01,0.3762615919674787,1,Machine tools for molding and forging metals,Machinery,False
+8463,60.85,5886.15,0.7056362091411572,1,"Other machine tools for working metal, without removal",Machinery,False
+8464,42.44,4791.4,0.3168720227069281,1,Machine tools for working stone,Machinery,False
+8465,72.02,5108.89,0.14655042239444577,0,Machine tools for working wood,Machinery,False
+8466,97.48,5036.69,0.4195210594226844,1,Parts and accessories for metal working machines,Machinery,False
+8467,90.64,6622.68,0.1175865767971956,0,"Tools for hand working, pneumatic, hydraulic motors",Machinery,False
+8468,98.16,5816.51,0.3000125600371127,1,Machinery for soldering,Machinery,False
+8469,1.0,5764.0,,0,Word processing machines,Machinery,False
+8470,73.85,7001.65,0.45642484521940296,1,"Cash registers, calculators, etc.",Machinery,False
+8471,26.5,6295.9,0.10669193644651345,0,Computers,Machinery,True
+8472,98.26,6634.22,0.02949837662709703,0,Other office machines,Machinery,False
+8473,41.75,5192.35,0.27996245820655963,1,Parts and accessories for office machines,Machinery,False
+8474,164.44,5715.62,0.36004655704981475,1,Machinery for working minerals,Machinery,False
+8475,46.78,5409.55,0.05545509302394637,0,Machines for assembling electric lamps,Machinery,False
+8476,80.32,4130.02,0.48486354086376315,1,Automatic goods-vending machines,Machinery,False
+8477,91.59,5932.84,0.36440328452100473,1,Machinery for working rubber or plastics,Machinery,False
+8478,135.27,5012.3,-0.2522307501621215,0,Machinery for preparing tobacco,Machinery,False
+8479,111.46,5038.9,0.40891977167479576,1,Machines n.e.c.,Machinery,False
+8480,69.98,5349.11,0.10607272429737487,0,Molding boxes for metal foundry,Machinery,False
+8481,106.05,5748.31,0.30072018633640557,1,Appliances for thermostatically controlled valves,Machinery,True
+8482,117.85,5541.37,0.20630821107430322,0,Ball or roller bearings,Machinery,True
+8483,101.32,5493.97,0.31777554367221494,1,Transmission shafts,Machinery,True
+8484,138.81,5502.11,0.37330290733077315,1,Gaskets and similar joints of metal sheeting,Machinery,False
+8485,101.67,5816.19,0.27365588381505546,1,"Machinery parts, not containing electrical features, n.e.c.",Machinery,True
+8501,89.12,5570.76,0.27231230357782393,1,Electric motors and generators,Electronics,True
+8502,139.17,6045.93,0.19121982439040267,0,Electric generating sets and rotary converters,Electronics,True
+8503,73.98,5608.15,0.31674889000301043,1,Parts for use with electric generators,Electronics,True
+8504,87.25,5702.09,0.45936605051398854,1,Electrical transformers,Electronics,True
+8505,51.41,5521.48,0.2955018289604254,1,Electromagnets,Electronics,True
+8506,90.84,6380.17,0.08145078762676806,0,Primary cells and primary batteries,Electronics,True
+8507,39.05,6466.99,1.1187115409195016,1,Batteries,Electronics,True
+8508,27.89,6829.64,0.12435756414112158,0,Vacuum cleaners,Electronics,True
+8509,24.39,7075.92,0.14763565124671588,0,Electromechanical domestic appliances,Electronics,False
+8510,54.64,6262.09,0.08754916682744181,0,Electric shavers and hair clippers,Electronics,False
+8511,49.81,5935.48,0.11902402579773541,0,Electrical ignition equipment,Electronics,True
+8512,49.63,5316.13,0.15698123474277986,0,Electrical lighting equipment used for motor vehicles,Electronics,True
+8513,14.31,8153.13,0.16515059569119564,0,Portable electric lamps,Electronics,False
+8514,100.97,5664.02,0.5610735457293211,1,Industrial electric furnaces,Electronics,False
+8515,94.81,5692.19,0.21591754554674886,0,Electric soldering machines,Electronics,False
+8516,34.15,6528.78,0.14474396543455478,0,Electric heaters,Electronics,True
+8517,64.12,6390.82,0.022669048491780835,0,Telephones,Electronics,True
+8518,46.55,6223.85,0.11807389688726587,0,Microphones,Electronics,True
+8519,17.91,7905.01,0.25550037492813243,1,Sound reproducing apparatus,Electronics,False
+8520,25.95,7056.34,0.3680681908839752,1,Magnetic tape recorders,Electronics,False
+8521,51.01,6532.87,0.11056897406229493,0,Video recording apparatus,Electronics,False
+8522,27.83,4284.77,-0.06543790268799629,0,Parts and accessories for video or sound equipment,Electronics,False
+8523,31.41,5152.2,0.11561731165543254,0,Sound storage media,Electronics,False
+8524,38.72,5044.67,0.04260319058179927,0,"Tapes, cassettes, records and compact disks",Electronics,False
+8525,23.25,6567.48,0.06881745677241907,0,"Transmission apparatus for radio, telephone and TV",Electronics,False
+8526,106.01,5791.69,0.23356814064838224,0,Radar,Electronics,True
+8527,36.77,6962.04,-0.24836206602294486,0,Reception apparatus for radio broadcasting,Electronics,True
+8528,22.01,6020.51,-0.19113133731043128,0,Monitors and projectors,Electronics,True
+8529,25.49,4687.03,-0.029646141481198648,0,"Parts of radios, telephones, and T.V.s",Electronics,False
+8530,77.91,3885.25,0.33917140651850336,1,Electric signal and traffic controls,Electronics,False
+8531,88.42,5422.34,0.28603856628406044,1,Electric sound or visual signaling apparatus,Electronics,False
+8532,41.25,3821.47,0.04231137984667939,0,Electrical capacitors,Electronics,True
+8533,48.16,4152.97,0.01628622457438522,0,Electrical resistors,Electronics,True
+8534,17.49,3469.85,0.1522314042498186,0,Electronic printed circuits,Electronics,True
+8535,107.88,4706.16,0.45858624238885176,1,Electrical apparatus for > 1k volts,Electronics,True
+8536,87.63,4558.98,0.2045508688896175,0,Electrical apparatus for < 1k volts,Electronics,True
+8537,70.81,5156.83,0.38306009205071995,1,Electrical boards,Electronics,True
+8538,61.99,4414.81,0.22743077488359767,0,Parts for electrical apparatus,Electronics,True
+8539,61.72,6255.45,-0.26113811398369585,0,Electrical filament,Electronics,False
+8540,67.14,6215.33,0.041530865286159784,0,"Thermionic, cold cathode or photocathode tubes",Electronics,False
+8541,56.84,6197.91,0.13861040753889475,0,Semiconductor devices,Electronics,True
+8542,33.49,3035.33,0.3941662597833505,1,Electronic integrated circuits,Electronics,True
+8543,50.2,6420.45,0.2817839353967673,1,Electrical machines with individual functions n.e.c.,Electronics,True
+8544,55.11,4395.59,0.2664307290316853,1,Insulated electrical wire,Electronics,True
+8545,51.76,6158.9,-0.04051275612327951,0,Carbon articles for eletrical purposes,Electronics,True
+8546,103.05,5745.16,0.13595466350603932,0,Electrical insulators of any material,Electronics,True
+8547,109.88,4741.5,0.1772198193111625,0,Insulating fittings for electrical machines,Electronics,True
+8548,18.38,2748.2,0.3756818738264562,1,Waste and scrap of batteries,Electronics,False
+8601,30.84,2858.96,0.5362697536395199,1,Electric trains,Vehicles,False
+8602,51.08,6803.67,0.24075759345968645,0,Other rail locomotives,Vehicles,False
+8603,84.37,4245.98,0.1904382274713426,0,Self-propelled railway coaches,Vehicles,False
+8604,72.06,4737.26,0.23057990971471984,0,Railway service vehicles,Vehicles,False
+8605,35.54,4407.56,0.6119243207774557,1,"Railway coaches, not self-propelled",Vehicles,False
+8606,15.43,3036.04,0.30311758275682604,1,"Railway cars, not self-propelled",Vehicles,False
+8607,68.59,3778.62,0.14538232569613346,0,Parts of railway locomotives,Vehicles,False
+8608,119.57,4564.15,0.3236326039498007,1,Railway track fixtures,Vehicles,False
+8609,7.32,5924.56,1.1388310735166485,1,Containers for multimodal transportation,Vehicles,False
+8701,35.3,3978.12,0.3587307197708325,1,Tractors,Vehicles,False
+8702,97.27,4418.47,0.5024565343394827,1,Buses,Vehicles,False
+8703,71.85,5397.59,0.4383067246324891,1,Cars,Vehicles,False
+8704,18.07,4042.26,0.2905611041325216,1,Motor vehicles for transporting goods,Vehicles,False
+8705,77.17,4849.72,0.6577243001783522,1,Special purpose motor vehicles,Vehicles,True
+8706,69.54,5450.44,0.4027722572635734,1,Vehicle chassis fitted with engines,Vehicles,False
+8707,25.41,3399.05,0.21738637678621547,0,Vehicle Bodies,Vehicles,True
+8708,57.53,4960.05,0.20698853520339175,0,Parts of motor vehicles,Vehicles,True
+8709,85.0,5649.01,0.5205921464913094,1,Work trucks,Vehicles,False
+8710,10.0,8007.29,-0.011440760283213378,0,Tanks and other armored fighting vehicles,Vehicles,False
+8711,119.37,7391.48,0.3995436406126723,1,Motorcycles,Vehicles,False
+8712,54.98,6428.65,-0.1559204060728715,0,Bicycles,Vehicles,False
+8713,22.9,6793.17,0.41243646671581524,1,Wheelchairs,Vehicles,False
+8714,121.34,6613.75,0.17126638742611539,0,Parts of motorcycles or wheelchairs,Vehicles,False
+8715,16.61,7368.95,0.24027976496253534,0,Baby carriages,Vehicles,False
+8716,37.56,3563.62,0.3093808629422141,1,Trailers and semi-trailers,Vehicles,True
+8801,28.36,6632.71,0.09901823301178721,0,"Gliders, hang gliders",Vehicles,False
+8802,88.72,5792.79,0.38632015607330356,1,Other aircraft and spacecraft,Vehicles,False
+8803,62.61,5259.57,0.1541313457833226,0,Parts of other aircraft,Vehicles,False
+8804,84.21,6511.96,1.012474525861254,1,Parachutes,Vehicles,False
+8805,12.44,5965.1,0.21723503190176452,0,Aircraft launching gear,Vehicles,False
+8901,33.99,7023.03,0.6757505204620134,1,Cargo ships and similar vessels,Vehicles,False
+8902,23.59,4710.76,-0.2125162912562767,0,Fishing vessels,Vehicles,False
+8903,51.6,4960.16,0.3728932693839885,1,Pleasure or sport boats,Vehicles,False
+8904,34.07,4254.4,0.04795471367854443,0,Tugs and pusher craft,Vehicles,False
+8905,64.73,6419.86,0.031271751838008885,0,"Special function vessels, n.e.c.",Vehicles,False
+8906,24.53,4599.57,0.3144175668496867,1,Other vessels,Vehicles,True
+8907,85.12,5596.48,0.308258328481983,1,Other floating structures,Vehicles,False
+8908,32.24,4297.57,-0.6712403678497944,0,Floating structures for scrapping,Vehicles,False
+9001,57.17,4892.52,0.025860387934109153,0,Optical fibers,Machinery,True
+9002,20.57,3859.46,0.40225726544399715,1,Lenses and other optical elements,Machinery,False
+9003,31.72,5907.89,0.6571126006431152,1,"Frames for spectacles, goggles",Machinery,False
+9004,28.35,6456.36,0.5834276662271295,1,Glasses,Machinery,False
+9005,30.64,6733.45,0.37808404913948424,1,Binoculars and telescopes,Machinery,False
+9006,29.71,4798.1,-0.2060339760944558,0,Photographic cameras,Machinery,False
+9007,60.57,6142.07,0.5305945257720558,1,Cinematographic cameras and projectors,Machinery,False
+9008,38.19,6406.22,0.3884132622707496,1,Still image projectors,Machinery,False
+9009,88.55,6121.2,0.03183548883673248,0,Electrostatic photo-copyers,Machinery,False
+9010,27.45,6386.66,1.3560429011027941,1,"Apparatus and equipment for photographic laboratories, n.e.c.",Machinery,False
+9011,39.09,6304.47,0.37807921549095563,1,Optical microscopes,Machinery,False
+9012,29.69,6008.94,0.9917031582566573,1,"Microscopes, other than optical",Machinery,False
+9013,23.28,4547.77,-0.37468888228130487,0,Liquid crystal devices,Machinery,False
+9014,83.59,5349.41,0.09564874044638183,0,Navigational instruments,Machinery,False
+9015,149.95,5893.86,0.21614539959960194,0,Surveying instruments,Machinery,False
+9016,17.21,4673.42,0.3661685231818077,1,Balances of a sensitivity < 50 milligram,Machinery,False
+9017,77.03,7011.22,0.35002719302827323,1,Drafting tables and machines,Machinery,False
+9018,65.79,5585.73,0.19485473175257245,0,Medical instruments,Machinery,False
+9019,37.39,6777.58,-0.24127908267465914,0,Therapy applicances,Machinery,False
+9020,67.87,5090.9,-2.9144296071967935e-05,0,Other breathing appliances and gas masks,Machinery,False
+9021,76.35,5216.16,0.3606995232626395,1,Orthopedic appliances,Machinery,False
+9022,71.29,6349.84,0.1807105499876625,0,X-ray machines,Machinery,False
+9023,98.48,5787.68,0.19294361231377297,0,Instruments designed for demonstrational purposes,Machinery,False
+9024,100.29,5997.22,0.21731614826225779,0,Machines for testing the mechanical properties of materials,Machinery,False
+9025,75.16,5572.91,-0.073218736021891,0,"Thermometers, hydrometers etc.",Machinery,True
+9026,101.9,5315.14,0.2888040548141248,1,Instruments for measuring properties of liquids or gases,Machinery,True
+9027,103.86,6008.17,0.12997562817004277,0,Instruments for physical or chemical analysis,Machinery,True
+9028,40.17,5047.35,0.03039026532853989,0,"Gas, liquid or electricity meters",Machinery,False
+9029,24.79,4922.86,0.07371194485242376,0,Meters,Machinery,False
+9030,84.25,5516.84,0.21864870049007376,0,Instruments for measuring electricity,Machinery,True
+9031,91.24,5377.09,0.4123585877788631,1,Measuring instruments,Machinery,True
+9032,73.22,5416.87,0.0405712098065048,0,Automatic regulating instruments,Machinery,True
+9033,61.78,6476.55,-0.03472725383918931,0,Other parts for machines and appliances,Machinery,False
+9101,34.26,6217.75,0.463373417069445,1,Watches with precious metal,Machinery,False
+9102,31.89,5920.09,0.38230335355016043,1,Watches,Machinery,False
+9103,54.77,5695.02,0.3169325519808417,1,Clocks with watch movements,Machinery,False
+9104,46.21,5865.58,-0.29862596483774934,0,Instrument panel clocks for vehicles,Machinery,False
+9105,20.61,7305.21,0.04233402868689006,0,Other clocks,Machinery,False
+9106,28.95,5836.31,1.3143537261393927,1,Apparatus for measuring intervals of time,Machinery,False
+9107,15.3,5237.45,-0.1405574143503992,0,Time switches,Machinery,False
+9108,5.91,4158.79,-0.016993977487292658,0,"Watch movements, complete",Machinery,False
+9109,36.38,5534.47,0.0019326133687050868,0,"Clock movements, complete",Machinery,False
+9110,11.53,4002.01,-0.15882015958976317,0,"Clock movements, complete, unassembled",Machinery,False
+9111,6.52,3684.68,0.1409204877155045,0,Watch cases and parts,Machinery,False
+9112,37.0,6348.97,-0.01704072692896519,0,Clock cases,Machinery,False
+9113,19.83,4645.6,0.6746356373760115,1,Watch straps,Machinery,False
+9114,23.88,4205.27,0.3836824389019992,1,Other clock or watch parts,Machinery,False
+9201,46.71,6794.84,-0.11151836669332969,0,Pianos,Machinery,False
+9202,30.63,7729.8,-0.05432017404255693,0,"Musical instruments, string",Machinery,False
+9203,46.52,7360.15,0.4189151152446061,1,"Harmoniums, pipe organs, etc",Machinery,False
+9204,46.29,7358.71,0.41842540576825604,1,Accordions and similar instruments,Machinery,False
+9205,28.3,7689.08,0.4446146668744628,1,"Musical instruments, wind",Machinery,False
+9206,33.58,7144.82,0.5173084970371933,1,"Musical instruments, percussion",Machinery,False
+9207,45.38,7792.43,0.07238568139388206,0,"Musical instruments, electric",Machinery,False
+9208,28.98,7002.53,0.4169655677745998,1,"Other musical instruments, n.e.c.",Machinery,False
+9209,74.65,6220.8,0.07766121160397381,0,Parts of musical instruments,Machinery,False
+9301,23.9,6293.99,1.9036354477936859,1,"Military weapons, other than pistols and swords",Machinery,False
+9302,18.27,6703.45,0.0693549359921806,0,Revolvers and pistols,Machinery,False
+9303,16.76,6127.15,0.4415339313253574,1,Other firearms,Machinery,False
+9304,30.12,4478.0,1.4854491560430239,1,"Other arms (air guns, truncheons, etc.)",Machinery,False
+9305,68.73,5460.59,0.38848248520651446,1,Parts of military weapons,Machinery,False
+9306,49.56,6390.43,1.4498090324824542,1,Munitions of war,Machinery,False
+9307,20.9,7489.21,0.36039772446492396,1,Swords,Machinery,False
+9401,31.19,6385.54,0.053534324803875676,0,Seats,Textiles,False
+9402,60.21,5774.94,0.08216653924297762,0,"Medical, dental or veterinary furniture",Textiles,False
+9403,40.93,6398.76,0.13071879921992938,0,Other furniture and parts,Textiles,False
+9404,19.11,6663.13,0.07549710897169391,0,Mattresses and bedding,Textiles,False
+9405,23.5,7267.4,0.056866285809579205,0,Lamps,Textiles,False
+9406,118.6,3920.46,0.41420953188190207,1,Prefabricated buildings,Textiles,False
+9501,18.51,7715.96,0.11655517744020415,0,"Rideable wheeled toys, dolls carriages",Machinery,False
+9502,18.5,7716.38,0.11656097670690423,0,Dolls,Machinery,False
+9503,18.5,7716.14,0.1167108511151514,0,Toys,Machinery,False
+9504,14.22,7423.74,-0.04604799299410098,0,Games,Machinery,False
+9505,3.86,9959.81,0.06402112393781022,0,Christmas and other festivity articles,Machinery,False
+9506,19.13,7380.45,0.11593733963861608,0,Sports equipment,Machinery,True
+9507,22.94,7116.91,0.059080000462372696,0,Fishing and hunting equipment,Machinery,False
+9508,85.73,5949.2,0.6325027047825583,1,Fairground amusements,Machinery,False
+9601,13.65,5499.35,-0.3330271937062609,0,Worked animal carving material,Machinery,False
+9602,48.84,5239.13,0.0810836327533045,0,Worked vegetable or mineral carving material,Machinery,False
+9603,38.7,6178.32,0.23720270892126502,0,Brooms and mops,Machinery,False
+9604,147.06,4966.33,0.13173129798358799,0,Hand sieves and riddles,Machinery,False
+9605,22.12,6926.36,0.2781099706297875,1,Travel sets,Machinery,False
+9606,37.34,4163.69,0.3766137771953253,1,Buttons,Machinery,False
+9607,51.09,4646.46,0.3660964138019345,1,Slide fasteners,Machinery,False
+9608,59.92,6286.04,0.3113202132936233,1,Pens,Machinery,False
+9609,67.3,7247.7,0.23039849393153844,0,"Pencils, crayons, pastels, etc.",Machinery,False
+9610,11.37,7780.08,0.13398567864047023,0,"Slates and boards, with writing or drawing surfaces",Machinery,False
+9611,95.97,5648.37,0.33338821943406965,1,Hand-operated stamps,Machinery,False
+9612,85.95,5245.28,0.06316065251799516,0,Typewriter ribbons and ink pads,Machinery,False
+9613,57.0,6648.52,0.16338196501855248,0,Cigarette lighters,Machinery,False
+9614,22.97,7211.17,-0.3060194509013459,0,Smoking pipes,Machinery,False
+9615,19.99,7863.3,0.9731828545748125,1,"Combs, hair-slides etc.",Machinery,False
+9616,35.92,6416.83,-0.03448835953688745,0,Scent sprays,Machinery,False
+9617,7.85,8587.43,0.8195006342601635,1,Vacuum vessels,Machinery,False
+9618,41.31,7053.82,0.27763736316157517,1,Mannequins,Machinery,False
+9701,20.89,5990.27,0.27537851875098845,1,Paintings and drawings,Textiles,False
+9702,14.74,5660.85,0.5852335457522135,1,Original engravings,Textiles,False
+9703,38.68,5595.1,0.8527850003483313,1,Sculptures,Textiles,False
+9704,45.0,5507.99,0.6254898912521607,1,Postage or revenue stamps,Textiles,False
+9705,23.5,5101.37,0.7223208775305159,1,Collectors pieces,Textiles,False
+9706,19.15,5576.25,0.11504718207172066,0,Antiques >100 years,Textiles,False

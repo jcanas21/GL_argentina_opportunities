@@ -1,0 +1,8 @@
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
+
+# Raw files intentionally excluded from GitHub (too large for git hosting).
+data/input/hs92_country_country_product_year_6_2020_2024.csv
+data/intermediate/complexity_calculations.csv
