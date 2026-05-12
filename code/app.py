@@ -30,8 +30,60 @@ You can:
         """
 - Component variables are normalized (z-score) for score construction.
 - **Feasibility Index** combines: transformed RCA, density, effective exporters, WNAI percentile.
-- **Attractiveness Index** combines: PCI, COG, global market growth (5y), accessible market size share.
+- **Attractiveness Index** combines: PCI, COG, accessible market growth (5y), accessible market size share.
 - **Combined Opportunity Score** rebalances feasibility and attractiveness by your strategic slider, then rescales to 0-1 for ranking.
+"""
+    )
+
+    st.markdown("## Algebra and Interpretation")
+    st.markdown(
+        r"""
+### Distance Travelled (by product)
+\[
+\mathrm{DistanceTravelled}_i
+=
+\sum_y
+\left(
+Distance_y \times \frac{M_{i,y}}{\sum_y M_{i,y}}
+\right)
+\]
+
+- \(M_{i,y}\): imports of product \(i\) by destination \(y\).
+- Interpretation: value-weighted average shipping distance of product \(i\). Larger destinations matter more.
+
+### Accessible Market Size
+\[
+\mathrm{AccessibleMarket}_i
+=
+\sum_{y:\,Distance_y \le \mathrm{DistanceTravelled}_i} M_{i,y}
+\]
+
+- Uses Distance Travelled as the product-specific cutoff.
+- Interpretation: total demand in destinations that are within the product's "reachable" distance profile.
+
+### WNAI (Weighted Network Alignment Index)
+\[
+\mathrm{WNAI}_{z,i}
+=
+\sum_y
+\left[
+\left(
+\frac{X_{z,y}/M_y}{X_z/WT}
+\right)
+\times
+\left(
+\frac{M_{i,y}}{M_y}
+\right)
+\times
+GDPShare_y
+\right]
+\]
+
+- \(z\): exporter (Argentina in this dashboard), \(i\): product, \(y\): partner market.
+- First term: relative pipe thickness (where exporter over-indexes vs world average).
+- Second term: product relevance in each partner's import basket.
+- Third term: partner economic weight.
+- Interpretation: higher WNAI means Argentina's strongest trade links are better aligned with large, product-relevant markets.
 """
     )
 
@@ -40,7 +92,7 @@ You can:
     glossary = pd.DataFrame(
         [
             {"Variable": "Raw RCA", "Brief Definition": "Revealed Comparative Advantage: Argentina's export share in a product divided by the world's export share in that product.", "How to Read It": "Greater than 1 = Argentina is relatively specialized; less than 1 = weaker specialization.", "Unit / Scale": "Ratio"},
-            {"Variable": "Transformed RCA", "Brief Definition": "Rescaled RCA used only inside the feasibility formula to keep scores comparable with other components.", "How to Read It": "Higher means stronger contribution to feasibility after transformation.", "Unit / Scale": "Bounded index"},
+            {"Variable": "Transformed RCA", "Brief Definition": "Min-max version of Raw RCA used for complexity calculations.", "How to Read It": "0 = lowest relative RCA in the sample, 1 = highest.", "Unit / Scale": "0-1"},
             {"Variable": "Density (Raw)", "Brief Definition": "Product-space proximity to Argentina's current capabilities.", "How to Read It": "Higher means the product is closer to what Argentina already knows how to export.", "Unit / Scale": "Continuous"},
             {"Variable": "Density Percentile", "Brief Definition": "Relative rank of density across products.", "How to Read It": "0.80 means denser than 80% of products in the sample.", "Unit / Scale": "0-1"},
             {"Variable": "Effective Exporters", "Brief Definition": "Effective number of competing exporters in that product (competition breadth).", "How to Read It": "Higher usually implies a broader competitive field.", "Unit / Scale": "Count-like index"},
