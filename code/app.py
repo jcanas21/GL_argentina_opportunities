@@ -43,6 +43,7 @@ You can:
             {"Variable": "Transformed RCA", "Brief Definition": "Min-max version of Raw RCA used for complexity calculations.", "How to Read It": "0 = lowest relative RCA in the sample, 1 = highest.", "Unit / Scale": "0-1"},
             {"Variable": "Density (Raw)", "Brief Definition": "Product-space proximity to Argentina's current capabilities.", "How to Read It": "Higher means the product is closer to what Argentina already knows how to export.", "Unit / Scale": "Continuous"},
             {"Variable": "Density Percentile", "Brief Definition": "Relative rank of density across products.", "How to Read It": "0.80 means denser than 80% of products in the sample.", "Unit / Scale": "0-1"},
+            {"Variable": "Distance Travelled", "Brief Definition": "Weighted average bilateral distance travelled by product, using bilateral export values between origin x and destination y as weights.", "How to Read It": "Higher means exports of that product are concentrated in farther destination markets.", "Unit / Scale": "Distance units (from bilateral distance file)"},
             {"Variable": "Effective Exporters", "Brief Definition": "Effective number of competing exporters in that product (competition breadth).", "How to Read It": "Higher usually implies a broader competitive field.", "Unit / Scale": "Count-like index"},
             {"Variable": "WNAI Percentile", "Brief Definition": "Weighted Network Alignment Index percentile for Argentina versus major exporters in each product.", "How to Read It": "Higher percentile = Argentina's trade network is better aligned with high-value demand hubs.", "Unit / Scale": "0-100"},
             {"Variable": "WNAI Lead", "Brief Definition": "Argentina's WNAI percentile minus the median percentile of top competitors.", "How to Read It": "Positive = Argentina leads peers; negative = Argentina trails peers.", "Unit / Scale": "Percentile points"},
@@ -66,9 +67,9 @@ You can:
 
     st.markdown("## Algebra and Interpretation")
     st.markdown("### Distance Travelled (by product)")
-    st.latex(r"\mathrm{DistanceTravelled}_i = \sum_y \left( Distance_y \times \frac{M_{i,y}}{\sum_y M_{i,y}} \right)")
-    st.markdown("- `M_{i,y}`: imports of product `i` by destination `y`.")
-    st.markdown("- Interpretation: value-weighted average shipping distance of product `i`. Larger destinations matter more.")
+    st.latex(r"\mathrm{DistanceTravelled}_i = \sum_y \left( Distance_{x,y} \times \frac{X_{x,y,i}}{\sum_y X_{x,y,i}} \right)")
+    st.markdown("- `X_{x,y,i}`: bilateral exports of product `i` from origin `x` to destination `y`.")
+    st.markdown("- Interpretation: weighted average distance travelled by product, where bilateral export value is the weight.")
 
     st.markdown("### Accessible Market Size")
     st.latex(r"\mathrm{AccessibleMarket}_i = \sum_{y:\,Distance_y \le \mathrm{DistanceTravelled}_i} M_{i,y}")
