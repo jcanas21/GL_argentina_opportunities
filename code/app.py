@@ -35,58 +35,6 @@ You can:
 """
     )
 
-    st.markdown("## Algebra and Interpretation")
-    st.markdown(
-        r"""
-### Distance Travelled (by product)
-\[
-\mathrm{DistanceTravelled}_i
-=
-\sum_y
-\left(
-Distance_y \times \frac{M_{i,y}}{\sum_y M_{i,y}}
-\right)
-\]
-
-- \(M_{i,y}\): imports of product \(i\) by destination \(y\).
-- Interpretation: value-weighted average shipping distance of product \(i\). Larger destinations matter more.
-
-### Accessible Market Size
-\[
-\mathrm{AccessibleMarket}_i
-=
-\sum_{y:\,Distance_y \le \mathrm{DistanceTravelled}_i} M_{i,y}
-\]
-
-- Uses Distance Travelled as the product-specific cutoff.
-- Interpretation: total demand in destinations that are within the product's "reachable" distance profile.
-
-### WNAI (Weighted Network Alignment Index)
-\[
-\mathrm{WNAI}_{z,i}
-=
-\sum_y
-\left[
-\left(
-\frac{X_{z,y}/M_y}{X_z/WT}
-\right)
-\times
-\left(
-\frac{M_{i,y}}{M_y}
-\right)
-\times
-GDPShare_y
-\right]
-\]
-
-- \(z\): exporter (Argentina in this dashboard), \(i\): product, \(y\): partner market.
-- First term: relative pipe thickness (where exporter over-indexes vs world average).
-- Second term: product relevance in each partner's import basket.
-- Third term: partner economic weight.
-- Interpretation: higher WNAI means Argentina's strongest trade links are better aligned with large, product-relevant markets.
-"""
-    )
-
     st.markdown("## Variable Glossary (Main Page)")
     st.caption("Brief definitions plus interpretation guidance for the key technical variables.")
     glossary = pd.DataFrame(
@@ -115,6 +63,27 @@ GDPShare_y
         ]
     )
     st.dataframe(glossary, use_container_width=True, hide_index=True)
+
+    st.markdown("## Algebra and Interpretation")
+    st.markdown("### Distance Travelled (by product)")
+    st.latex(r"\mathrm{DistanceTravelled}_i = \sum_y \left( Distance_y \times \frac{M_{i,y}}{\sum_y M_{i,y}} \right)")
+    st.markdown("- `M_{i,y}`: imports of product `i` by destination `y`.")
+    st.markdown("- Interpretation: value-weighted average shipping distance of product `i`. Larger destinations matter more.")
+
+    st.markdown("### Accessible Market Size")
+    st.latex(r"\mathrm{AccessibleMarket}_i = \sum_{y:\,Distance_y \le \mathrm{DistanceTravelled}_i} M_{i,y}")
+    st.markdown("- Uses Distance Travelled as the product-specific cutoff.")
+    st.markdown("- Interpretation: total demand in destinations that are within the product's reachable distance profile.")
+
+    st.markdown("### WNAI (Weighted Network Alignment Index)")
+    st.latex(
+        r"\mathrm{WNAI}_{z,i} = \sum_y \left[ \left( \frac{X_{z,y}/M_y}{X_z/WT} \right) \times \left( \frac{M_{i,y}}{M_y} \right) \times GDPShare_y \right]"
+    )
+    st.markdown("- `z`: exporter (Argentina in this dashboard), `i`: product, `y`: partner market.")
+    st.markdown("- First term: relative pipe thickness (where exporter over-indexes vs world average).")
+    st.markdown("- Second term: product relevance in each partner's import basket.")
+    st.markdown("- Third term: partner economic weight.")
+    st.markdown("- Interpretation: higher WNAI means Argentina's strongest trade links are better aligned with large, product-relevant markets.")
 
 
 st.set_page_config(
