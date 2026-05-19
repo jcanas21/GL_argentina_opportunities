@@ -9,13 +9,20 @@ from data_utils import (
 )
 
 
+APP_CACHE_VERSION = "arg-dashboard-v2-presets-2026-05-19.2"
+
 st.title("Opportunity Analysis")
 st.caption("BACI-based HS92 opportunity model. Calibrate index components, rebalance feasibility vs attractiveness, and explore product opportunities.")
+
+if st.session_state.get("_app_cache_version") != APP_CACHE_VERSION:
+    st.cache_data.clear()
+    st.session_state["_app_cache_version"] = APP_CACHE_VERSION
 
 df = load_opportunity_dataset()
 if df.empty:
     st.warning("No data available for year 2024 / ARG in complexity_calculations.csv.")
     st.stop()
+st.sidebar.caption(f"Version: {APP_CACHE_VERSION} | data rows: {len(df):,}")
 
 FEAS_COLS = ["rca_transformed_z", "density_z", "eff_num_exp_z", "alignment_weighted_percentile_z"]
 ATTR_COLS = ["pci_z", "cog_z", "potential_market_growth_5y_z", "potential_market_size_share_z"]
