@@ -202,48 +202,60 @@ st.sidebar.header("Preset Filters")
 st.sidebar.caption("Each preset applies the algorithm thresholds, common exclusions, top 50 rows, and the corresponding score weights.")
 preset_cols = st.sidebar.columns(1)
 with preset_cols[0]:
-    if st.button("Intensive Margin", width="stretch"):
-        _apply_preset(
-            trade_min_value=1.0,
-            rca_min_value=1.0,
-            rca_max_value=max(float(rca_max_data), 1.0),
-            density_range_value=(density_pct_min_data, density_pct_max_data),
-            feasibility_weights={
+    st.button(
+        "Intensive Margin",
+        width="stretch",
+        on_click=_apply_preset,
+        kwargs={
+            "trade_min_value": 1.0,
+            "rca_min_value": 1.0,
+            "rca_max_value": max(float(rca_max_data), 1.0),
+            "density_range_value": (density_pct_min_data, density_pct_max_data),
+            "feasibility_weights": {
                 "w_rca": 0.30,
                 "w_density": 0.00,
                 "w_eff_num_exp": 0.00,
                 "w_alignment_hv": 0.70,
             },
-            attractiveness_weight=0.70,
-        )
-    if st.button("Extensive Margin: Low Hanging Fruits", width="stretch"):
-        _apply_preset(
-            trade_min_value=1.0,
-            rca_min_value=0.30,
-            rca_max_value=1.0,
-            density_range_value=(density_pct_min_data, density_pct_max_data),
-            feasibility_weights={
+            "attractiveness_weight": 0.70,
+        },
+    )
+    st.button(
+        "Extensive Margin: Low Hanging Fruits",
+        width="stretch",
+        on_click=_apply_preset,
+        kwargs={
+            "trade_min_value": 1.0,
+            "rca_min_value": 0.30,
+            "rca_max_value": 1.0,
+            "density_range_value": (density_pct_min_data, density_pct_max_data),
+            "feasibility_weights": {
                 "w_rca": 0.35,
                 "w_density": 0.35,
                 "w_eff_num_exp": 0.00,
                 "w_alignment_hv": 0.30,
             },
-            attractiveness_weight=0.30,
-        )
-    if st.button("Extensive Margin: Strategic Bets", width="stretch"):
-        _apply_preset(
-            trade_min_value=1.0,
-            rca_min_value=0.0,
-            rca_max_value=0.30,
-            density_range_value=(max(0.50, density_pct_min_data), density_pct_max_data),
-            feasibility_weights={
+            "attractiveness_weight": 0.30,
+        },
+    )
+    st.button(
+        "Extensive Margin: Strategic Bets",
+        width="stretch",
+        on_click=_apply_preset,
+        kwargs={
+            "trade_min_value": 1.0,
+            "rca_min_value": 0.0,
+            "rca_max_value": 0.30,
+            "density_range_value": (max(0.50, density_pct_min_data), density_pct_max_data),
+            "feasibility_weights": {
                 "w_rca": 0.00,
                 "w_density": 0.70,
                 "w_eff_num_exp": 0.00,
                 "w_alignment_hv": 0.30,
             },
-            attractiveness_weight=0.70,
-        )
+            "attractiveness_weight": 0.70,
+        },
+    )
 
 st.sidebar.caption(
     "Always excluded: "
