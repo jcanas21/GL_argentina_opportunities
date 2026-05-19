@@ -40,6 +40,14 @@ SECTOR_COLORS = {
     "Electronics": "#74c5c6",
     "Other": "#2f5d74",
 }
+MANDATORY_EXCLUDED_HS4 = {
+    "2701": "Coal",
+    "2709": "Petroleum oils, crude",
+    "2710": "Petroleum oils, refined",
+    "2711": "Petroleum gases",
+    "2713": "Petroleum coke",
+    "7108": "Gold",
+}
 
 
 def weighted_index(frame: pd.DataFrame, cols: list[str], weights: list[float]) -> pd.Series:
@@ -64,8 +72,6 @@ defaults = {
 }
 for k, v in defaults.items():
     st.session_state.setdefault(k, v)
-
-st.sidebar.header("Filters")
 
 trade_max = float(df["total_trade_b"].max()) if not df.empty else 0.0
 country_export_max = float(df["country_current_exports_b"].max()) if not df.empty else 0.0
@@ -137,8 +143,6 @@ st.session_state["rca_max_filter"] = max(
 )
 if "selected_sectors" not in st.session_state:
     st.session_state["selected_sectors"] = sector_options
-if "excluded_product_labels" not in st.session_state:
-    st.session_state["excluded_product_labels"] = []
 if "above_median_only" not in st.session_state:
     st.session_state["above_median_only"] = False
 if "above_export_median_only" not in st.session_state:
@@ -149,7 +153,104 @@ if "size_label" not in st.session_state:
     st.session_state["size_label"] = "Accessible market growth (5y)"
 if "density_pct_range" not in st.session_state:
     st.session_state["density_pct_range"] = (density_pct_min_data, density_pct_max_data)
+if "top_n" not in st.session_state:
+    st.session_state["top_n"] = 60
 
+mandatory_excluded_labels = [
+    label
+    for label, code in product_label_to_code.items()
+    if code in MANDATORY_EXCLUDED_HS4
+]
+mandatory_excluded_labels = sorted(mandatory_excluded_labels)
+if "excluded_product_labels" not in st.session_state:
+    st.session_state["excluded_product_labels"] = []
+
+
+def _apply_preset(
+    *,
+    trade_min_value: float,
+    rca_min_value: float,
+    rca_max_value: float,
+    density_range_value: tuple[float, float],
+    feasibility_weights: dict[str, float],
+    attractiveness_weight: float,
+) -> None:
+    st.session_state["trade_min"] = trade_min_value
+    st.session_state["country_export_min_m"] = 0.0
+    st.session_state["rca_min_filter"] = rca_min_value
+    st.session_state["rca_max_filter"] = rca_max_value
+    st.session_state["density_pct_range"] = density_range_value
+    st.session_state["selected_sectors"] = sector_options
+    st.session_state["excluded_product_labels"] = []
+    st.session_state["above_median_only"] = True
+    st.session_state["above_export_median_only"] = False
+    st.session_state["above_potential_growth_only"] = False
+    st.session_state["top_n"] = 50
+
+    st.session_state["w_rca"] = feasibility_weights.get("w_rca", 0.0)
+    st.session_state["w_density"] = feasibility_weights.get("w_density", 0.0)
+    st.session_state["w_eff_num_exp"] = feasibility_weights.get("w_eff_num_exp", 0.0)
+    st.session_state["w_alignment_hv"] = feasibility_weights.get("w_alignment_hv", 0.0)
+    st.session_state["w_pci"] = 0.35
+    st.session_state["w_cog"] = 0.35
+    st.session_state["w_growth"] = 0.15
+    st.session_state["w_market_size"] = 0.15
+    st.session_state["strategic_balance"] = attractiveness_weight
+
+
+st.sidebar.header("Preset Filters")
+st.sidebar.caption("Each preset applies the algorithm thresholds, common exclusions, top 50 rows, and the corresponding score weights.")
+preset_cols = st.sidebar.columns(1)
+with preset_cols[0]:
+    if st.button("Intensive Margin", width="stretch"):
+        _apply_preset(
+            trade_min_value=1.0,
+            rca_min_value=1.0,
+            rca_max_value=max(float(rca_max_data), 1.0),
+            density_range_value=(density_pct_min_data, density_pct_max_data),
+            feasibility_weights={
+                "w_rca": 0.30,
+                "w_density": 0.00,
+                "w_eff_num_exp": 0.00,
+                "w_alignment_hv": 0.70,
+            },
+            attractiveness_weight=0.70,
+        )
+    if st.button("Extensive Margin: Low Hanging Fruits", width="stretch"):
+        _apply_preset(
+            trade_min_value=1.0,
+            rca_min_value=0.30,
+            rca_max_value=1.0,
+            density_range_value=(density_pct_min_data, density_pct_max_data),
+            feasibility_weights={
+                "w_rca": 0.35,
+                "w_density": 0.35,
+                "w_eff_num_exp": 0.00,
+                "w_alignment_hv": 0.30,
+            },
+            attractiveness_weight=0.30,
+        )
+    if st.button("Extensive Margin: Strategic Bets", width="stretch"):
+        _apply_preset(
+            trade_min_value=1.0,
+            rca_min_value=0.0,
+            rca_max_value=0.30,
+            density_range_value=(max(0.50, density_pct_min_data), density_pct_max_data),
+            feasibility_weights={
+                "w_rca": 0.00,
+                "w_density": 0.70,
+                "w_eff_num_exp": 0.00,
+                "w_alignment_hv": 0.30,
+            },
+            attractiveness_weight=0.70,
+        )
+
+st.sidebar.caption(
+    "Always excluded: "
+    + ", ".join(f"{code} {name}" for code, name in sorted(MANDATORY_EXCLUDED_HS4.items()))
+)
+
+st.sidebar.header("Filters")
 size_label = st.sidebar.selectbox("Dot size variable", list(size_choices.keys()), key="size_label")
 min_dot_size = 4
 max_dot_size = 20
@@ -177,13 +278,13 @@ country_export_min_m = st.sidebar.number_input(
 )
 country_export_min_b = country_export_min_m / 1000
 
-rca_step = 0.001 if rca_max_data <= 2 else (0.01 if rca_max_data <= 10 else 0.1)
+rca_step = 0.001
 rca_min_filter = st.sidebar.number_input(
     "Minimum (Raw) RCA",
     min_value=0.0,
     value=min(float(st.session_state["rca_min_filter"]), float(st.session_state["rca_max_filter"])),
     step=float(rca_step),
-    format="%.3f" if rca_step < 0.01 else ("%.2f" if rca_step < 0.1 else "%.1f"),
+    format="%.3f",
     key="rca_min_filter",
     help="Keep products with raw RCA greater than or equal to this value.",
 )
@@ -192,7 +293,7 @@ rca_max_filter = st.sidebar.number_input(
     min_value=float(rca_min_filter),
     value=max(float(st.session_state["rca_max_filter"]), float(rca_min_filter)),
     step=float(rca_step),
-    format="%.3f" if rca_step < 0.01 else ("%.2f" if rca_step < 0.1 else "%.1f"),
+    format="%.3f",
     key="rca_max_filter",
     help="Keep products with raw RCA less than or equal to this value.",
 )
@@ -213,13 +314,15 @@ selected_sectors = st.sidebar.multiselect(
     key="selected_sectors",
 )
 excluded_product_labels = st.sidebar.multiselect(
-    "Exclude products (HS4)",
+    "Additional exclude products (HS4)",
     options=product_options_df["hs4_label"].tolist(),
     default=st.session_state["excluded_product_labels"],
     key="excluded_product_labels",
-    help="Exclude one or more HS4 products from the analysis.",
+    help="Add one or more HS4 products to the mandatory exclusions listed above.",
 )
-excluded_hs4_codes = {product_label_to_code[label] for label in excluded_product_labels}
+excluded_hs4_codes = set(MANDATORY_EXCLUDED_HS4).union(
+    {product_label_to_code[label] for label in excluded_product_labels}
+)
 
 above_median_only = st.sidebar.toggle(
     "CAGR 5y greater than 0",
@@ -420,7 +523,14 @@ st.plotly_chart(
 
 st.subheader("Top Product Rankings")
 search_text = st.text_input("Search product name", placeholder="Type to filter...")
-top_n = st.slider("Rows to display", min_value=10, max_value=300, value=60, step=10)
+top_n = st.slider(
+    "Rows to display",
+    min_value=10,
+    max_value=300,
+    value=int(st.session_state["top_n"]),
+    step=10,
+    key="top_n",
+)
 
 table = flt.copy()
 if search_text:
