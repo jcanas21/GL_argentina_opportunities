@@ -8,17 +8,12 @@ import pandas as pd
 import streamlit as st
 
 FOCUS_ISO = "ARG"
-V1_METRICS_FILE = "opportunity_metrics_hs4_arg.csv"
-V1_METRICS_FALLBACK = "v1_metrics_arg.csv"
-
-COUNTRY_METRIC_RENAME = {
-    "ecu_total_trade": "country_current_exports",
-    "ecu_export_growth_5y": "country_export_growth_5y",
-    "ecu_exporter_rank": "country_exporter_rank",
-    "ecu_market_share_2020": "country_market_share_2020",
-    "ecu_market_share_2024": "country_market_share_2024",
-}
-
+FOCUS_COUNTRY_NAME = "Argentina"
+FOCUS_COUNTRY_SLUG = FOCUS_COUNTRY_NAME.lower().replace(" ", "_")
+V2_METRICS_FILE = "opportunity_metrics_hs4_arg.csv"
+V2_METRICS_FALLBACK = "v2_metrics_arg.csv"
+CORDOBA_EXPORTS_FILE = "cordoba_exports.csv"
+CORDOBA_RUBRO_CROSSWALK_FILE = "cordoba_rubro_to_hs.csv"
 
 def project_root() -> Path:
     here = Path(__file__).resolve()
@@ -48,6 +43,25 @@ def _resolve_intermediate_csv(primary_name: str, fallback_name: str | None = Non
         f"Missing intermediate file. Tried: {primary_name}"
         + (f", {fallback_name}" if fallback_name else "")
     )
+
+
+def _parse_percent_share(series: pd.Series) -> pd.Series:
+    text = series.astype(str).str.strip().str.replace("%", "", regex=False)
+    return pd.to_numeric(text, errors="coerce") / 100.0
+
+
+def _expand_hs_prefix_token(token: str) -> list[str]:
+    token = str(token).strip()
+    if not token:
+        return []
+    if "-" not in token:
+        return [token.zfill(2) if token.isdigit() and len(token) <= 2 else token]
+
+    start, end = [part.strip() for part in token.split("-", 1)]
+    if not start.isdigit() or not end.isdigit():
+        return []
+    width = max(len(start), len(end), 2)
+    return [str(value).zfill(width) for value in range(int(start), int(end) + 1)]
 
 
 def normalize_0_1(series: pd.Series) -> pd.Series:
@@ -276,8 +290,8 @@ def compute_network_alignment_indices_hs4(valid_hs4: Iterable[str], year: int = 
     else:
         top30 = pd.DataFrame(columns=["product_code", "exporter_iso"])
 
-    ecu_rows = pd.DataFrame({"product_code": products, "exporter_iso": "ARG"})
-    comparison_set = pd.concat([top30, ecu_rows], ignore_index=True).drop_duplicates()
+    focus_rows = pd.DataFrame({"product_code": products, "exporter_iso": FOCUS_ISO})
+    comparison_set = pd.concat([top30, focus_rows], ignore_index=True).drop_duplicates()
     out = out.merge(comparison_set, on=["product_code", "exporter_iso"], how="inner")
 
     out["unweighted_percentile"] = (
@@ -360,22 +374,22 @@ def compute_alignment_leads_hs4(valid_hs4: Iterable[str], year: int = 2024) -> p
         competitor_median_weighted=("weighted_percentile", "median"),
     )
 
-    ecu = align[align["exporter_iso"] == "ARG"][
+    focus = align[align["exporter_iso"] == FOCUS_ISO][
         ["hs4", "unweighted_percentile", "weighted_percentile"]
     ].rename(
         columns={
-            "unweighted_percentile": "ecu_unweighted_percentile",
-            "weighted_percentile": "ecu_weighted_percentile",
+            "unweighted_percentile": "focus_unweighted_percentile",
+            "weighted_percentile": "focus_weighted_percentile",
         }
     )
 
-    out = base.merge(ecu, on="hs4", how="left").merge(comp_med, on="hs4", how="left")
+    out = base.merge(focus, on="hs4", how="left").merge(comp_med, on="hs4", how="left")
     out["alignment_lead_unweighted"] = (
-        pd.to_numeric(out["ecu_unweighted_percentile"], errors="coerce").fillna(0.0)
+        pd.to_numeric(out["focus_unweighted_percentile"], errors="coerce").fillna(0.0)
         - pd.to_numeric(out["competitor_median_unweighted"], errors="coerce").fillna(0.0)
     )
     out["alignment_lead_weighted"] = (
-        pd.to_numeric(out["ecu_weighted_percentile"], errors="coerce").fillna(0.0)
+        pd.to_numeric(out["focus_weighted_percentile"], errors="coerce").fillna(0.0)
         - pd.to_numeric(out["competitor_median_weighted"], errors="coerce").fillna(0.0)
     )
     return out[["hs4", "alignment_lead_unweighted", "alignment_lead_weighted"]]
@@ -386,13 +400,13 @@ def compute_trade_metrics(valid_hs4: Iterable[str]) -> pd.DataFrame:
     valid_hs4 = set(valid_hs4)
     allowed_countries = load_rankings_countries(2024)
     trade_path = input_dir() / "hs92_country_country_product_year_6_2020_2024.csv"
-    distance_path = intermediate_dir() / "argentina_distance.csv"
+    distance_path = intermediate_dir() / f"{FOCUS_COUNTRY_SLUG}_distance.csv"
     potential_path = intermediate_dir() / "potential_market_by_product.csv"
     potential_growth_path = intermediate_dir() / "potential_market_growth_by_product.csv"
     potential_growth_yearly_path = intermediate_dir() / "potential_market_by_product_year.csv"
 
     world_acc = pd.Series(dtype="float64")  # index: (year, hs4)
-    ecu_year_acc = pd.Series(dtype="float64")  # index: (year, hs4)
+    country_year_acc = pd.Series(dtype="float64")  # index: (year, hs4)
     imports_2024_acc = pd.Series(dtype="float64")  # index: (importer, hs4)
     exp_hs4_2024_acc = pd.Series(dtype="float64")  # index: (exporter, hs4)
 
@@ -503,11 +517,11 @@ def compute_trade_metrics(valid_hs4: Iterable[str]) -> pd.DataFrame:
         else:
             world_acc = world_acc.add(world_grp, fill_value=0)
 
-        ecu_year_grp = chunk[chunk["exporter"] == "ARG"].groupby(["year", "hs4"])["value"].sum()
-        if ecu_year_acc.empty:
-            ecu_year_acc = ecu_year_grp.copy()
+        country_year_grp = chunk[chunk["exporter"] == FOCUS_ISO].groupby(["year", "hs4"])["value"].sum()
+        if country_year_acc.empty:
+            country_year_acc = country_year_grp.copy()
         else:
-            ecu_year_acc = ecu_year_acc.add(ecu_year_grp, fill_value=0)
+            country_year_acc = country_year_acc.add(country_year_grp, fill_value=0)
 
         c2024 = chunk[chunk["year"] == 2024]
         if c2024.empty:
@@ -547,35 +561,41 @@ def compute_trade_metrics(valid_hs4: Iterable[str]) -> pd.DataFrame:
         0,
     )
 
-    if ecu_year_acc.empty:
-        ecu_pivot = pd.DataFrame({"hs4": sorted(valid_hs4), 2020: 0.0, 2024: 0.0})
+    if country_year_acc.empty:
+        country_pivot = pd.DataFrame({"hs4": sorted(valid_hs4), 2020: 0.0, 2024: 0.0})
     else:
-        ecu_year = ecu_year_acc.rename("ecu_value").reset_index()
-        ecu_year.columns = ["year", "hs4", "ecu_value"]
-        ecu_pivot = ecu_year.pivot(index="hs4", columns="year", values="ecu_value").reset_index()
-        if 2020 not in ecu_pivot.columns:
-            ecu_pivot[2020] = 0.0
-        if 2024 not in ecu_pivot.columns:
-            ecu_pivot[2024] = 0.0
+        country_year = country_year_acc.rename("country_value").reset_index()
+        country_year.columns = ["year", "hs4", "country_value"]
+        country_pivot = country_year.pivot(index="hs4", columns="year", values="country_value").reset_index()
+        if 2020 not in country_pivot.columns:
+            country_pivot[2020] = 0.0
+        if 2024 not in country_pivot.columns:
+            country_pivot[2024] = 0.0
 
-    ecu_pivot["ecu_export_growth_5y"] = np.where(
-        (ecu_pivot[2020] > 0) & (ecu_pivot[2024] > 0),
-        (ecu_pivot[2024] / ecu_pivot[2020]) ** (1 / 5) - 1,
+    country_pivot["country_export_growth_5y"] = np.where(
+        (country_pivot[2020] > 0) & (country_pivot[2024] > 0),
+        (country_pivot[2024] / country_pivot[2020]) ** (1 / 5) - 1,
         0,
     )
-    ecu_2024 = ecu_pivot[["hs4", 2024, "ecu_export_growth_5y"]].rename(columns={2024: "ecu_total_trade"})
+    country_2024 = country_pivot[["hs4", 2024, "country_export_growth_5y"]].rename(
+        columns={2024: "country_current_exports"}
+    )
 
     # Argentina market share by product and absolute change (2024 - 2020).
     share_df = world_pivot[["hs4", 2020, 2024]].rename(columns={2020: "world_2020", 2024: "world_2024"})
     share_df = share_df.merge(
-        ecu_pivot[["hs4", 2020, 2024]].rename(columns={2020: "ecu_2020", 2024: "ecu_2024"}),
+        country_pivot[["hs4", 2020, 2024]].rename(columns={2020: "country_2020", 2024: "country_2024"}),
         on="hs4",
         how="left",
     ).fillna(0)
-    share_df["ecu_market_share_2020"] = np.where(share_df["world_2020"] > 0, share_df["ecu_2020"] / share_df["world_2020"], 0)
-    share_df["ecu_market_share_2024"] = np.where(share_df["world_2024"] > 0, share_df["ecu_2024"] / share_df["world_2024"], 0)
-    share_df["market_share_change_abs"] = share_df["ecu_market_share_2024"] - share_df["ecu_market_share_2020"]
-    share_df = share_df[["hs4", "ecu_market_share_2020", "ecu_market_share_2024", "market_share_change_abs"]]
+    share_df["country_market_share_2020"] = np.where(
+        share_df["world_2020"] > 0, share_df["country_2020"] / share_df["world_2020"], 0
+    )
+    share_df["country_market_share_2024"] = np.where(
+        share_df["world_2024"] > 0, share_df["country_2024"] / share_df["world_2024"], 0
+    )
+    share_df["market_share_change_abs"] = share_df["country_market_share_2024"] - share_df["country_market_share_2020"]
+    share_df = share_df[["hs4", "country_market_share_2020", "country_market_share_2024", "market_share_change_abs"]]
 
     if distance_path.exists():
         distance = pd.read_csv(distance_path)
@@ -616,7 +636,7 @@ def compute_trade_metrics(valid_hs4: Iterable[str]) -> pd.DataFrame:
     # Effective number of exporters (Hill number of order 2 / inverse HHI) under the same 145-country filter.
     if exp_hs4_2024_acc.empty:
         eff_df = pd.DataFrame({"hs4": sorted(valid_hs4), "eff_num_exp": 0.0})
-        rank_df = pd.DataFrame({"hs4": sorted(valid_hs4), "ecu_exporter_rank": np.nan})
+        rank_df = pd.DataFrame({"hs4": sorted(valid_hs4), "country_exporter_rank": np.nan})
     else:
         exp_hs4 = exp_hs4_2024_acc.rename("value").reset_index()
         exp_hs4.columns = ["exporter", "hs4", "value"]
@@ -630,13 +650,13 @@ def compute_trade_metrics(valid_hs4: Iterable[str]) -> pd.DataFrame:
         )
         # Argentina's rank among exporters by product in 2024 (1 = largest exporter).
         exp_hs4["exporter_rank"] = exp_hs4.groupby("hs4")["value"].rank(method="min", ascending=False)
-        ecu_rank = exp_hs4[exp_hs4["exporter"] == "ARG"][["hs4", "exporter_rank"]].rename(
-            columns={"exporter_rank": "ecu_exporter_rank"}
+        country_rank = exp_hs4[exp_hs4["exporter"] == FOCUS_ISO][["hs4", "exporter_rank"]].rename(
+            columns={"exporter_rank": "country_exporter_rank"}
         )
-        rank_df = pd.DataFrame({"hs4": sorted(valid_hs4)}).merge(ecu_rank, on="hs4", how="left")
+        rank_df = pd.DataFrame({"hs4": sorted(valid_hs4)}).merge(country_rank, on="hs4", how="left")
 
     out = world_pivot[["hs4", "market_growth_5y"]].merge(world_2024, on="hs4", how="outer")
-    out = out.merge(ecu_2024, on="hs4", how="left")
+    out = out.merge(country_2024, on="hs4", how="left")
     out = out.merge(share_df, on="hs4", how="left")
     out = out.merge(distance_travelled, on="hs4", how="left")
     out = out.merge(eff_df, on="hs4", how="left")
@@ -645,11 +665,11 @@ def compute_trade_metrics(valid_hs4: Iterable[str]) -> pd.DataFrame:
     out = out.fillna(0)
     # Raw RCA for ARG in 2024 from trade shares:
     # RCA_i = (X_ARG_i / X_ARG_total) / (X_world_i / X_world_total)
-    arg_total_2024 = float(pd.to_numeric(out["ecu_total_trade"], errors="coerce").fillna(0.0).sum())
+    country_total_2024 = float(pd.to_numeric(out["country_current_exports"], errors="coerce").fillna(0.0).sum())
     world_total_2024 = float(pd.to_numeric(out["total_trade"], errors="coerce").fillna(0.0).sum())
     out["raw_rca_trade"] = np.where(
-        (arg_total_2024 > 0) & (world_total_2024 > 0) & (out["total_trade"] > 0),
-        (pd.to_numeric(out["ecu_total_trade"], errors="coerce").fillna(0.0) / arg_total_2024)
+        (country_total_2024 > 0) & (world_total_2024 > 0) & (out["total_trade"] > 0),
+        (pd.to_numeric(out["country_current_exports"], errors="coerce").fillna(0.0) / country_total_2024)
         / (pd.to_numeric(out["total_trade"], errors="coerce").fillna(0.0) / world_total_2024),
         0.0,
     )
@@ -670,14 +690,14 @@ def compute_trade_metrics(valid_hs4: Iterable[str]) -> pd.DataFrame:
         pd.to_numeric(out["potential_market_size"], errors="coerce").fillna(0.0) / out["market_size"],
         0.0,
     )
-    out["ecu_exporter_rank"] = pd.to_numeric(out["ecu_exporter_rank"], errors="coerce")
-    out.loc[out["ecu_exporter_rank"] <= 0, "ecu_exporter_rank"] = np.nan
+    out["country_exporter_rank"] = pd.to_numeric(out["country_exporter_rank"], errors="coerce")
+    out.loc[out["country_exporter_rank"] <= 0, "country_exporter_rank"] = np.nan
     median_cagr = out["market_growth_5y"].median()
     median_potential_market_growth = out["potential_market_growth_5y"].median()
-    median_ecu_export_cagr = out["ecu_export_growth_5y"].median()
+    median_country_export_cagr = out["country_export_growth_5y"].median()
     out["above_median_cagr"] = out["market_growth_5y"] > median_cagr
     out["above_median_potential_market_growth"] = out["potential_market_growth_5y"] > median_potential_market_growth
-    out["above_median_export_cagr"] = out["ecu_export_growth_5y"] > median_ecu_export_cagr
+    out["above_median_export_cagr"] = out["country_export_growth_5y"] > median_country_export_cagr
     return out
 
 
@@ -695,7 +715,7 @@ def load_product_market_deep_dive(hs4: str, focus_year: int = 2024) -> tuple[pd.
 
     hs4 = str(hs4).zfill(4)
     world_by_year = pd.Series(dtype="float64")  # index: year
-    ecu_by_year = pd.Series(dtype="float64")  # index: year
+    country_by_year = pd.Series(dtype="float64")  # index: year
     dest_focus = pd.Series(dtype="float64")  # index: importer
     hs6_year_acc = pd.Series(dtype="float64")  # index: (hs6, year), ARG exports
 
@@ -727,26 +747,26 @@ def load_product_market_deep_dive(hs4: str, focus_year: int = 2024) -> tuple[pd.
         w = chunk.groupby("year")["value"].sum()
         world_by_year = w.copy() if world_by_year.empty else world_by_year.add(w, fill_value=0)
 
-        ecu = chunk[chunk["exporter"] == "ARG"].groupby("year")["value"].sum()
-        ecu_by_year = ecu.copy() if ecu_by_year.empty else ecu_by_year.add(ecu, fill_value=0)
+        country = chunk[chunk["exporter"] == FOCUS_ISO].groupby("year")["value"].sum()
+        country_by_year = country.copy() if country_by_year.empty else country_by_year.add(country, fill_value=0)
 
-        ecu_hs6 = chunk[chunk["exporter"] == "ARG"].groupby(["hs6", "year"])["value"].sum()
-        hs6_year_acc = ecu_hs6.copy() if hs6_year_acc.empty else hs6_year_acc.add(ecu_hs6, fill_value=0)
+        country_hs6 = chunk[chunk["exporter"] == FOCUS_ISO].groupby(["hs6", "year"])["value"].sum()
+        hs6_year_acc = country_hs6.copy() if hs6_year_acc.empty else hs6_year_acc.add(country_hs6, fill_value=0)
 
-        focus = chunk[(chunk["year"] == focus_year) & (chunk["exporter"] == "ARG")].groupby("importer")["value"].sum()
+        focus = chunk[(chunk["year"] == focus_year) & (chunk["exporter"] == FOCUS_ISO)].groupby("importer")["value"].sum()
         dest_focus = focus.copy() if dest_focus.empty else dest_focus.add(focus, fill_value=0)
 
     if world_by_year.empty:
-        share_df = pd.DataFrame(columns=["year", "world_value", "ecu_value", "ecu_market_share"])
+        share_df = pd.DataFrame(columns=["year", "world_value", "country_value", "country_market_share"])
     else:
         share_df = world_by_year.rename("world_value").reset_index()
         share_df.columns = ["year", "world_value"]
-        ecu_df = ecu_by_year.rename("ecu_value").reset_index()
-        ecu_df.columns = ["year", "ecu_value"]
-        share_df = share_df.merge(ecu_df, on="year", how="left").fillna(0)
-        share_df["ecu_market_share"] = np.where(
+        country_df = country_by_year.rename("country_value").reset_index()
+        country_df.columns = ["year", "country_value"]
+        share_df = share_df.merge(country_df, on="year", how="left").fillna(0)
+        share_df["country_market_share"] = np.where(
             share_df["world_value"] > 0,
-            share_df["ecu_value"] / share_df["world_value"],
+            share_df["country_value"] / share_df["world_value"],
             0,
         )
         share_df = share_df.sort_values("year").reset_index(drop=True)
@@ -801,8 +821,8 @@ def load_eff_num_exp() -> pd.DataFrame:
 @st.cache_data(show_spinner=False)
 def load_or_build_v1_hs4_metrics(valid_hs4: Iterable[str], year: int = 2024) -> pd.DataFrame:
     valid_hs4_set = set(str(x).zfill(4) for x in valid_hs4)
-    primary_path = intermediate_dir() / V1_METRICS_FILE
-    fallback_path = intermediate_dir() / V1_METRICS_FALLBACK
+    primary_path = intermediate_dir() / V2_METRICS_FILE
+    fallback_path = intermediate_dir() / V2_METRICS_FALLBACK
     required_cols = {"potential_market_growth_5y"}
 
     for p in [primary_path, fallback_path]:
@@ -811,11 +831,6 @@ def load_or_build_v1_hs4_metrics(valid_hs4: Iterable[str], year: int = 2024) -> 
         m = pd.read_csv(p)
         if "hs4" not in m.columns:
             continue
-        safe_rename = {
-            k: v for k, v in COUNTRY_METRIC_RENAME.items()
-            if (k in m.columns) and (v not in m.columns)
-        }
-        m = m.rename(columns=safe_rename)
         m = m.loc[:, ~m.columns.duplicated()].copy()
         m["hs4"] = m["hs4"].astype(str).str.zfill(4)
         m = m[m["hs4"].isin(valid_hs4_set)].copy()
@@ -837,15 +852,97 @@ def load_or_build_v1_hs4_metrics(valid_hs4: Iterable[str], year: int = 2024) -> 
     lead = compute_alignment_leads_hs4(valid_hs4_set, year=year)
     trade_metrics = compute_trade_metrics(valid_hs4_set)
     metrics = trade_metrics.merge(align, on="hs4", how="left").merge(lead, on="hs4", how="left")
-    safe_rename = {
-        k: v for k, v in COUNTRY_METRIC_RENAME.items()
-        if (k in metrics.columns) and (v not in metrics.columns)
-    }
-    metrics = metrics.rename(columns=safe_rename)
     metrics["hs4"] = metrics["hs4"].astype(str).str.zfill(4)
     metrics = metrics[metrics["hs4"].isin(valid_hs4_set)].copy()
     metrics.to_csv(primary_path, index=False)
     return metrics
+
+
+@st.cache_data(show_spinner=False)
+def load_cordoba_context_annotations(valid_hs4: Iterable[str]) -> pd.DataFrame:
+    """Expand Cordoba export RCA annotations to HS4 without additive allocation."""
+    exports_path = input_dir() / CORDOBA_EXPORTS_FILE
+    crosswalk_path = input_dir() / CORDOBA_RUBRO_CROSSWALK_FILE
+    valid = (
+        pd.Series(list(valid_hs4), dtype="string")
+        .dropna()
+        .astype(str)
+        .str.zfill(4)
+        .drop_duplicates()
+        .sort_values()
+        .tolist()
+    )
+    if not valid:
+        return pd.DataFrame(columns=["hs4", "rca_cordoba_exports"])
+    if not exports_path.exists() or not crosswalk_path.exists():
+        return pd.DataFrame({"hs4": valid, "rca_cordoba_exports": np.nan})
+
+    exports = pd.read_csv(exports_path, dtype=str, encoding="utf-8-sig")
+    exports.columns = exports.columns.str.strip()
+    required_export_cols = {"CCOD_RUBRO", "rca_cordoba_exports"}
+    if not required_export_cols.issubset(exports.columns):
+        return pd.DataFrame({"hs4": valid, "rca_cordoba_exports": np.nan})
+    exports["CCOD_RUBRO"] = exports["CCOD_RUBRO"].astype(str).str.strip()
+    exports["rca_cordoba_exports"] = pd.to_numeric(exports["rca_cordoba_exports"], errors="coerce")
+    source_cols = ["CCOD_RUBRO", "rca_cordoba_exports"]
+    if "DESCRIP_RUBRO" in exports.columns:
+        source_cols.append("DESCRIP_RUBRO")
+    exports = exports[source_cols].drop_duplicates("CCOD_RUBRO")
+
+    crosswalk = pd.read_csv(crosswalk_path, dtype=str)
+    crosswalk.columns = crosswalk.columns.str.strip()
+    if not {"CCOD_RUBRO", "hs_prefixes", "mapping_priority"}.issubset(crosswalk.columns):
+        return pd.DataFrame({"hs4": valid, "rca_cordoba_exports": np.nan})
+    crosswalk["CCOD_RUBRO"] = crosswalk["CCOD_RUBRO"].astype(str).str.strip()
+    crosswalk["mapping_priority"] = pd.to_numeric(crosswalk["mapping_priority"], errors="coerce").fillna(0)
+    valid_df = pd.DataFrame({"hs4": valid})
+
+    expanded_rows: list[dict[str, object]] = []
+    for row in crosswalk.itertuples(index=False):
+        prefixes_raw = getattr(row, "hs_prefixes", "")
+        if pd.isna(prefixes_raw) or not str(prefixes_raw).strip():
+            continue
+        prefixes: list[str] = []
+        for token in str(prefixes_raw).split(";"):
+            prefixes.extend(_expand_hs_prefix_token(token))
+        for prefix in prefixes:
+            matches = valid_df[valid_df["hs4"].str.startswith(prefix)]["hs4"]
+            for hs4 in matches:
+                expanded_rows.append(
+                    {
+                        "hs4": hs4,
+                        "CCOD_RUBRO": getattr(row, "CCOD_RUBRO"),
+                        "cordoba_mapping_priority": float(getattr(row, "mapping_priority")),
+                        "cordoba_mapping_level": len(prefix),
+                        "cordoba_mapping_note": getattr(row, "mapping_note", ""),
+                    }
+                )
+
+    if not expanded_rows:
+        return pd.DataFrame({"hs4": valid, "rca_cordoba_exports": np.nan})
+
+    expanded = pd.DataFrame(expanded_rows).merge(exports, on="CCOD_RUBRO", how="left")
+    expanded["rca_cordoba_exports_sort"] = pd.to_numeric(expanded["rca_cordoba_exports"], errors="coerce").fillna(-1)
+    expanded = expanded.sort_values(
+        ["hs4", "cordoba_mapping_priority", "cordoba_mapping_level", "rca_cordoba_exports_sort"],
+        ascending=[True, False, False, False],
+    ).drop_duplicates("hs4", keep="first")
+    return expanded[
+        [
+            "hs4",
+            "rca_cordoba_exports",
+            "CCOD_RUBRO",
+            "DESCRIP_RUBRO" if "DESCRIP_RUBRO" in expanded.columns else "CCOD_RUBRO",
+            "cordoba_mapping_priority",
+            "cordoba_mapping_level",
+            "cordoba_mapping_note",
+        ]
+    ].rename(
+        columns={
+            "CCOD_RUBRO": "cordoba_rubro_code",
+            "DESCRIP_RUBRO": "cordoba_rubro_description",
+        }
+    )
 
 
 @st.cache_data(show_spinner=True)
@@ -876,13 +973,6 @@ def load_opportunity_dataset() -> pd.DataFrame:
     # Prefer RCA recomputed from trade shares for filtering/display as "raw RCA".
     if "raw_rca_trade" in df.columns:
         df["raw_rca"] = pd.to_numeric(df["raw_rca_trade"], errors="coerce").fillna(0.0)
-    # Backward compatibility with legacy metrics naming.
-    if "country_current_exports" not in df.columns and "ecu_total_trade" in df.columns:
-        df["country_current_exports"] = df["ecu_total_trade"]
-    if "country_export_growth_5y" not in df.columns and "ecu_export_growth_5y" in df.columns:
-        df["country_export_growth_5y"] = df["ecu_export_growth_5y"]
-    if "country_exporter_rank" not in df.columns and "ecu_exporter_rank" in df.columns:
-        df["country_exporter_rank"] = df["ecu_exporter_rank"]
     df = df.fillna(0)
     if "country_exporter_rank" in df.columns:
         df["country_exporter_rank"] = pd.to_numeric(df["country_exporter_rank"], errors="coerce")
@@ -940,4 +1030,7 @@ def load_opportunity_dataset() -> pd.DataFrame:
     df["market_size_b"] = pd.to_numeric(df["market_size"], errors="coerce").fillna(0.0) / 1_000_000_000
     df["total_trade_b"] = df["total_trade"] / 1_000_000_000
     df["country_current_exports_b"] = df["country_current_exports"] / 1_000_000_000
+    cordoba = load_cordoba_context_annotations(valid_hs4)
+    if not cordoba.empty:
+        df = df.merge(cordoba, on="hs4", how="left")
     return df

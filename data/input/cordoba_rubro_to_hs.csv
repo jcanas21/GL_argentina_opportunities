@@ -1,0 +1,101 @@
+CCOD_RUBRO,hs_prefixes,mapping_priority,mapping_note
+101,01,2,Chapter-level parent mapping for live animals.
+103,0409,4,Direct HS4 mapping for natural honey.
+104A,0703,4,Direct HS4 mapping for onions and garlic group; used for onions.
+104B,0703,4,Direct HS4 mapping for onions and garlic group; used for garlic.
+104C,0713,4,Direct HS4 mapping for dried leguminous vegetables.
+104Z,07,2,Chapter-level parent mapping for other vegetables.
+105E,0809,4,Direct HS4 mapping for stone fruit.
+106A,1001,4,Direct HS4 mapping for wheat.
+106B,1005,4,Direct HS4 mapping for maize.
+106C,1007,4,Direct HS4 mapping for grain sorghum.
+106ZA,1004,4,Direct HS4 mapping for oats.
+106ZB,1003,4,Direct HS4 mapping for barley.
+106ZD,1008,4,Direct HS4 mapping for other cereals including canary seed.
+106ZE,1008,4,Direct HS4 mapping for other cereals including millet.
+107A,1201,4,Direct HS4 mapping for soybeans.
+107B,1206,4,Direct HS4 mapping for sunflower seeds.
+107C,1204,4,Direct HS4 mapping for linseed.
+107D,1202,4,Direct HS4 mapping for peanuts.
+107Z,12,2,Chapter-level parent mapping for other oil seeds and oleaginous fruits.
+110,52,2,Chapter-level parent mapping for cotton fibers.
+19899,,0,Not expanded because the confidential primary basket is broader than HS2.
+199,,0,Not expanded because the residual primary basket is broader than HS2.
+201AA,0201;0202,4,Direct HS4 mapping for bovine meat.
+201AC,0203,4,Direct HS4 mapping for swine meat.
+201B,1601;1602,4,Direct HS4 mapping for prepared or preserved meats.
+203A,0402,4,Direct HS4 mapping for prepared/concentrated milk.
+203B,0405,4,Direct HS4 mapping for butter.
+203C,0406,4,Direct HS4 mapping for cheese.
+204,05,2,Chapter-level parent mapping for other animal-origin products.
+206D,09,2,Chapter-level parent mapping for spices.
+207A,1101,4,Direct HS4 mapping for wheat flour.
+207CB,1902;1905,4,Direct HS4 mapping for pasta and bakery products.
+207Z,11;19,2,Chapter-level parent mapping for other milling/cereal preparations.
+208AA,1507,4,Direct HS4 mapping for soybean oil.
+208AC,1508,4,Direct HS4 mapping for peanut oil.
+208AE,1512,4,Direct HS4 mapping for sunflower oil.
+208AH,1515,4,Direct HS4 mapping for maize/corn oil.
+208Z,15,2,Chapter-level parent mapping for other fats and oils.
+209B,1704,4,Direct HS4 mapping for sugar confectionery without cocoa.
+209CB,1806,4,Direct HS4 mapping for chocolate and cocoa preparations.
+210B,2007,4,Direct HS4 mapping for fruit purees and pastes.
+210Z,20,2,Chapter-level parent mapping for other vegetable and fruit preparations.
+211Z,22,2,Chapter-level parent mapping for beverages excluding grape wine.
+212AD,2305,4,Direct HS4 mapping for peanut oilcake and residues.
+212AE,2304,4,Direct HS4 mapping for soybean oilcake and residues.
+212B,2302,4,Direct HS4 mapping for bran and similar residues.
+212Z,23,2,Chapter-level parent mapping for other food residues and animal feed.
+213Z,32;35,2,Chapter-level parent mapping for tanning/dye extracts and albuminoidal substances.
+29899,,0,Not expanded because the confidential agro-industrial basket is broader than HS2.
+299,,0,Not expanded because the residual agro-industrial basket is broader than HS2.
+302A,28,2,Chapter-level parent mapping for inorganic chemicals.
+302B,29,2,Chapter-level parent mapping for organic chemicals.
+302C,30,2,Chapter-level parent mapping for pharmaceutical products.
+302D,31,2,Chapter-level parent mapping for fertilizers.
+302E,32,2,Chapter-level parent mapping for tanning/dye extracts and paints.
+302F,33,2,Chapter-level parent mapping for essential oils and cosmetics.
+302G,34,2,Chapter-level parent mapping for soaps and surfactants.
+302JZ,38,2,Chapter-level parent mapping for miscellaneous chemical products.
+303,39,2,Chapter-level parent mapping for plastics and articles thereof.
+304,40,2,Chapter-level parent mapping for rubber and articles thereof.
+305,42,2,Chapter-level parent mapping for leather manufactures.
+306A,48,2,Chapter-level parent mapping for paper and paperboard articles.
+306B,49,2,Chapter-level parent mapping for printed books and publishing products.
+307E,57;58,2,Chapter-level parent mapping for carpets and special woven fabrics.
+307F,56;59,2,Chapter-level parent mapping for wadding and special textile articles.
+307H,61;62,2,Chapter-level parent mapping for apparel and clothing accessories.
+307I,63,2,Chapter-level parent mapping for other made-up textile articles.
+309A,68,2,Chapter-level parent mapping for stone/asbestos manufactures.
+309B,69,2,Chapter-level parent mapping for ceramic products.
+309C,70,2,Chapter-level parent mapping for glass and glassware.
+311AZ,72;73,2,Chapter-level parent mapping for iron and steel related manufactures.
+311AE,730,3,HS3 parent mapping for tubes and pipes of iron or steel.
+311AF,7308,4,Direct HS4 mapping for structures of iron or steel.
+311B,74,2,Chapter-level parent mapping for copper.
+311C,76,2,Chapter-level parent mapping for aluminum.
+311F,82,2,Chapter-level parent mapping for tools and cutlery of base metal.
+311G,83,2,Chapter-level parent mapping for miscellaneous articles of base metal.
+312AA,8407;8408;8409,4,Direct HS4 mapping for internal combustion engines and parts.
+312AB,8413,4,Direct HS4 mapping for pumps and parts.
+312AC,8418,4,Direct HS4 mapping for refrigeration equipment.
+312AD,8419,4,Direct HS4 mapping for heating and cooking machinery.
+312AE,8422,4,Direct HS4 mapping for bottle cleaning and filling machinery.
+312AF,8428,4,Direct HS4 mapping for lifting and handling machinery.
+312AG,8438,4,Direct HS4 mapping for food and beverage preparation machinery.
+312AH,8456;8457;8458;8459;8460;8461;8462;8463,4,Direct HS4 mapping for metal-working machine tools.
+312AL,84,2,Chapter-level parent mapping for other mechanical machinery and parts.
+312AM,8481,4,Direct HS4 mapping for taps and valves.
+312AZ,84,2,Chapter-level parent mapping for other mechanical machinery.
+312B,85,2,Chapter-level parent mapping for electrical machinery and electronics.
+313BB,8703;8704,4,Direct HS4 mapping for motor cars and goods vehicles.
+313BC,8708,4,Direct HS4 mapping for motor vehicle parts and accessories.
+313BZ,87,2,Chapter-level parent mapping for other vehicles and tractors.
+39899,,0,Not expanded because the confidential industrial basket is broader than HS2.
+399A,90,2,Chapter-level parent mapping for optical and medical instruments.
+399D,93,2,Chapter-level parent mapping for arms and ammunition.
+399E,94,2,Chapter-level parent mapping for furniture and prefabricated buildings.
+399F,95,2,Chapter-level parent mapping for toys and sports articles.
+399Z,,0,Not expanded because the residual industrial basket is broader than HS2.
+402Z,27,2,Chapter-level parent mapping for other fuels.
+49899,27,1,Broad fallback for confidential fuels and energy.

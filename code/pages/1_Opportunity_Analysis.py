@@ -10,7 +10,7 @@ from data_utils import (
 
 
 st.title("Opportunity Analysis")
-st.caption("Calibrate index components, rebalance feasibility vs attractiveness, and explore product opportunities.")
+st.caption("BACI-based HS92 opportunity model. Calibrate index components, rebalance feasibility vs attractiveness, and explore product opportunities.")
 
 df = load_opportunity_dataset()
 if df.empty:
@@ -23,6 +23,10 @@ ATTR_COLS = ["pci_z", "cog_z", "potential_market_growth_5y_z", "potential_market
 for col in FEAS_COLS + ATTR_COLS + ["potential_market_growth_5y"]:
     if col not in df.columns:
         df[col] = 0.0
+if "rca_cordoba_exports" not in df.columns:
+    df["rca_cordoba_exports"] = np.nan
+if "cordoba_rubro_description" not in df.columns:
+    df["cordoba_rubro_description"] = ""
 SECTOR_COLORS = {
     "Services": "#b23c6f",
     "Textiles": "#7bc8a4",
@@ -411,7 +415,7 @@ fig.add_shape(
 )
 st.plotly_chart(
     fig,
-    use_container_width=True,
+    width="stretch",
 )
 
 st.subheader("Top Product Rankings")
@@ -431,6 +435,8 @@ display_cols = [
     "hs4",
     "product_name_short",
     "sector",
+    "cordoba_rubro_description",
+    "rca_cordoba_exports",
     "combined_score",
     "attractiveness_index",
     "feasibility_index",
@@ -458,6 +464,7 @@ table_display = (
     table[display_cols]
     .head(top_n)
     .assign(
+        cordoba_rubro_description=lambda d: d["cordoba_rubro_description"].fillna(""),
         market_growth_5y=lambda d: d["market_growth_5y"] * 100,
         potential_market_growth_5y=lambda d: d["potential_market_growth_5y"] * 100,
         country_export_growth_5y=lambda d: d["country_export_growth_5y"] * 100,
@@ -488,13 +495,22 @@ table_styler = table_display.style.map(
 
 st.dataframe(
     table_styler,
-    use_container_width=True,
+    width="stretch",
     hide_index=True,
     column_config={
         "rank": st.column_config.NumberColumn("Rank", format="%.0f"),
         "hs4": st.column_config.TextColumn("HS4"),
         "product_name_short": st.column_config.TextColumn("Product"),
         "sector": st.column_config.TextColumn("Sector"),
+        "cordoba_rubro_description": st.column_config.TextColumn(
+            "Cordoba NCM/Rubro Description",
+            help="Spanish description of the mapped Cordoba export rubro used for the contextual RCA. Blank when there is no mapped rubro.",
+        ),
+        "rca_cordoba_exports": st.column_config.NumberColumn(
+            "Cordoba Export RCA (contextual)",
+            format="%.2f",
+            help="RCA for the mapped Cordoba export rubro/NCM parent. Repeated across HS4 children when the mapping is broader than HS4.",
+        ),
         "combined_score": st.column_config.NumberColumn("Combined Opportunity Score", format="%.3f"),
         "attractiveness_index": st.column_config.NumberColumn("Attractiveness Index", format="%.3f"),
         "feasibility_index": st.column_config.NumberColumn("Feasibility Index", format="%.3f"),
@@ -594,4 +610,4 @@ else:
     treemap.update_layout(
         margin=dict(t=60, l=10, r=10, b=10),
     )
-    st.plotly_chart(treemap, use_container_width=True)
+    st.plotly_chart(treemap, width="stretch")

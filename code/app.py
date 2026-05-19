@@ -6,7 +6,7 @@ import streamlit as st
 
 def render_guide_and_glossary() -> None:
     st.title("Argentina Export Opportunities Dashboard")
-    st.caption("Guide and glossary for the V1 Opportunity Analysis page (HS92 4-digit).")
+    st.caption("Guide and glossary for the BACI-based Opportunity Analysis page (HS92 4-digit).")
 
     st.markdown("## What This Dashboard Does")
     st.markdown(
@@ -15,6 +15,9 @@ The **Opportunity Analysis** page ranks HS92 4-digit products by combining two d
 
 - **Feasibility**: how realistic it is for Argentina to compete now.
 - **Attractiveness**: how valuable the opportunity is if Argentina expands in that product.
+
+V2 uses CEPII BACI HS92 trade flows for commercial calculations, while product
+names and sectors still come from the HS92 reference tables.
 
 You can:
 - Filter products by market size, RCA, sector, growth, density percentile, and Argentina export floor.
@@ -63,7 +66,7 @@ You can:
             {"Variable": "Combined Opportunity Score", "Brief Definition": "Final score that blends feasibility and attractiveness using user-defined balance and weights.", "How to Read It": "Higher = better overall opportunity under current strategy settings.", "Unit / Scale": "0-1"},
         ]
     )
-    st.dataframe(glossary, use_container_width=True, hide_index=True)
+    st.dataframe(glossary, width="stretch", hide_index=True)
 
     st.markdown("## Algebra and Interpretation")
     st.markdown("### Distance Travelled (by product)")
