@@ -9,7 +9,7 @@ from data_utils import (
 )
 
 
-APP_CACHE_VERSION = "arg-dashboard-v2-presets-2026-05-19.2"
+APP_CACHE_VERSION = "arg-dashboard-v2-treemap-pci-2026-05-21.1"
 
 st.title("Opportunity Analysis")
 st.caption("BACI-based HS92 opportunity model. Calibrate index components, rebalance feasibility vs attractiveness, and explore product opportunities.")
@@ -47,6 +47,20 @@ SECTOR_COLORS = {
     "Electronics": "#74c5c6",
     "Other": "#2f5d74",
 }
+PCI_COLOR_SCALE = [
+    [0.000000, "rgb(227, 159, 96)"],
+    [0.278697, "rgb(231, 173, 120)"],
+    [0.338965, "rgb(235, 188, 143)"],
+    [0.398272, "rgb(240, 202, 168)"],
+    [0.448314, "rgb(244, 217, 191)"],
+    [0.493999, "rgb(248, 231, 215)"],
+    [0.494099, "rgb(192, 228, 225)"],
+    [0.533691, "rgb(154, 211, 207)"],
+    [0.571435, "rgb(116, 195, 189)"],
+    [0.606597, "rgb(77, 178, 171)"],
+    [0.661681, "rgb(40, 162, 153)"],
+    [1.000000, "rgb(2, 146, 135)"],
+]
 MANDATORY_EXCLUDED_HS4 = {
     "2701": "Coal",
     "2709": "Petroleum oils, crude",
@@ -681,9 +695,24 @@ treemap_size_label = st.selectbox(
     key="treemap_size_metric_v1",
 )
 treemap_value_col = treemap_size_options[treemap_size_label]
+treemap_color_label = st.selectbox(
+    "Treemap color variable",
+    options=["Sector", "PCI (raw)"],
+    key="treemap_color_metric_v1",
+)
 
 treemap_df = table_display[
-    ["sector", "hs4", "product_name_short", "combined_score", "total_trade_b", "potential_market_size", "potential_market_growth_5y", "density_percentile"]
+    [
+        "sector",
+        "hs4",
+        "product_name_short",
+        "combined_score",
+        "total_trade_b",
+        "potential_market_size",
+        "potential_market_growth_5y",
+        "density_percentile",
+        "pci",
+    ]
 ].copy()
 treemap_df["sector"] = treemap_df["sector"].fillna("Sin sector")
 treemap_df["product_label"] = (
@@ -713,30 +742,47 @@ treemap_df["frequency"] = 1.0
 if treemap_df.empty:
     st.info("No products available for the treemap under the current filters.")
 else:
-    treemap = px.treemap(
-        treemap_df,
-        path=["sector", "product_label_wrapped"],
-        values=treemap_value_col,
-        color="sector",
-        color_discrete_map=SECTOR_COLORS,
-        hover_data={
+    common_hover_data = {
             "combined_score": ":.3f",
             "total_trade_b": ":.3f",
             "potential_market_size": ":.3f",
             "potential_market_growth_5y": ":.3f",
             "density_percentile": ":.3f",
+            "pci": ":.3f",
             "product_label": True,
             "sector": False,
             "product_label_wrapped": False,
-        },
-        title=f"Opportunity treemap (n = {len(treemap_df)} products shown) | size = {treemap_size_label}",
-    )
+    }
+    treemap_kwargs = {
+        "data_frame": treemap_df,
+        "path": ["sector", "product_label_wrapped"],
+        "values": treemap_value_col,
+        "hover_data": common_hover_data,
+        "title": f"Opportunity treemap (n = {len(treemap_df)} products shown) | size = {treemap_size_label} | color = {treemap_color_label}",
+    }
+    text_color = "#ffffff"
+    if treemap_color_label == "PCI (raw)":
+        treemap = px.treemap(
+            color="pci",
+            color_continuous_scale=PCI_COLOR_SCALE,
+            labels={"pci": "PCI (raw)"},
+            **treemap_kwargs,
+        )
+        text_color = "#1f2937"
+    else:
+        treemap = px.treemap(
+            color="sector",
+            color_discrete_map=SECTOR_COLORS,
+            **treemap_kwargs,
+        )
     treemap.update_traces(
         textinfo="label",
-        textfont=dict(size=18, color="#ffffff"),
+        textfont=dict(size=18, color=text_color),
         marker=dict(line=dict(width=1, color="rgba(255,255,255,0.45)")),
     )
     treemap.update_layout(
         margin=dict(t=60, l=10, r=10, b=10),
     )
+    if treemap_color_label == "PCI (raw)":
+        treemap.update_layout(coloraxis_colorbar=dict(title="PCI (raw)"))
     st.plotly_chart(treemap, width="stretch")
