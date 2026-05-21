@@ -9,7 +9,7 @@ from data_utils import (
 )
 
 
-APP_CACHE_VERSION = "arg-dashboard-v2-treemap-pci-2026-05-21.1"
+APP_CACHE_VERSION = "arg-dashboard-v2-treemap-market-box-2026-05-21.1"
 
 st.title("Opportunity Analysis")
 st.caption("BACI-based HS92 opportunity model. Calibrate index components, rebalance feasibility vs attractiveness, and explore product opportunities.")
@@ -738,6 +738,14 @@ def _wrap_treemap_label(text: str, width: int = 18) -> str:
 
 treemap_df["product_label_wrapped"] = treemap_df["product_label"].map(_wrap_treemap_label)
 treemap_df["frequency"] = 1.0
+market_box_col = "total_trade_b" if treemap_size_label == "Market size (B USD)" else "potential_market_size"
+market_box_label = (
+    "Total Market Size (shown products)"
+    if treemap_size_label == "Market size (B USD)"
+    else "Accessible Market Size (shown products)"
+)
+market_box_value = pd.to_numeric(treemap_df[market_box_col], errors="coerce").fillna(0.0).sum()
+st.metric(market_box_label, f"${market_box_value:,.2f}B")
 
 if treemap_df.empty:
     st.info("No products available for the treemap under the current filters.")
