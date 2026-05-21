@@ -9,7 +9,7 @@ from data_utils import (
 )
 
 
-APP_CACHE_VERSION = "arg-dashboard-v2-treemap-market-box-2026-05-21.1"
+APP_CACHE_VERSION = "arg-dashboard-v2-treemap-horizontal-pci-legend-2026-05-21.1"
 
 st.title("Opportunity Analysis")
 st.caption("BACI-based HS92 opportunity model. Calibrate index components, rebalance feasibility vs attractiveness, and explore product opportunities.")
@@ -792,5 +792,17 @@ else:
         margin=dict(t=60, l=10, r=10, b=10),
     )
     if treemap_color_label == "PCI (raw)":
-        treemap.update_layout(coloraxis_colorbar=dict(title="PCI (raw)"))
+        treemap.update_layout(
+            margin=dict(t=60, l=10, r=10, b=80),
+            coloraxis_colorbar=dict(
+                title=dict(text="PCI (raw)", side="top"),
+                orientation="h",
+                x=0.5,
+                xanchor="center",
+                y=-0.16,
+                yanchor="top",
+                len=0.65,
+                thickness=16,
+            ),
+        )
     st.plotly_chart(treemap, width="stretch")
