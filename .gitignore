@@ -2,6 +2,7 @@
 __pycache__/
 *.pyc
 .venv/
+outputs/
 
 # Raw files intentionally excluded from GitHub (too large for git hosting).
 data/input/hs92_country_country_product_year_6_2020_2024.csv
