@@ -9,7 +9,7 @@ from data_utils import (
 )
 
 
-APP_CACHE_VERSION = "arg-dashboard-v2-opportunity-presets-2026-05-29.1"
+APP_CACHE_VERSION = "arg-dashboard-v2-fixed-pci-treemap-scale-2026-05-29.1"
 
 st.title("Opportunity Analysis")
 st.caption("BACI-based HS92 opportunity model. Calibrate index components, rebalance feasibility vs attractiveness, and explore product opportunities.")
@@ -61,6 +61,7 @@ PCI_COLOR_SCALE = [
     [0.661681, "rgb(40, 162, 153)"],
     [1.000000, "rgb(2, 146, 135)"],
 ]
+PCI_COLOR_RANGE = (-2.0, 2.0)
 MANDATORY_EXCLUDED_HS4 = {
     "2701": "Coal",
     "2709": "Petroleum oils, crude",
@@ -792,6 +793,7 @@ else:
         treemap = px.treemap(
             color="pci",
             color_continuous_scale=PCI_COLOR_SCALE,
+            range_color=PCI_COLOR_RANGE,
             labels={"pci": "PCI (raw)"},
             **treemap_kwargs,
         )
@@ -814,7 +816,7 @@ else:
         treemap.update_layout(
             margin=dict(t=60, l=10, r=10, b=80),
             coloraxis_colorbar=dict(
-                title=dict(text="PCI (raw)", side="top"),
+                title=dict(text="PCI (raw, fixed scale)", side="top"),
                 orientation="h",
                 x=0.5,
                 xanchor="center",
@@ -822,6 +824,9 @@ else:
                 yanchor="top",
                 len=0.65,
                 thickness=16,
+                tickmode="array",
+                tickvals=[-2, -1, 0, 1, 2],
+                ticktext=["<= -2", "-1", "0", "1", ">= 2"],
             ),
         )
     st.plotly_chart(treemap, width="stretch")
