@@ -9,7 +9,7 @@ from data_utils import (
 )
 
 
-APP_CACHE_VERSION = "arg-dashboard-v2-treemap-horizontal-pci-legend-2026-05-21.1"
+APP_CACHE_VERSION = "arg-dashboard-v2-product-density-percentile-2026-05-28.1"
 
 st.title("Opportunity Analysis")
 st.caption("BACI-based HS92 opportunity model. Calibrate index components, rebalance feasibility vs attractiveness, and explore product opportunities.")
@@ -332,7 +332,7 @@ rca_max_filter = st.sidebar.number_input(
 )
 
 density_pct_range = st.sidebar.slider(
-    "Density percentile range",
+    "Density percentile within HS4 range",
     min_value=float(density_pct_min_data),
     max_value=float(density_pct_max_data),
     value=st.session_state["density_pct_range"],
@@ -515,7 +515,7 @@ fig = px.scatter(
         "density": "Density",
         "eff_num_exp": "Effective Exporters",
         "distance_travelled": "Distance Travelled",
-        "density_percentile": "Density Percentile",
+        "density_percentile": "Density Percentile within HS4",
         "market_growth_5y": "Global Market Growth (5y)",
         "potential_market_growth_5y": "Accessible Market Growth (5y)",
         "country_export_growth_5y": "Country Export Growth (5y)",
@@ -659,7 +659,7 @@ st.dataframe(
         "feasibility_index": st.column_config.NumberColumn("Feasibility Index", format="%.3f"),
         "raw_rca": st.column_config.NumberColumn("Raw RCA", format="%.3f"),
         "density": st.column_config.NumberColumn("Density (Raw)", format="%.6f"),
-        "density_percentile": st.column_config.NumberColumn("Density Percentile", format="%.3f"),
+        "density_percentile": st.column_config.NumberColumn("Density Percentile within HS4", format="%.3f"),
         "distance_travelled": st.column_config.NumberColumn("Distance Travelled", format="%.2f"),
         "pci": st.column_config.NumberColumn("PCI", format="%.3f"),
         "cog": st.column_config.NumberColumn("COG", format="%.3f"),
@@ -685,7 +685,7 @@ treemap_size_options = {
     "Accessible market growth (5y)": "potential_market_growth_5y",
     "Market size (B USD)": "total_trade_b",
     "Combined Opportunity Score": "combined_score",
-    "Density Percentile": "density_percentile",
+    "Density Percentile within HS4": "density_percentile",
     "Frequency": "frequency",
 }
 st.session_state.setdefault("treemap_size_metric_v1", "Accessible market size (B USD)")
