@@ -9,7 +9,7 @@ from data_utils import (
 )
 
 
-APP_CACHE_VERSION = "arg-dashboard-v2-product-density-percentile-2026-05-28.1"
+APP_CACHE_VERSION = "arg-dashboard-v2-opportunity-presets-2026-05-29.1"
 
 st.title("Opportunity Analysis")
 st.caption("BACI-based HS92 opportunity model. Calibrate index components, rebalance feasibility vs attractiveness, and explore product opportunities.")
@@ -194,6 +194,7 @@ def _apply_preset(
     rca_max_value: float,
     density_range_value: tuple[float, float],
     feasibility_weights: dict[str, float],
+    attractiveness_weights: dict[str, float],
     attractiveness_weight: float,
 ) -> None:
     st.session_state["trade_min"] = trade_min_value
@@ -212,10 +213,10 @@ def _apply_preset(
     st.session_state["w_density"] = feasibility_weights.get("w_density", 0.0)
     st.session_state["w_eff_num_exp"] = feasibility_weights.get("w_eff_num_exp", 0.0)
     st.session_state["w_alignment_hv"] = feasibility_weights.get("w_alignment_hv", 0.0)
-    st.session_state["w_pci"] = 0.35
-    st.session_state["w_cog"] = 0.35
-    st.session_state["w_growth"] = 0.15
-    st.session_state["w_market_size"] = 0.15
+    st.session_state["w_pci"] = attractiveness_weights.get("w_pci", 0.0)
+    st.session_state["w_cog"] = attractiveness_weights.get("w_cog", 0.0)
+    st.session_state["w_growth"] = attractiveness_weights.get("w_growth", 0.0)
+    st.session_state["w_market_size"] = attractiveness_weights.get("w_market_size", 0.0)
     st.session_state["strategic_balance"] = attractiveness_weight
 
 
@@ -224,7 +225,7 @@ st.sidebar.caption("Each preset applies the algorithm thresholds, common exclusi
 preset_cols = st.sidebar.columns(1)
 with preset_cols[0]:
     st.button(
-        "Intensive Margin",
+        "Consolidadas",
         width="stretch",
         on_click=_apply_preset,
         kwargs={
@@ -233,16 +234,22 @@ with preset_cols[0]:
             "rca_max_value": max(float(rca_max_data), 1.0),
             "density_range_value": (density_pct_min_data, density_pct_max_data),
             "feasibility_weights": {
-                "w_rca": 0.30,
+                "w_rca": 0.00,
                 "w_density": 0.00,
                 "w_eff_num_exp": 0.00,
-                "w_alignment_hv": 0.70,
+                "w_alignment_hv": 1.00,
             },
-            "attractiveness_weight": 0.70,
+            "attractiveness_weights": {
+                "w_pci": 0.35,
+                "w_cog": 0.00,
+                "w_growth": 0.15,
+                "w_market_size": 0.15,
+            },
+            "attractiveness_weight": 0.80,
         },
     )
     st.button(
-        "Extensive Margin: Low Hanging Fruits",
+        "Emergentes",
         width="stretch",
         on_click=_apply_preset,
         kwargs={
@@ -256,11 +263,17 @@ with preset_cols[0]:
                 "w_eff_num_exp": 0.00,
                 "w_alignment_hv": 0.30,
             },
+            "attractiveness_weights": {
+                "w_pci": 0.35,
+                "w_cog": 0.35,
+                "w_growth": 0.15,
+                "w_market_size": 0.15,
+            },
             "attractiveness_weight": 0.30,
         },
     )
     st.button(
-        "Extensive Margin: Strategic Bets",
+        "Apuestas Estratégicas",
         width="stretch",
         on_click=_apply_preset,
         kwargs={
@@ -273,6 +286,12 @@ with preset_cols[0]:
                 "w_density": 0.70,
                 "w_eff_num_exp": 0.00,
                 "w_alignment_hv": 0.30,
+            },
+            "attractiveness_weights": {
+                "w_pci": 0.35,
+                "w_cog": 0.35,
+                "w_growth": 0.15,
+                "w_market_size": 0.15,
             },
             "attractiveness_weight": 0.70,
         },
