@@ -82,6 +82,31 @@ def normalize_zscore(series: pd.Series) -> pd.Series:
     return (s - mu) / sigma
 
 
+def ensure_opportunity_metric_aliases(df: pd.DataFrame) -> pd.DataFrame:
+    """Keep new DAI/accessible-market fields and legacy aliases in sync."""
+    out = df.copy()
+    alias_pairs = [
+        ("dai_percentile", "alignment_weighted_percentile"),
+        ("dai_lead", "alignment_lead_weighted"),
+        ("accessible_market_size", "potential_market_size"),
+        ("accessible_market_growth_5y", "potential_market_growth_5y"),
+        ("accessible_market_size_share", "potential_market_size_share"),
+        ("accessible_market_to_market_ratio", "potential_market_to_market_ratio"),
+    ]
+    for canonical, legacy in alias_pairs:
+        if canonical not in out.columns and legacy in out.columns:
+            out[canonical] = out[legacy]
+        if legacy not in out.columns and canonical in out.columns:
+            out[legacy] = out[canonical]
+    if "dai_index" not in out.columns:
+        out["dai_index"] = 0.0
+    if "alignment_unweighted_percentile" not in out.columns and "dai_percentile" in out.columns:
+        out["alignment_unweighted_percentile"] = out["dai_percentile"]
+    if "alignment_lead_unweighted" not in out.columns and "dai_lead" in out.columns:
+        out["alignment_lead_unweighted"] = out["dai_lead"]
+    return out
+
+
 @st.cache_data(show_spinner=False)
 def load_rankings_countries(year: int = 2024) -> set[str]:
     path = input_dir() / "rankings.csv"
@@ -823,7 +848,7 @@ def load_or_build_v1_hs4_metrics(valid_hs4: Iterable[str], year: int = 2024) -> 
     valid_hs4_set = set(str(x).zfill(4) for x in valid_hs4)
     primary_path = intermediate_dir() / V2_METRICS_FILE
     fallback_path = intermediate_dir() / V2_METRICS_FALLBACK
-    required_cols = {"potential_market_growth_5y"}
+    required_cols = {"accessible_market_growth_5y"}
 
     for p in [primary_path, fallback_path]:
         if not p.exists():
@@ -834,8 +859,9 @@ def load_or_build_v1_hs4_metrics(valid_hs4: Iterable[str], year: int = 2024) -> 
         m = m.loc[:, ~m.columns.duplicated()].copy()
         m["hs4"] = m["hs4"].astype(str).str.zfill(4)
         m = m[m["hs4"].isin(valid_hs4_set)].copy()
+        m = ensure_opportunity_metric_aliases(m)
         if not m.empty and required_cols.issubset(set(m.columns)):
-            growth_signal = pd.to_numeric(m["potential_market_growth_5y"], errors="coerce").fillna(0.0).abs().sum()
+            growth_signal = pd.to_numeric(m["accessible_market_growth_5y"], errors="coerce").fillna(0.0).abs().sum()
             if growth_signal > 0:
                 return m
 
@@ -970,6 +996,7 @@ def load_opportunity_dataset() -> pd.DataFrame:
     df = c.merge(hs_ref, on="hs4", how="left")
     df = df.merge(metrics, on="hs4", how="left")
     df = df.loc[:, ~df.columns.duplicated()].copy()
+    df = ensure_opportunity_metric_aliases(df)
     # Prefer RCA recomputed from trade shares for filtering/display as "raw RCA".
     if "raw_rca_trade" in df.columns:
         df["raw_rca"] = pd.to_numeric(df["raw_rca_trade"], errors="coerce").fillna(0.0)
@@ -987,9 +1014,16 @@ def load_opportunity_dataset() -> pd.DataFrame:
         "density_percentile",
         "eff_num_exp",
         "distance_travelled",
+        "dai_index",
+        "dai_percentile",
+        "dai_lead",
         "alignment_weighted_percentile",
         "market_growth_5y",
         "market_size_share",
+        "accessible_market_size_share",
+        "accessible_market_size",
+        "accessible_market_growth_5y",
+        "accessible_market_to_market_ratio",
         "potential_market_size_share",
         "market_size",
         "potential_market_size",
@@ -1008,24 +1042,25 @@ def load_opportunity_dataset() -> pd.DataFrame:
         df[col] = pd.to_numeric(df[col], errors="coerce").fillna(0)
 
     # Keep min-max normalized values for views that need bounded scales (e.g., sizes/ranking views).
-    for col in ["raw_rca", "rca_transformed", "density", "eff_num_exp", "distance_travelled", "alignment_weighted_percentile", "pci", "cog", "market_growth_5y", "potential_market_growth_5y", "market_size_share", "potential_market_size_share"]:
+    for col in ["raw_rca", "rca_transformed", "density", "eff_num_exp", "distance_travelled", "dai_percentile", "alignment_weighted_percentile", "pci", "cog", "market_growth_5y", "accessible_market_growth_5y", "potential_market_growth_5y", "market_size_share", "accessible_market_size_share", "potential_market_size_share"]:
         if col not in df.columns:
             df[col] = 0.0
         df[f"{col}_norm"] = normalize_0_1(df[col])
 
     # Use z-score normalization for feasibility/attractiveness index construction.
-    for col in ["raw_rca", "rca_transformed", "density", "eff_num_exp", "distance_travelled", "alignment_weighted_percentile", "pci", "cog", "market_growth_5y", "potential_market_growth_5y", "market_size_share", "potential_market_size_share"]:
+    for col in ["raw_rca", "rca_transformed", "density", "eff_num_exp", "distance_travelled", "dai_percentile", "alignment_weighted_percentile", "pci", "cog", "market_growth_5y", "accessible_market_growth_5y", "potential_market_growth_5y", "market_size_share", "accessible_market_size_share", "potential_market_size_share"]:
         if col not in df.columns:
             df[col] = 0.0
         df[f"{col}_z"] = normalize_zscore(df[col])
 
     df["feasibility_index"] = df[
-        ["rca_transformed_z", "density_z", "eff_num_exp_z", "alignment_weighted_percentile_z"]
+        ["rca_transformed_z", "density_z", "eff_num_exp_z", "dai_percentile_z"]
     ].mean(axis=1)
     df["attractiveness_index"] = df[
-        ["pci_z", "cog_z", "potential_market_growth_5y_z", "potential_market_size_share_z"]
+        ["pci_z", "cog_z", "accessible_market_growth_5y_z", "accessible_market_size_share_z"]
     ].mean(axis=1)
     df["combined_score"] = (df["feasibility_index"] + df["attractiveness_index"]) / 2
+    df["accessible_market_size_b"] = pd.to_numeric(df["accessible_market_size"], errors="coerce").fillna(0.0) / 1_000_000_000
     df["potential_market_size_b"] = pd.to_numeric(df["potential_market_size"], errors="coerce").fillna(0.0) / 1_000_000_000
     df["market_size_b"] = pd.to_numeric(df["market_size"], errors="coerce").fillna(0.0) / 1_000_000_000
     df["total_trade_b"] = df["total_trade"] / 1_000_000_000

@@ -9,7 +9,7 @@ from data_utils import (
 )
 
 
-APP_CACHE_VERSION = "arg-dashboard-v2-fixed-pci-treemap-scale-2026-05-29.1"
+APP_CACHE_VERSION = "arg-dashboard-v2-baci-ecomplexity-dai-2026-06-23.1"
 
 st.title("Opportunity Analysis")
 st.caption("BACI-based HS92 opportunity model. Calibrate index components, rebalance feasibility vs attractiveness, and explore product opportunities.")
@@ -24,10 +24,10 @@ if df.empty:
     st.stop()
 st.sidebar.caption(f"Version: {APP_CACHE_VERSION} | data rows: {len(df):,}")
 
-FEAS_COLS = ["rca_transformed_z", "density_z", "eff_num_exp_z", "alignment_weighted_percentile_z"]
-ATTR_COLS = ["pci_z", "cog_z", "potential_market_growth_5y_z", "potential_market_size_share_z"]
+FEAS_COLS = ["rca_transformed_z", "density_z", "eff_num_exp_z", "dai_percentile_z"]
+ATTR_COLS = ["pci_z", "cog_z", "accessible_market_growth_5y_z", "accessible_market_size_share_z"]
 # Defensive schema guard for cached/legacy datasets.
-for col in FEAS_COLS + ATTR_COLS + ["potential_market_growth_5y"]:
+for col in FEAS_COLS + ATTR_COLS + ["accessible_market_growth_5y"]:
     if col not in df.columns:
         df[col] = 0.0
 if "rca_cordoba_exports" not in df.columns:
@@ -136,8 +136,8 @@ product_options_df["hs4_label"] = product_options_df["hs4_code"] + " - " + produ
 product_label_to_code = dict(zip(product_options_df["hs4_label"], product_options_df["hs4_code"]))
 size_choices = {
     "Total trade (B USD)": "total_trade_b",
-    "Accessible market size (B USD)": "potential_market_size_b",
-    "Accessible market growth (5y)": "potential_market_growth_5y",
+    "Accessible market size (B USD)": "accessible_market_size_b",
+    "Accessible market growth (5y)": "accessible_market_growth_5y",
     "Raw RCA": "raw_rca",
     "Market growth (5y)": "market_growth_5y",
     "Country export growth (5y)": "country_export_growth_5y",
@@ -416,7 +416,7 @@ with st.sidebar.expander("Feasibility Components", expanded=True):
         "Effective exporters weight", 0.0, 1.0, float(st.session_state["w_eff_num_exp"]), 0.05, key="w_eff_num_exp"
     )
     w_alignment_hv = st.slider(
-        "WNAI weight",
+        "DAI weight",
         0.0,
         1.0,
         float(st.session_state["w_alignment_hv"]),
@@ -472,7 +472,7 @@ if above_median_only:
 if above_export_median_only:
     flt = flt[flt["above_median_export_cagr"]]
 if above_potential_growth_only:
-    flt = flt[flt["potential_market_growth_5y"] > 0]
+    flt = flt[flt["accessible_market_growth_5y"] > 0]
 
 if flt.empty:
     st.warning("No products match the current filters.")
@@ -518,12 +518,12 @@ fig = px.scatter(
         "distance_travelled": ":.2f",
         "density_percentile": ":.3f",
         "market_growth_5y": ":.3%",
-        "potential_market_growth_5y": ":.3%",
+        "accessible_market_growth_5y": ":.3%",
         "country_export_growth_5y": ":.3%",
         "market_size_share": ":.3%",
         "market_size_b": ":.3f",
-        "potential_market_size_b": ":.3f",
-        "potential_market_to_market_ratio": ":.3%",
+        "accessible_market_size_b": ":.3f",
+        "accessible_market_to_market_ratio": ":.3%",
         "total_trade_b": ":.3f",
         "dot_size": False,
     },
@@ -537,12 +537,12 @@ fig = px.scatter(
         "distance_travelled": "Distance Travelled",
         "density_percentile": "Density Percentile within HS4",
         "market_growth_5y": "Global Market Growth (5y)",
-        "potential_market_growth_5y": "Accessible Market Growth (5y)",
+        "accessible_market_growth_5y": "Accessible Market Growth (5y)",
         "country_export_growth_5y": "Country Export Growth (5y)",
         "market_size_share": "Global Market Share",
         "market_size_b": "Global Market Size (B USD)",
-        "potential_market_size_b": "Accessible Market Size (B USD)",
-        "potential_market_to_market_ratio": "Accessible/Market Ratio",
+        "accessible_market_size_b": "Accessible Market Size (B USD)",
+        "accessible_market_to_market_ratio": "Accessible/Market Ratio",
         "total_trade_b": "Total Trade (B USD)",
         "feasibility_index": "Feasibility",
         "attractiveness_index": "Attractiveness",
@@ -610,17 +610,17 @@ display_cols = [
     "cog",
     "eff_num_exp",
     "country_exporter_rank",
-    "alignment_weighted_percentile",
-    "alignment_lead_weighted",
+    "dai_percentile",
+    "dai_lead",
     "distance_travelled",
     "market_growth_5y",
-    "potential_market_growth_5y",
+    "accessible_market_growth_5y",
     "country_export_growth_5y",
     "country_current_exports",
     "market_share_change_abs",
     "market_size_share",
-    "potential_market_size",
-    "potential_market_to_market_ratio",
+    "accessible_market_size",
+    "accessible_market_to_market_ratio",
     "total_trade_b",
 ]
 table_display = (
@@ -629,13 +629,13 @@ table_display = (
     .assign(
         cordoba_rubro_description=lambda d: d["cordoba_rubro_description"].fillna(""),
         market_growth_5y=lambda d: d["market_growth_5y"] * 100,
-        potential_market_growth_5y=lambda d: d["potential_market_growth_5y"] * 100,
+        accessible_market_growth_5y=lambda d: d["accessible_market_growth_5y"] * 100,
         country_export_growth_5y=lambda d: d["country_export_growth_5y"] * 100,
         country_current_exports=lambda d: d["country_current_exports"] / 1_000_000,
         market_share_change_abs=lambda d: d["market_share_change_abs"] * 100,
         market_size_share=lambda d: d["market_size_share"] * 100,
-        potential_market_size=lambda d: d["potential_market_size"] / 1_000_000_000,
-        potential_market_to_market_ratio=lambda d: d["potential_market_to_market_ratio"] * 100,
+        accessible_market_size=lambda d: d["accessible_market_size"] / 1_000_000_000,
+        accessible_market_to_market_ratio=lambda d: d["accessible_market_to_market_ratio"] * 100,
     )
 )
 
@@ -653,7 +653,7 @@ def _lead_color(value: float) -> str:
 
 table_styler = table_display.style.map(
     _lead_color,
-    subset=["alignment_lead_weighted"],
+    subset=["dai_lead"],
 )
 
 st.dataframe(
@@ -685,24 +685,24 @@ st.dataframe(
         "cog": st.column_config.NumberColumn("COG", format="%.3f"),
         "eff_num_exp": st.column_config.NumberColumn("Effective Exporters", format="%.2f"),
         "country_exporter_rank": st.column_config.NumberColumn("Country Exporter Rank (2024)", format="%.0f"),
-        "alignment_weighted_percentile": st.column_config.NumberColumn("WNAI Percentile", format="%.1f"),
-        "alignment_lead_weighted": st.column_config.NumberColumn("WNAI Lead", format="%.1f"),
+        "dai_percentile": st.column_config.NumberColumn("DAI Percentile", format="%.1f"),
+        "dai_lead": st.column_config.NumberColumn("DAI Lead", format="%.1f"),
         "market_growth_5y": st.column_config.NumberColumn("Global Market Growth % (5y)", format="%.2f%%"),
-        "potential_market_growth_5y": st.column_config.NumberColumn("Accessible Market Growth % (5y)", format="%.2f%%"),
+        "accessible_market_growth_5y": st.column_config.NumberColumn("Accessible Market Growth % (5y)", format="%.2f%%"),
         "country_export_growth_5y": st.column_config.NumberColumn("Country Export Growth % (5y)", format="%.2f%%"),
         "country_current_exports": st.column_config.NumberColumn("Country Current Exports (M USD)", format="%.2f"),
         "market_share_change_abs": st.column_config.NumberColumn("Absolute Market Share Change (pp, 2024-2020)", format="%.2f"),
         "market_size_share": st.column_config.NumberColumn("Global Market Share", format="%.2f%%"),
-        "potential_market_size": st.column_config.NumberColumn("Accessible Market Size (B USD)", format="%.3f"),
-        "potential_market_to_market_ratio": st.column_config.NumberColumn("Accessible-to-Market Ratio", format="%.2f%%"),
+        "accessible_market_size": st.column_config.NumberColumn("Accessible Market Size (B USD)", format="%.3f"),
+        "accessible_market_to_market_ratio": st.column_config.NumberColumn("Accessible-to-Market Ratio", format="%.2f%%"),
         "total_trade_b": st.column_config.NumberColumn("Total Trade (B USD)", format="%.3f"),
     },
 )
 
 st.subheader("Opportunity Summary by Sector")
 treemap_size_options = {
-    "Accessible market size (B USD)": "potential_market_size",
-    "Accessible market growth (5y)": "potential_market_growth_5y",
+    "Accessible market size (B USD)": "accessible_market_size",
+    "Accessible market growth (5y)": "accessible_market_growth_5y",
     "Market size (B USD)": "total_trade_b",
     "Combined Opportunity Score": "combined_score",
     "Density Percentile within HS4": "density_percentile",
@@ -728,8 +728,8 @@ treemap_df = table_display[
         "product_name_short",
         "combined_score",
         "total_trade_b",
-        "potential_market_size",
-        "potential_market_growth_5y",
+        "accessible_market_size",
+        "accessible_market_growth_5y",
         "density_percentile",
         "pci",
     ]
@@ -758,7 +758,7 @@ def _wrap_treemap_label(text: str, width: int = 18) -> str:
 
 treemap_df["product_label_wrapped"] = treemap_df["product_label"].map(_wrap_treemap_label)
 treemap_df["frequency"] = 1.0
-market_box_col = "total_trade_b" if treemap_size_label == "Market size (B USD)" else "potential_market_size"
+market_box_col = "total_trade_b" if treemap_size_label == "Market size (B USD)" else "accessible_market_size"
 market_box_label = (
     "Total Market Size (shown products)"
     if treemap_size_label == "Market size (B USD)"
@@ -773,8 +773,8 @@ else:
     common_hover_data = {
             "combined_score": ":.3f",
             "total_trade_b": ":.3f",
-            "potential_market_size": ":.3f",
-            "potential_market_growth_5y": ":.3f",
+            "accessible_market_size": ":.3f",
+            "accessible_market_growth_5y": ":.3f",
             "density_percentile": ":.3f",
             "pci": ":.3f",
             "product_label": True,
