@@ -26,7 +26,7 @@ st.sidebar.caption(f"Version: {APP_CACHE_VERSION} | data rows: {len(df):,}")
 
 FEAS_COLS = ["rca_transformed_z", "density_z", "eff_num_exp_z", "dai_percentile_z"]
 ATTR_COLS = ["pci_z", "cog_z", "accessible_market_growth_5y_z", "accessible_market_size_share_z"]
-# Defensive schema guard for cached/legacy datasets.
+# Defensive schema guard for cached datasets.
 for col in FEAS_COLS + ATTR_COLS + ["accessible_market_growth_5y"]:
     if col not in df.columns:
         df[col] = 0.0
@@ -85,7 +85,7 @@ defaults = {
     "w_rca": 0.00,
     "w_density": 0.70,
     "w_eff_num_exp": 0.00,
-    "w_alignment_hv": 0.30,
+    "w_dai": 0.30,
     "w_pci": 0.35,
     "w_cog": 0.35,
     "w_growth": 0.15,
@@ -213,7 +213,7 @@ def _apply_preset(
     st.session_state["w_rca"] = feasibility_weights.get("w_rca", 0.0)
     st.session_state["w_density"] = feasibility_weights.get("w_density", 0.0)
     st.session_state["w_eff_num_exp"] = feasibility_weights.get("w_eff_num_exp", 0.0)
-    st.session_state["w_alignment_hv"] = feasibility_weights.get("w_alignment_hv", 0.0)
+    st.session_state["w_dai"] = feasibility_weights.get("w_dai", 0.0)
     st.session_state["w_pci"] = attractiveness_weights.get("w_pci", 0.0)
     st.session_state["w_cog"] = attractiveness_weights.get("w_cog", 0.0)
     st.session_state["w_growth"] = attractiveness_weights.get("w_growth", 0.0)
@@ -238,7 +238,7 @@ with preset_cols[0]:
                 "w_rca": 0.00,
                 "w_density": 0.00,
                 "w_eff_num_exp": 0.00,
-                "w_alignment_hv": 1.00,
+                "w_dai": 1.00,
             },
             "attractiveness_weights": {
                 "w_pci": 0.35,
@@ -262,7 +262,7 @@ with preset_cols[0]:
                 "w_rca": 0.35,
                 "w_density": 0.35,
                 "w_eff_num_exp": 0.00,
-                "w_alignment_hv": 0.30,
+                "w_dai": 0.30,
             },
             "attractiveness_weights": {
                 "w_pci": 0.35,
@@ -286,7 +286,7 @@ with preset_cols[0]:
                 "w_rca": 0.00,
                 "w_density": 0.70,
                 "w_eff_num_exp": 0.00,
-                "w_alignment_hv": 0.30,
+                "w_dai": 0.30,
             },
             "attractiveness_weights": {
                 "w_pci": 0.35,
@@ -415,13 +415,13 @@ with st.sidebar.expander("Feasibility Components", expanded=True):
     w_eff_num_exp = st.slider(
         "Effective exporters weight", 0.0, 1.0, float(st.session_state["w_eff_num_exp"]), 0.05, key="w_eff_num_exp"
     )
-    w_alignment_hv = st.slider(
+    w_dai = st.slider(
         "DAI weight",
         0.0,
         1.0,
-        float(st.session_state["w_alignment_hv"]),
+        float(st.session_state["w_dai"]),
         0.05,
-        key="w_alignment_hv",
+        key="w_dai",
     )
 
 with st.sidebar.expander("Attractiveness Components", expanded=True):
@@ -438,7 +438,7 @@ flt = df.copy()
 flt["feasibility_raw"] = weighted_index(
     flt,
     FEAS_COLS,
-    [w_rca, w_density, w_eff_num_exp, w_alignment_hv],
+    [w_rca, w_density, w_eff_num_exp, w_dai],
 )
 flt["attractiveness_raw"] = weighted_index(
     flt,
