@@ -15,6 +15,31 @@ V2_METRICS_FALLBACK = "v2_metrics_arg.csv"
 CORDOBA_EXPORTS_FILE = "cordoba_exports.csv"
 CORDOBA_RUBRO_CROSSWALK_FILE = "cordoba_rubro_to_hs.csv"
 
+HS_SECTION_RULES = [
+    (1, range(1, 6), "1. Live animals; animal products"),
+    (2, range(6, 15), "2. Vegetable products"),
+    (3, range(15, 16), "3. Animal or vegetable fats and oils"),
+    (4, range(16, 25), "4. Prepared foodstuffs; beverages, spirits and tobacco"),
+    (5, range(25, 28), "5. Mineral products"),
+    (6, range(28, 39), "6. Products of the chemical or allied industries"),
+    (7, range(39, 41), "7. Plastics and articles thereof; rubber and articles thereof"),
+    (8, range(41, 44), "8. Raw hides and skins, leather, furskins and articles thereof"),
+    (9, range(44, 47), "9. Wood and articles of wood"),
+    (10, range(47, 50), "10. Pulp, paper and paperboard"),
+    (11, range(50, 64), "11. Textiles and textile articles"),
+    (12, range(64, 68), "12. Footwear, headgear, umbrellas and related articles"),
+    (13, range(68, 71), "13. Articles of stone, plaster, cement, ceramics and glass"),
+    (14, range(71, 72), "14. Pearls, precious stones and metals"),
+    (15, range(72, 84), "15. Base metals and articles of base metal"),
+    (16, range(84, 86), "16. Machinery, mechanical appliances and electrical equipment"),
+    (17, range(86, 90), "17. Vehicles, aircraft, vessels and associated transport equipment"),
+    (18, range(90, 93), "18. Optical, photographic, medical and musical instruments"),
+    (19, range(93, 94), "19. Arms and ammunition"),
+    (20, range(94, 97), "20. Miscellaneous manufactured articles"),
+    (21, range(97, 98), "21. Works of art, collectors' pieces and antiques"),
+]
+
+
 def project_root() -> Path:
     here = Path(__file__).resolve()
     for parent in here.parents:
@@ -29,6 +54,17 @@ def input_dir() -> Path:
 
 def intermediate_dir() -> Path:
     return project_root() / "data" / "intermediate"
+
+
+def output_dir() -> Path:
+    return project_root() / "data" / "output"
+
+
+def _file_mtime_ns(path: Path) -> int:
+    try:
+        return path.stat().st_mtime_ns
+    except FileNotFoundError:
+        return -1
 
 
 def _resolve_intermediate_csv(primary_name: str, fallback_name: str | None = None) -> Path:
@@ -80,6 +116,17 @@ def normalize_zscore(series: pd.Series) -> pd.Series:
     if not np.isfinite(mu) or not np.isfinite(sigma) or sigma == 0:
         return pd.Series(np.zeros(len(s)), index=s.index)
     return (s - mu) / sigma
+
+
+def hs4_to_section_name(code: str) -> str:
+    digits = "".join(ch for ch in str(code) if ch.isdigit())
+    if len(digits) < 2:
+        return "Other"
+    chapter = int(digits[:2])
+    for _, chapters, label in HS_SECTION_RULES:
+        if chapter in chapters:
+            return label
+    return "Other"
 
 
 def ensure_opportunity_metric_aliases(df: pd.DataFrame) -> pd.DataFrame:
@@ -136,6 +183,80 @@ def load_hs92_reference() -> pd.DataFrame:
     df = pd.read_csv(path, encoding="utf-8-sig")
     df["hs4"] = df["product_hs92_code"].astype(str).str.zfill(4)
     return df[["hs4", "product_name_short", "product_name", "sector", "green_product"]].drop_duplicates("hs4")
+
+
+@st.cache_data(show_spinner=False)
+def _load_anchor_proximity_dataset_cached(_mtime_ns: int) -> pd.DataFrame:
+    path = output_dir() / "anchors_proximity_percentile.csv"
+    if not path.exists():
+        return pd.DataFrame()
+
+    df = pd.read_csv(path)
+    for col in ["anchor_hs4", "candidate_hs4"]:
+        if col in df.columns:
+            df[col] = df[col].astype(str).str.zfill(4)
+
+    df = ensure_opportunity_metric_aliases(df)
+    numeric_cols = [
+        "proximity",
+        "proximity_above_country_median",
+        "proximity_rank",
+        "eligible_candidate_count",
+        "pci",
+        "cog",
+        "distance_travelled",
+        "accessible_market_size",
+        "accessible_market_size_share",
+        "accessible_market_growth_5y",
+        "dai_index",
+        "dai_percentile",
+        "dai_lead",
+        "alignment_weighted_percentile",
+        "attractiveness_score",
+        "feasibility_score",
+        "combined_score",
+        "anchor_density",
+        "anchor_density_percentile",
+        "anchor_embeddedness",
+    ]
+    for col in numeric_cols:
+        if col in df.columns:
+            df[col] = pd.to_numeric(df[col], errors="coerce").fillna(0.0)
+
+    df["anchor_sector"] = df.get("anchor_sector", "").fillna("Other").astype(str)
+    df["anchor_hs_section_name"] = df.get(
+        "anchor_hs_section_name",
+        df.get("anchor_hs4", "").astype(str).map(hs4_to_section_name),
+    )
+    df["anchor_hs_section_name"] = df["anchor_hs_section_name"].fillna("Other").astype(str)
+    df["candidate_sector"] = df.get("candidate_sector", "").fillna("Other").astype(str)
+    df["candidate_hs_section_name"] = df.get(
+        "candidate_hs_section_name",
+        df.get("candidate_hs4", "").astype(str).map(hs4_to_section_name),
+    )
+    df["candidate_hs_section_name"] = df["candidate_hs_section_name"].fillna("Other").astype(str)
+    df["accessible_market_size_b"] = (
+        pd.to_numeric(df.get("accessible_market_size", 0), errors="coerce").fillna(0.0) / 1_000_000_000
+    )
+
+    try:
+        metrics = pd.read_csv(intermediate_dir() / V2_METRICS_FILE, usecols=["hs4", "raw_rca_trade"])
+        metrics["hs4"] = metrics["hs4"].astype(str).str.zfill(4)
+        metrics["raw_rca_trade"] = pd.to_numeric(metrics["raw_rca_trade"], errors="coerce").fillna(0.0)
+        df = df.merge(
+            metrics.rename(columns={"hs4": "candidate_hs4", "raw_rca_trade": "candidate_raw_rca"}),
+            on="candidate_hs4",
+            how="left",
+        )
+    except Exception:
+        df["candidate_raw_rca"] = 0.0
+    df["candidate_raw_rca"] = pd.to_numeric(df.get("candidate_raw_rca", 0), errors="coerce").fillna(0.0)
+    return df
+
+
+def load_anchor_proximity_dataset() -> pd.DataFrame:
+    path = output_dir() / "anchors_proximity_percentile.csv"
+    return _load_anchor_proximity_dataset_cached(_file_mtime_ns(path))
 
 
 @st.cache_data(show_spinner=False)

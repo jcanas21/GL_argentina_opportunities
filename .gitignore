@@ -7,3 +7,21 @@ outputs/
 # Raw files intentionally excluded from GitHub (too large for git hosting).
 data/input/hs92_country_country_product_year_6_2020_2024.csv
 data/intermediate/complexity_calculations.csv
+data/intermediate/accessible_market_by_country_product.csv
+data/intermediate/accessible_market_by_country_product_year.csv
+data/intermediate/accessible_market_by_product.csv
+data/intermediate/accessible_market_by_product_year.csv
+data/intermediate/accessible_market_growth_by_product.csv
+data/intermediate/complexity_calculations_avg.csv
+data/intermediate/countries.csv
+data/intermediate/hs92_growth.csv
+data/intermediate/anchors.csv
+data/intermediate/argentina_presence.csv
+data/intermediate/potential_market_by_product.csv
+data/intermediate/potential_market_by_product_year.csv
+data/intermediate/potential_market_growth_by_product.csv
+data/intermediate/potential_market_by_country_product.csv
+data/intermediate/potential_market_by_country_product_year.csv
+data/intermediate/proximity.csv
+data/intermediate/proximity_avg.csv
+data/intermediate/trade_hs4_baci_2020_2024.csv

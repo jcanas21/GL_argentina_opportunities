@@ -1,0 +1,534 @@
+candidate_hs4,candidate_product_name_short,anchor_count,anchors
+2105,Ice cream,17,"0402 - Milk, concentrated; 0405 - Butter; 0406 - Cheese; 0409 - Honey; 0808 - Apples & pears; 1518 - Animal or vegetable fats and oils, processed; 1602 - Other prepared or preserved meat; 1901 - Malt extract; 2102 - Yeasts; 2518 - Dolomite; 2713 - Petroleum coke; 3101 - Animal or vegetable fertilizers; 3307 - Toiletries; 3405 - Polishes and creams; 3808 - Insecticides, rodenticides, fungicides, etc.; 3823 - Industrial monocarboxylic fatty acids; 4411 - Fiberboard of wood"
+8432,Machinery for soil preparation or cultivation,17,"0201 - Beef; 0206 - Edible offal; 0207 - Poultry; 0404 - Whey; 0405 - Butter; 0408 - Egg yolks; 1001 - Wheat and meslin; 1005 - Corn; 1107 - Malt; 1108 - Starches; 1702 - Other sugars; 2303 - Starch residues; 2304 - Solid soybean residues; 2923 - Quaternary ammonium salts and hydroxides; 6807 - Asphalt; 7304 - Tubes, seamless, of iron or steel; 8702 - Buses"
+1102,Cereal flours,16,"0303 - Frozen fish, excluding fillets; 0510 - Animal products used in pharmaceuticals; 0713 - Legumes, dried; 1008 - Other cereals; 1101 - Wheat or meslin flour; 1103 - Cereal meals; 1104 - Worked cereal grains; 1208 - Flours of oil seeds; 1209 - Seeds used for sowing; 1515 - Other vegetable fats and oils; 1521 - Vegetable waxes and beeswax; 1701 - Sugarcane & sucrose; 2008 - Fruits and nuts, otherwise prepared; 2302 - Cereal residues; 4104 - Tanned hides of bovines or equines; 4403 - Wood in the rough"
+1205,Rape or colza seeds,16,"0202 - Beef (frozen); 0205 - Horse meat; 0505 - Feathers and down; 1001 - Wheat and meslin; 1003 - Barley; 1007 - Grain sorghum; 1201 - Soya beans; 1206 - Sunflower seeds; 1214 - Forage products; 1502 - Bovine, sheep and goat fats; 2205 - Wine, flavored; 2303 - Starch residues; 3501 - Casein; 5101 - Wool; 5103 - Wool or animal hair waste; 5105 - Wool, combed"
+1703,Molasses,16,"0409 - Honey; 0511 - Animal products n.e.c.; 0713 - Legumes, dried; 1008 - Other cereals; 1101 - Wheat or meslin flour; 1103 - Cereal meals; 1104 - Worked cereal grains; 1507 - Soybean oil; 1515 - Other vegetable fats and oils; 1701 - Sugarcane & sucrose; 2301 - Flours of fish, for animal feed; 2302 - Cereal residues; 2401 - Unmanufactured tobacco; 3301 - Essential oils; 4104 - Tanned hides of bovines or equines; 4402 - Wood charcoal"
+1207,Other oil seeds,15,"0713 - Legumes, dried; 1007 - Grain sorghum; 1008 - Other cereals; 1201 - Soya beans; 1202 - Peanuts; 1208 - Flours of oil seeds; 1301 - Lac; 1515 - Other vegetable fats and oils; 1701 - Sugarcane & sucrose; 2302 - Cereal residues; 2305 - Solid peanut residues; 4104 - Tanned hides of bovines or equines; 4403 - Wood in the rough; 5201 - Raw cotton; 7108 - Gold"
+0401,Milk,14,"0201 - Beef; 0206 - Edible offal; 0207 - Poultry; 0402 - Milk, concentrated; 0404 - Whey; 0405 - Butter; 0406 - Cheese; 0504 - Animal guts, except fish; 1518 - Animal or vegetable fats and oils, processed; 1602 - Other prepared or preserved meat; 1901 - Malt extract; 2308 - Vegetable materials for animal feeding; 3501 - Casein; 4411 - Fiberboard of wood"
+0209,Pig and poultry fat,13,"0205 - Horse meat; 0206 - Edible offal; 1214 - Forage products; 1502 - Bovine, sheep and goat fats; 1520 - Glycerol; 2004 - Other vegetables, frozen; 2204 - Wine; 2205 - Wine, flavored; 2303 - Starch residues; 2512 - Siliceous fossil meals and earths; 3502 - Albumins; 3507 - Enzymes; 3913 - Natural polymers"
+4822,"Bobbins, spools, cops of paper",13,"1518 - Animal or vegetable fats and oils, processed; 1602 - Other prepared or preserved meat; 2102 - Yeasts; 2518 - Dolomite; 2713 - Petroleum coke; 2714 - Bitumen and asphalt, natural; 3211 - Prepared driers; 3307 - Toiletries; 3405 - Polishes and creams; 3808 - Insecticides, rodenticides, fungicides, etc.; 6807 - Asphalt; 6809 - Plaster articles; 8702 - Buses"
+0810,Other fresh fruit,12,"0307 - Molluscs; 0703 - Onions, shallots, garlic; 0711 - Vegetables, provisionally preserved; 0805 - Citrus fruit; 0806 - Grapes; 0808 - Apples & pears; 0809 - Peaches & cherries; 0812 - Fruits and nuts, provisionally preserved; 0813 - Fruits, dried; 0814 - Peel of citrus fruit or melons; 1209 - Seeds used for sowing; 2616 - Precious metal ores"
+0811,"Fruits and nuts, frozen",12,"0409 - Honey; 0504 - Animal guts, except fish; 0711 - Vegetables, provisionally preserved; 0805 - Citrus fruit; 0812 - Fruits and nuts, provisionally preserved; 0813 - Fruits, dried; 1209 - Seeds used for sowing; 1507 - Soybean oil; 2005 - Other vegetables, prepared or preserved; 2007 - Jams, jellies and marmalades; 2102 - Yeasts; 4409 - Wood shaped along its edges"
+1506,Other animal fats and oils,12,"0101 - Horses; 0205 - Horse meat; 1502 - Bovine, sheep and goat fats; 1505 - Wool grease; 2004 - Other vegetables, frozen; 2205 - Wine, flavored; 3001 - Heparin for therapeutic use; 3501 - Casein; 3502 - Albumins; 3507 - Enzymes; 3806 - Rosin and resin acids; 4206 - Articles of gut"
+1601,Sausages,12,0201 - Beef; 0207 - Poultry; 0404 - Whey; 0405 - Butter; 0406 - Cheese; 0408 - Egg yolks; 1602 - Other prepared or preserved meat; 2512 - Siliceous fossil meals and earths; 2518 - Dolomite; 3405 - Polishes and creams; 4411 - Fiberboard of wood; 6807 - Asphalt
+2103,Sauces and seasonings,12,"0303 - Frozen fish, excluding fillets; 1101 - Wheat or meslin flour; 1103 - Cereal meals; 1515 - Other vegetable fats and oils; 1517 - Margarine; 1704 - Confectionery sugar; 1901 - Malt extract; 2005 - Other vegetables, prepared or preserved; 2007 - Jams, jellies and marmalades; 2008 - Fruits and nuts, otherwise prepared; 2009 - Fruit juices; 2522 - Quicklime"
+3504,Peptones,12,"0101 - Horses; 1214 - Forage products; 1502 - Bovine, sheep and goat fats; 1505 - Wool grease; 2004 - Other vegetables, frozen; 3001 - Heparin for therapeutic use; 3501 - Casein; 3502 - Albumins; 3507 - Enzymes; 3806 - Rosin and resin acids; 3913 - Natural polymers; 4206 - Articles of gut"
+4410,Particle board and similar board,12,"0207 - Poultry; 0404 - Whey; 1005 - Corn; 1107 - Malt; 1108 - Starches; 1206 - Sunflower seeds; 1702 - Other sugars; 2518 - Dolomite; 4411 - Fiberboard of wood; 6807 - Asphalt; 7304 - Tubes, seamless, of iron or steel; 7312 - Wire of iron or steel, not insulated"
+6806,Mineral wools and insulating materials,12,"0207 - Poultry; 0404 - Whey; 0405 - Butter; 1001 - Wheat and meslin; 1107 - Malt; 1206 - Sunflower seeds; 2509 - Chalk; 2518 - Dolomite; 6807 - Asphalt; 7304 - Tubes, seamless, of iron or steel; 7312 - Wire of iron or steel, not insulated; 8702 - Buses"
+0710,Frozen vegetables,11,"0409 - Honey; 0703 - Onions, shallots, garlic; 0711 - Vegetables, provisionally preserved; 0812 - Fruits and nuts, provisionally preserved; 1208 - Flours of oil seeds; 1209 - Seeds used for sowing; 1521 - Vegetable waxes and beeswax; 2005 - Other vegetables, prepared or preserved; 2102 - Yeasts; 3101 - Animal or vegetable fertilizers; 4411 - Fiberboard of wood"
+2207,Ethyl alcohol > 80%,11,"0202 - Beef (frozen); 0402 - Milk, concentrated; 0510 - Animal products used in pharmaceuticals; 1005 - Corn; 1007 - Grain sorghum; 1201 - Soya beans; 1208 - Flours of oil seeds; 1507 - Soybean oil; 1702 - Other sugars; 2304 - Solid soybean residues; 2308 - Vegetable materials for animal feeding"
+4404,Strips and other pieces of wood,11,0409 - Honey; 1005 - Corn; 1104 - Worked cereal grains; 1208 - Flours of oil seeds; 1512 - Sunflower seed oil; 2306 - Solid vegetable oil and fat residues; 2308 - Vegetable materials for animal feeding; 4403 - Wood in the rough; 4409 - Wood shaped along its edges; 4411 - Fiberboard of wood; 6809 - Plaster articles
+4415,Packing boxes,11,"0402 - Milk, concentrated; 0406 - Cheese; 0409 - Honey; 1104 - Worked cereal grains; 1512 - Sunflower seed oil; 1602 - Other prepared or preserved meat; 1901 - Malt extract; 2306 - Solid vegetable oil and fat residues; 3823 - Industrial monocarboxylic fatty acids; 4403 - Wood in the rough; 4409 - Wood shaped along its edges"
+4819,Cardboard packing containers,11,"0511 - Animal products n.e.c.; 1101 - Wheat or meslin flour; 1103 - Cereal meals; 1517 - Margarine; 1704 - Confectionery sugar; 2005 - Other vegetables, prepared or preserved; 2007 - Jams, jellies and marmalades; 2009 - Fruit juices; 2301 - Flours of fish, for animal feed; 2309 - Animal feed; 2522 - Quicklime"
+0204,Lamb,10,0101 - Horses; 0201 - Beef; 0202 - Beef (frozen); 0205 - Horse meat; 0903 - Mate; 1007 - Grain sorghum; 1214 - Forage products; 1505 - Wool grease; 2204 - Wine; 5101 - Wool
+0506,"Bones, simply prepared",10,"0201 - Beef; 0202 - Beef (frozen); 0206 - Edible offal; 0504 - Animal guts, except fish; 0510 - Animal products used in pharmaceuticals; 1108 - Starches; 1521 - Vegetable waxes and beeswax; 1702 - Other sugars; 2308 - Vegetable materials for animal feeding; 3503 - Gelatin"
+1514,"Rapeseed, colza or mustard oil,",10,"0202 - Beef (frozen); 0405 - Butter; 1001 - Wheat and meslin; 1003 - Barley; 1107 - Malt; 1201 - Soya beans; 1214 - Forage products; 1502 - Bovine, sheep and goat fats; 2303 - Starch residues; 2304 - Solid soybean residues"
+2001,Pickled fruits and vegetables,10,"0409 - Honey; 0711 - Vegetables, provisionally preserved; 0805 - Citrus fruit; 0812 - Fruits and nuts, provisionally preserved; 0813 - Fruits, dried; 0909 - Anise, fennel, etc.; 1209 - Seeds used for sowing; 2005 - Other vegetables, prepared or preserved; 2007 - Jams, jellies and marmalades; 2508 - Clays"
+0403,Fermented milk products,9,"0402 - Milk, concentrated; 0405 - Butter; 0406 - Cheese; 0409 - Honey; 1602 - Other prepared or preserved meat; 1901 - Malt extract; 2301 - Flours of fish, for animal feed; 2309 - Animal feed; 2522 - Quicklime"
+1904,Cereal foods,9,"1103 - Cereal meals; 1104 - Worked cereal grains; 1209 - Seeds used for sowing; 1517 - Margarine; 1704 - Confectionery sugar; 2005 - Other vegetables, prepared or preserved; 2007 - Jams, jellies and marmalades; 2009 - Fruit juices; 2309 - Animal feed"
+1905,Bakery products,9,"0511 - Animal products n.e.c.; 1103 - Cereal meals; 1517 - Margarine; 1704 - Confectionery sugar; 2005 - Other vegetables, prepared or preserved; 2007 - Jams, jellies and marmalades; 2008 - Fruits and nuts, otherwise prepared; 2009 - Fruit juices; 2522 - Quicklime"
+2106,Food preparations n.e.c.,9,"0511 - Animal products n.e.c.; 1517 - Margarine; 1704 - Confectionery sugar; 1901 - Malt extract; 2005 - Other vegetables, prepared or preserved; 2007 - Jams, jellies and marmalades; 2009 - Fruit juices; 2309 - Animal feed; 3301 - Essential oils"
+2716,Electrical energy,9,"0511 - Animal products n.e.c.; 0813 - Fruits, dried; 1008 - Other cereals; 1104 - Worked cereal grains; 1208 - Flours of oil seeds; 1512 - Sunflower seed oil; 2304 - Solid soybean residues; 2522 - Quicklime; 4403 - Wood in the rough"
+3923,Packing lids,9,"0511 - Animal products n.e.c.; 1101 - Wheat or meslin flour; 1515 - Other vegetable fats and oils; 1704 - Confectionery sugar; 2007 - Jams, jellies and marmalades; 2008 - Fruits and nuts, otherwise prepared; 2009 - Fruit juices; 2309 - Animal feed; 4104 - Tanned hides of bovines or equines"
+8433,Harvesting or agricultural machinery,9,"0201 - Beef; 0404 - Whey; 0408 - Egg yolks; 1502 - Bovine, sheep and goat fats; 2303 - Starch residues; 2923 - Quaternary ammonium salts and hydroxides; 3503 - Gelatin; 4302 - Other tanned furskins; 5103 - Wool or animal hair waste"
+0708,Legumes,8,"0307 - Molluscs; 0703 - Onions, shallots, garlic; 0713 - Legumes, dried; 0814 - Peel of citrus fruit or melons; 0902 - Tea; 1202 - Peanuts; 1209 - Seeds used for sowing; 1301 - Lac"
+0804,"Avocados, pineapples, mangos, etc.",8,"0303 - Frozen fish, excluding fillets; 0805 - Citrus fruit; 0814 - Peel of citrus fruit or melons; 1515 - Other vegetable fats and oils; 1701 - Sugarcane & sucrose; 2008 - Fruits and nuts, otherwise prepared; 2009 - Fruit juices; 7108 - Gold"
+0910,Spices,8,"0703 - Onions, shallots, garlic; 0713 - Legumes, dried; 0813 - Fruits, dried; 0902 - Tea; 1301 - Lac; 1515 - Other vegetable fats and oils; 2008 - Fruits and nuts, otherwise prepared; 3301 - Essential oils"
+2515,Marble,8,"0805 - Citrus fruit; 0806 - Grapes; 0809 - Peaches & cherries; 0909 - Anise, fennel, etc.; 1509 - Olive oil; 2518 - Dolomite; 2607 - Lead ore; 2714 - Bitumen and asphalt, natural"
+3402,Cleaning products,8,"1209 - Seeds used for sowing; 1517 - Margarine; 1901 - Malt extract; 2309 - Animal feed; 2522 - Quicklime; 3101 - Animal or vegetable fertilizers; 3307 - Toiletries; 3808 - Insecticides, rodenticides, fungicides, etc."
+4005,Compounded rubber,8,0205 - Horse meat; 0505 - Feathers and down; 1520 - Glycerol; 3202 - Synthetic tanning substances; 3812 - Stabilizers for rubber or plastic; 3815 - Catalytic preparations; 5103 - Wool or animal hair waste; 8704 - Motor vehicles for transporting goods
+4703,"Chemical woodpulp, soda or sulfate",8,0903 - Mate; 1201 - Soya beans; 2307 - Wine lees; 2528 - Natural borates; 2810 - Oxides of boron; boric acids; 3805 - Turpentines; 3806 - Rosin and resin acids; 5101 - Wool
+5302,Hemp fiber,8,"1107 - Malt; 1206 - Sunflower seeds; 1214 - Forage products; 2204 - Wine; 2205 - Wine, flavored; 2304 - Solid soybean residues; 3201 - Vegetable tanning extracts; 3805 - Turpentines"
+6308,Needlecraft sets of woven fabric and yarn,8,"0504 - Animal guts, except fish; 0812 - Fruits and nuts, provisionally preserved; 1108 - Starches; 1512 - Sunflower seed oil; 1702 - Other sugars; 2306 - Solid vegetable oil and fat residues; 2508 - Clays; 5103 - Wool or animal hair waste"
+7310,"Tanks etc. < 300 liters, iron or steel",8,"0812 - Fruits and nuts, provisionally preserved; 1209 - Seeds used for sowing; 1901 - Malt extract; 2007 - Jams, jellies and marmalades; 2102 - Yeasts; 3101 - Animal or vegetable fertilizers; 3307 - Toiletries; 3823 - Industrial monocarboxylic fatty acids"
+8436,Other agricultural machinery,8,"0206 - Edible offal; 0404 - Whey; 0405 - Butter; 0408 - Egg yolks; 1502 - Bovine, sheep and goat fats; 1702 - Other sugars; 2923 - Quaternary ammonium salts and hydroxides; 3503 - Gelatin"
+8608,Railway track fixtures,8,"1001 - Wheat and meslin; 1003 - Barley; 1005 - Corn; 1206 - Sunflower seeds; 1512 - Sunflower seed oil; 2303 - Starch residues; 2304 - Solid soybean residues; 7304 - Tubes, seamless, of iron or steel"
+0203,Pork,7,"0205 - Horse meat; 2004 - Other vegetables, frozen; 2307 - Wine lees; 2810 - Oxides of boron; boric acids; 3501 - Casein; 3502 - Albumins; 4206 - Articles of gut"
+0210,Preserved meat,7,0201 - Beef; 0202 - Beef (frozen); 0205 - Horse meat; 0206 - Edible offal; 1520 - Glycerol; 2304 - Solid soybean residues; 4302 - Other tanned furskins
+0305,Preserved fish,7,"0303 - Frozen fish, excluding fillets; 0304 - Fish fillets; 0306 - Crustaceans; 0307 - Molluscs; 0511 - Animal products n.e.c.; 1008 - Other cereals; 2301 - Flours of fish, for animal feed"
+0701,Potatoes,7,"0405 - Butter; 0504 - Animal guts, except fish; 0703 - Onions, shallots, garlic; 0805 - Citrus fruit; 0808 - Apples & pears; 0902 - Tea; 2508 - Clays"
+0709,Other vegetables,7,"0307 - Molluscs; 0703 - Onions, shallots, garlic; 0711 - Vegetables, provisionally preserved; 0805 - Citrus fruit; 0813 - Fruits, dried; 2005 - Other vegetables, prepared or preserved; 2401 - Unmanufactured tobacco"
+0802,Other nuts,7,"0805 - Citrus fruit; 0806 - Grapes; 0809 - Peaches & cherries; 0812 - Fruits and nuts, provisionally preserved; 0813 - Fruits, dried; 0902 - Tea; 5201 - Raw cotton"
+1004,Oats,7,"1001 - Wheat and meslin; 1003 - Barley; 1107 - Malt; 1214 - Forage products; 1502 - Bovine, sheep and goat fats; 2205 - Wine, flavored; 5101 - Wool"
+1212,Seaweeds & edible vegetable products,7,"0703 - Onions, shallots, garlic; 0713 - Legumes, dried; 0813 - Fruits, dried; 0814 - Peel of citrus fruit or melons; 1008 - Other cereals; 1202 - Peanuts; 1301 - Lac"
+1213,Cereal straw and husks,7,0201 - Beef; 0408 - Egg yolks; 0505 - Feathers and down; 1003 - Barley; 1007 - Grain sorghum; 1214 - Forage products; 5103 - Wool or animal hair waste
+1501,"Pig and poultry fat, rendered",7,0202 - Beef (frozen); 0206 - Edible offal; 0408 - Egg yolks; 0505 - Feathers and down; 1520 - Glycerol; 2303 - Starch residues; 2923 - Quaternary ammonium salts and hydroxides
+1605,Prepared aquatic invertibrates,7,"0303 - Frozen fish, excluding fillets; 0304 - Fish fillets; 0306 - Crustaceans; 0307 - Molluscs; 0814 - Peel of citrus fruit or melons; 2301 - Flours of fish, for animal feed; 3101 - Animal or vegetable fertilizers"
+3214,Glaziers' putty,7,"0406 - Cheese; 1518 - Animal or vegetable fats and oils, processed; 1602 - Other prepared or preserved meat; 2713 - Petroleum coke; 3307 - Toiletries; 3823 - Industrial monocarboxylic fatty acids; 8702 - Buses"
+3401,Soap,7,"1101 - Wheat or meslin flour; 1515 - Other vegetable fats and oils; 1701 - Sugarcane & sucrose; 1704 - Confectionery sugar; 2008 - Fruits and nuts, otherwise prepared; 2009 - Fruit juices; 2401 - Unmanufactured tobacco"
+3505,Dextrins and other modified starches,7,0408 - Egg yolks; 1108 - Starches; 1520 - Glycerol; 2303 - Starch residues; 2923 - Quaternary ammonium salts and hydroxides; 3503 - Gelatin; 3507 - Enzymes
+4101,Raw hides of bovines or equines,7,"0511 - Animal products n.e.c.; 0713 - Legumes, dried; 1301 - Lac; 1515 - Other vegetable fats and oils; 1701 - Sugarcane & sucrose; 4104 - Tanned hides of bovines or equines; 7108 - Gold"
+4110,Waste of leather,7,0510 - Animal products used in pharmaceuticals; 0814 - Peel of citrus fruit or melons; 2607 - Lead ore; 2836 - Carbonates; 3201 - Vegetable tanning extracts; 4206 - Articles of gut; 7106 - Silver
+4418,Wood carpentry for construction,7,"1108 - Starches; 1518 - Animal or vegetable fats and oils, processed; 1602 - Other prepared or preserved meat; 2306 - Solid vegetable oil and fat residues; 2308 - Vegetable materials for animal feeding; 4409 - Wood shaped along its edges; 4411 - Fiberboard of wood"
+4818,Toilet paper,7,"1103 - Cereal meals; 1517 - Margarine; 1704 - Confectionery sugar; 2007 - Jams, jellies and marmalades; 2309 - Animal feed; 2522 - Quicklime; 3307 - Toiletries"
+5905,Textile wall coverings,7,"0101 - Horses; 1505 - Wool grease; 2004 - Other vegetables, frozen; 3502 - Albumins; 3806 - Rosin and resin acids; 3815 - Catalytic preparations; 5105 - Wool, combed"
+6105,"Men's shirts, knit",7,0306 - Crustaceans; 0307 - Molluscs; 0814 - Peel of citrus fruit or melons; 1301 - Lac; 1401 - Vegetable materials used for plaiting; 2401 - Unmanufactured tobacco; 3301 - Essential oils
+6305,Bags for packing goods,7,"1101 - Wheat or meslin flour; 1701 - Sugarcane & sucrose; 2008 - Fruits and nuts, otherwise prepared; 2009 - Fruit juices; 2302 - Cereal residues; 2401 - Unmanufactured tobacco; 4104 - Tanned hides of bovines or equines"
+6904,Ceramic building bricks,7,"0504 - Animal guts, except fish; 1208 - Flours of oil seeds; 1507 - Soybean oil; 1512 - Sunflower seed oil; 2306 - Solid vegetable oil and fat residues; 2308 - Vegetable materials for animal feeding; 6809 - Plaster articles"
+7325,Other cast articles of iron or steel,7,"0808 - Apples & pears; 1108 - Starches; 1512 - Sunflower seed oil; 2508 - Clays; 2518 - Dolomite; 2836 - Carbonates; 7312 - Wire of iron or steel, not insulated"
+8434,Dairy machinery,7,"0206 - Edible offal; 0207 - Poultry; 0404 - Whey; 0405 - Butter; 0406 - Cheese; 2204 - Wine; 2827 - Chlorides, bromides, iodides etc."
+8701,Tractors,7,2832 - Sulfites; 2923 - Quaternary ammonium salts and hydroxides; 3507 - Enzymes; 3805 - Turpentines; 3806 - Rosin and resin acids; 8408 - Compression-ignition internal combustion piston engines; 8704 - Motor vehicles for transporting goods
+0102,Bovine,6,"0201 - Beef; 0409 - Honey; 0713 - Legumes, dried; 1008 - Other cereals; 1104 - Worked cereal grains; 4403 - Wood in the rough"
+0302,"Fish, excluding fillets",6,"0303 - Frozen fish, excluding fillets; 0304 - Fish fillets; 0306 - Crustaceans; 0307 - Molluscs; 0511 - Animal products n.e.c.; 2301 - Flours of fish, for animal feed"
+0712,"Vegetables, dried",6,"0409 - Honey; 0703 - Onions, shallots, garlic; 0711 - Vegetables, provisionally preserved; 0813 - Fruits, dried; 0909 - Anise, fennel, etc.; 1008 - Other cereals"
+0801,Cashew nuts & coconuts,6,1006 - Rice; 1201 - Soya beans; 1202 - Peanuts; 1521 - Vegetable waxes and beeswax; 2305 - Solid peanut residues; 5201 - Raw cotton
+1106,Flour of dried legumes,6,"0713 - Legumes, dried; 1101 - Wheat or meslin flour; 1515 - Other vegetable fats and oils; 2008 - Fruits and nuts, otherwise prepared; 2009 - Fruit juices; 7108 - Gold"
+2002,"Tomatoes, prepared or preserved",6,0806 - Grapes; 0808 - Apples & pears; 0809 - Peaches & cherries; 1509 - Olive oil; 2836 - Carbonates; 3103 - Phosphatic fertilizers
+2206,Other fermented beverages,6,"0405 - Butter; 0406 - Cheese; 2204 - Wine; 2205 - Wine, flavored; 2512 - Siliceous fossil meals and earths; 3823 - Industrial monocarboxylic fatty acids"
+2501,Salt,6,"0304 - Fish fillets; 0307 - Molluscs; 0805 - Citrus fruit; 1103 - Cereal meals; 2301 - Flours of fish, for animal feed; 3101 - Animal or vegetable fertilizers"
+2918,Carboxylic acids with additional oxygen function,6,"1502 - Bovine, sheep and goat fats; 1505 - Wool grease; 3001 - Heparin for therapeutic use; 3202 - Synthetic tanning substances; 3812 - Stabilizers for rubber or plastic; 3913 - Natural polymers"
+2940,"Other sugars, chemically pure",6,2937 - Hormones; 3502 - Albumins; 3507 - Enzymes; 3815 - Catalytic preparations; 3913 - Natural polymers; 5803 - Gauze
+3305,Hair products,6,"0805 - Citrus fruit; 2102 - Yeasts; 3101 - Animal or vegetable fertilizers; 3307 - Toiletries; 3808 - Insecticides, rodenticides, fungicides, etc.; 6809 - Plaster articles"
+3821,Prepared culture media for micro-organisms,6,"2004 - Other vegetables, frozen; 3001 - Heparin for therapeutic use; 3502 - Albumins; 3507 - Enzymes; 3815 - Catalytic preparations; 3913 - Natural polymers"
+4006,Unvulcanized rubber rods,6,0408 - Egg yolks; 2512 - Siliceous fossil meals and earths; 2832 - Sulfites; 2923 - Quaternary ammonium salts and hydroxides; 3805 - Turpentines; 8704 - Motor vehicles for transporting goods
+4902,"Newspapers, journals and periodicals",6,0404 - Whey; 0408 - Egg yolks; 1001 - Wheat and meslin; 1003 - Barley; 1107 - Malt; 2204 - Wine
+5107,"Yarn of combed wool, not for retail sale",6,"0205 - Horse meat; 0505 - Feathers and down; 1505 - Wool grease; 4303 - Furskin apparel; 5103 - Wool or animal hair waste; 5105 - Wool, combed"
+5703,"Carpets, tufted",6,2509 - Chalk; 3211 - Prepared driers; 3503 - Gelatin; 3805 - Turpentines; 3806 - Rosin and resin acids; 5103 - Wool or animal hair waste
+6106,"Women's shirts, knit",6,"1701 - Sugarcane & sucrose; 2005 - Other vegetables, prepared or preserved; 2008 - Fruits and nuts, otherwise prepared; 2401 - Unmanufactured tobacco; 3301 - Essential oils; 4402 - Wood charcoal"
+7228,Other bars and rods of other alloy steel,6,"0207 - Poultry; 2827 - Chlorides, bromides, iodides etc.; 2832 - Sulfites; 2836 - Carbonates; 7224 - Other alloy steel in primary form; 7304 - Tubes, seamless, of iron or steel"
+7610,"Aluminum structures (bridges, towers etc)",6,"1518 - Animal or vegetable fats and oils, processed; 1602 - Other prepared or preserved meat; 2714 - Bitumen and asphalt, natural; 3307 - Toiletries; 4411 - Fiberboard of wood; 6809 - Plaster articles"
+8309,"Stoppers, caps and lids of metal",6,"0402 - Milk, concentrated; 1507 - Soybean oil; 2102 - Yeasts; 2308 - Vegetable materials for animal feeding; 2512 - Siliceous fossil meals and earths; 3808 - Insecticides, rodenticides, fungicides, etc."
+8607,Parts of railway locomotives,6,"1001 - Wheat and meslin; 1003 - Barley; 1206 - Sunflower seeds; 2303 - Starch residues; 7224 - Other alloy steel in primary form; 7304 - Tubes, seamless, of iron or steel"
+8706,Vehicle chassis fitted with engines,6,"0205 - Horse meat; 1502 - Bovine, sheep and goat fats; 1520 - Glycerol; 3202 - Synthetic tanning substances; 3503 - Gelatin; 3805 - Turpentines"
+9302,Revolvers and pistols,6,0903 - Mate; 1201 - Soya beans; 2307 - Wine lees; 2528 - Natural borates; 2830 - Sulfides; polysulfides; 2840 - Borates
+0208,Other meat,5,0201 - Beef; 0206 - Edible offal; 0404 - Whey; 2204 - Wine; 2509 - Chalk
+0407,"Eggs, in shell",5,"0504 - Animal guts, except fish; 1704 - Confectionery sugar; 2309 - Animal feed; 2522 - Quicklime; 6809 - Plaster articles"
+0507,Whalebone & horns,5,0510 - Animal products used in pharmaceuticals; 1005 - Corn; 1007 - Grain sorghum; 1521 - Vegetable waxes and beeswax; 5201 - Raw cotton
+0508,Coral and shells,5,"0303 - Frozen fish, excluding fillets; 0304 - Fish fillets; 0306 - Crustaceans; 0307 - Molluscs; 2301 - Flours of fish, for animal feed"
+0702,Tomatoes,5,0806 - Grapes; 0808 - Apples & pears; 0809 - Peaches & cherries; 0814 - Peel of citrus fruit or melons; 3103 - Phosphatic fertilizers
+0706,Carrots & turnips,5,"0504 - Animal guts, except fish; 0703 - Onions, shallots, garlic; 0806 - Grapes; 0809 - Peaches & cherries; 2102 - Yeasts"
+0707,Cucumbers,5,"0806 - Grapes; 0808 - Apples & pears; 0809 - Peaches & cherries; 0909 - Anise, fennel, etc.; 2607 - Lead ore"
+0807,Melons and papayas,5,"0703 - Onions, shallots, garlic; 0711 - Vegetables, provisionally preserved; 0805 - Citrus fruit; 0814 - Peel of citrus fruit or melons; 1301 - Lac"
+0904,Pepper,5,"0306 - Crustaceans; 0812 - Fruits and nuts, provisionally preserved; 0902 - Tea; 1202 - Peanuts; 1301 - Lac"
+1211,"Plants used in perfumery, pharmacy or insecticide",5,"0713 - Legumes, dried; 2302 - Cereal residues; 3301 - Essential oils; 4104 - Tanned hides of bovines or equines; 7108 - Gold"
+1404,Vegetable products n.e.c.,5,"0713 - Legumes, dried; 0812 - Fruits and nuts, provisionally preserved; 1008 - Other cereals; 3301 - Essential oils; 5201 - Raw cotton"
+1516,"Vegetable fats, hydrogenated",5,"0303 - Frozen fish, excluding fillets; 0304 - Fish fillets; 0306 - Crustaceans; 1517 - Margarine; 1519 - Stearic acid"
+1604,Prepared or preserved fish,5,"0303 - Frozen fish, excluding fillets; 0304 - Fish fillets; 0306 - Crustaceans; 0307 - Molluscs; 2301 - Flours of fish, for animal feed"
+1805,Cocoa powder,5,0903 - Mate; 1519 - Stearic acid; 1520 - Glycerol; 3201 - Vegetable tanning extracts; 3202 - Synthetic tanning substances
+2202,"Waters, flavored or sweetened",5,"1101 - Wheat or meslin flour; 2008 - Fruits and nuts, otherwise prepared; 2009 - Fruit juices; 2302 - Cereal residues; 4104 - Tanned hides of bovines or equines"
+3004,"Medicaments, packaged",5,"0206 - Edible offal; 0406 - Cheese; 2827 - Chlorides, bromides, iodides etc.; 3405 - Polishes and creams; 3808 - Insecticides, rodenticides, fungicides, etc."
+3822,Diagnostic or laboratory reagents,5,0101 - Horses; 2923 - Quaternary ammonium salts and hydroxides; 3001 - Heparin for therapeutic use; 3507 - Enzymes; 3913 - Natural polymers
+4301,Other raw furskins,5,0205 - Horse meat; 1003 - Barley; 3501 - Casein; 3502 - Albumins; 4302 - Other tanned furskins
+4401,Fuel wood,5,0201 - Beef; 0202 - Beef (frozen); 0207 - Poultry; 1107 - Malt; 4409 - Wood shaped along its edges
+4408,Sheets for veneering for plywood,5,1008 - Other cereals; 1104 - Worked cereal grains; 2306 - Solid vegetable oil and fat residues; 4403 - Wood in the rough; 4409 - Wood shaped along its edges
+4413,Densified wood,5,"1518 - Animal or vegetable fats and oils, processed; 1519 - Stearic acid; 2306 - Solid vegetable oil and fat residues; 4409 - Wood shaped along its edges; 4411 - Fiberboard of wood"
+5109,"Yarn of wool or animal hair, for retail sale",5,"2528 - Natural borates; 3202 - Synthetic tanning substances; 5101 - Wool; 5103 - Wool or animal hair waste; 5105 - Wool, combed"
+6801,"Flagstones, of natural stone",5,"0809 - Peaches & cherries; 0909 - Anise, fennel, etc.; 1509 - Olive oil; 2509 - Chalk; 2836 - Carbonates"
+7308,"Structures and their parts, of iron or steel",5,"1518 - Animal or vegetable fats and oils, processed; 2102 - Yeasts; 3307 - Toiletries; 6809 - Plaster articles; 7601 - Unwrought aluminum"
+7612,"Aluminum containers, <300 liters",5,"0504 - Animal guts, except fish; 2102 - Yeasts; 2301 - Flours of fish, for animal feed; 2309 - Animal feed; 3101 - Animal or vegetable fertilizers"
+8403,Central heating boilers,5,"0808 - Apples & pears; 1003 - Barley; 1206 - Sunflower seeds; 2205 - Wine, flavored; 2303 - Starch residues"
+8435,Machines for wine and juice production,5,"0808 - Apples & pears; 1005 - Corn; 1206 - Sunflower seeds; 2204 - Wine; 2205 - Wine, flavored"
+8703,Cars,5,3201 - Vegetable tanning extracts; 3812 - Stabilizers for rubber or plastic; 3815 - Catalytic preparations; 8408 - Compression-ignition internal combustion piston engines; 8704 - Motor vehicles for transporting goods
+0105,Fowl,4,"1005 - Corn; 1208 - Flours of oil seeds; 3808 - Insecticides, rodenticides, fungicides, etc.; 4411 - Fiberboard of wood"
+0604,Other parts of plants,4,0304 - Fish fillets; 0510 - Animal products used in pharmaceuticals; 1209 - Seeds used for sowing; 1517 - Margarine
+0704,"Cabbages, cauliflowers, broccoli",4,0806 - Grapes; 0808 - Apples & pears; 0809 - Peaches & cherries; 2607 - Lead ore
+1204,Linseed,4,"1003 - Barley; 1201 - Soya beans; 2810 - Oxides of boron; boric acids; 5105 - Wool, combed"
+2523,Cements,4,1101 - Wheat or meslin flour; 2302 - Cereal residues; 4104 - Tanned hides of bovines or equines; 7108 - Gold
+2526,Natural steatite,4,"2004 - Other vegetables, frozen; 2810 - Oxides of boron; boric acids; 2840 - Borates; 4206 - Articles of gut"
+2712,Petroleum jelly,4,"2714 - Bitumen and asphalt, natural; 2803 - Carbon; 3211 - Prepared driers; 7605 - Aluminum wire"
+3002,Serums and vaccines,4,0101 - Horses; 2937 - Hormones; 3001 - Heparin for therapeutic use; 3502 - Albumins
+3210,Other paints and varnishes,4,"0402 - Milk, concentrated; 3101 - Animal or vegetable fertilizers; 3405 - Polishes and creams; 3823 - Industrial monocarboxylic fatty acids"
+3306,Dental hygiene products,4,1507 - Soybean oil; 1702 - Other sugars; 2508 - Clays; 3405 - Polishes and creams
+3404,Artificial and prepared waxes,4,2803 - Carbon; 3812 - Stabilizers for rubber or plastic; 3815 - Catalytic preparations; 3817 - Mixed alkylbenzenes
+3816,Refractory cements,4,2509 - Chalk; 2512 - Siliceous fossil meals and earths; 3503 - Gelatin; 7605 - Aluminum wire
+3902,Polymers of propylene,4,"2827 - Chlorides, bromides, iodides etc.; 3211 - Prepared driers; 6807 - Asphalt; 7605 - Aluminum wire"
+3903,Polymers of styrene,4,1520 - Glycerol; 2803 - Carbon; 3211 - Prepared driers; 3812 - Stabilizers for rubber or plastic
+3915,Plastic waste,4,"0303 - Frozen fish, excluding fillets; 2302 - Cereal residues; 4104 - Tanned hides of bovines or equines; 7108 - Gold"
+3922,"Baths, sinks etc.",4,2508 - Clays; 2836 - Carbonates; 6807 - Asphalt; 8702 - Buses
+4010,Conveyor belts of vulcanized rubber,4,2832 - Sulfites; 7106 - Silver; 7605 - Aluminum wire; 8704 - Motor vehicles for transporting goods
+4205,Other articles of leather,4,"0504 - Animal guts, except fish; 1005 - Corn; 1507 - Soybean oil; 1512 - Sunflower seed oil"
+4407,Wood sawn lengthwise,4,1104 - Worked cereal grains; 2306 - Solid vegetable oil and fat residues; 4403 - Wood in the rough; 4409 - Wood shaped along its edges
+4412,Plywood,4,2304 - Solid soybean residues; 2306 - Solid vegetable oil and fat residues; 4409 - Wood shaped along its edges; 4411 - Fiberboard of wood
+5106,"Yarn of carded wool, not for retail sale",4,"4302 - Other tanned furskins; 5101 - Wool; 5103 - Wool or animal hair waste; 5105 - Wool, combed"
+5202,Cotton waste,4,1202 - Peanuts; 1301 - Lac; 2305 - Solid peanut residues; 5201 - Raw cotton
+5203,"Cotton, carded or combed",4,1006 - Rice; 1202 - Peanuts; 2305 - Solid peanut residues; 5201 - Raw cotton
+5601,Wadding of textile materials,4,1512 - Sunflower seed oil; 2306 - Solid vegetable oil and fat residues; 2308 - Vegetable materials for animal feeding; 6809 - Plaster articles
+5702,Woven carpets and rugs,4,"0806 - Grapes; 0809 - Peaches & cherries; 0909 - Anise, fennel, etc.; 5103 - Wool or animal hair waste"
+6203,Men's suits and pants,4,"0813 - Fruits, dried; 1701 - Sugarcane & sucrose; 2401 - Unmanufactured tobacco; 3301 - Essential oils"
+6205,Men's shirts,4,0306 - Crustaceans; 1401 - Vegetable materials used for plaiting; 2401 - Unmanufactured tobacco; 4402 - Wood charcoal
+6803,Worked slate,4,0903 - Mate; 1508 - Peanut oil; 2305 - Solid peanut residues; 2307 - Wine lees
+7213,Hot rolled bars of iron,4,1507 - Soybean oil; 1512 - Sunflower seed oil; 2713 - Petroleum coke; 7601 - Unwrought aluminum
+7306,"Other tubes, pipes and hollow profiles of iron or steel",4,1103 - Cereal meals; 1104 - Worked cereal grains; 1704 - Confectionery sugar; 2522 - Quicklime
+7322,Radiators for central heating of iron or steel,4,0505 - Feathers and down; 1206 - Sunflower seeds; 2803 - Carbon; 7224 - Other alloy steel in primary form
+8428,Other lifting machinery,4,"0404 - Whey; 7304 - Tubes, seamless, of iron or steel; 8702 - Buses; 8704 - Motor vehicles for transporting goods"
+0705,Lettuce,3,"1509 - Olive oil; 2004 - Other vegetables, frozen; 3103 - Phosphatic fertilizers"
+1002,Rye,3,1001 - Wheat and meslin; 1003 - Barley; 3501 - Casein
+1109,Wheat gluten,3,"2004 - Other vegetables, frozen; 3501 - Casein; 3502 - Albumins"
+1504,Fish oils,3,"0303 - Frozen fish, excluding fillets; 0304 - Fish fillets; 2301 - Flours of fish, for animal feed"
+1603,Extracts and juices of meat or fish,3,"0101 - Horses; 1502 - Bovine, sheep and goat fats; 5101 - Wool"
+1806,Chocolates,3,1901 - Malt extract; 3101 - Animal or vegetable fertilizers; 3823 - Industrial monocarboxylic fatty acids
+2104,Soups and broths,3,0814 - Peel of citrus fruit or melons; 1517 - Margarine; 1901 - Malt extract
+2402,Cigars and cigarettes,3,2401 - Unmanufactured tobacco; 2616 - Precious metal ores; 4402 - Wood charcoal
+2503,"Sulphur, crude",3,"2713 - Petroleum coke; 2714 - Bitumen and asphalt, natural; 7605 - Aluminum wire"
+2603,Copper ore,3,2607 - Lead ore; 2616 - Precious metal ores; 7106 - Silver
+2608,Zinc ore,3,2607 - Lead ore; 2616 - Precious metal ores; 7106 - Silver
+2614,Titanium ore,3,1007 - Grain sorghum; 1201 - Soya beans; 1508 - Peanut oil
+2615,Zirconium ore,3,0902 - Tea; 1006 - Rice; 1202 - Peanuts
+2617,Other ores,3,2607 - Lead ore; 2616 - Precious metal ores; 5201 - Raw cotton
+2833,Sulfates,3,0510 - Animal products used in pharmaceuticals; 2836 - Carbonates; 7106 - Silver
+2835,Phosphates,3,"1702 - Other sugars; 2827 - Chlorides, bromides, iodides etc.; 3103 - Phosphatic fertilizers"
+2839,Silicates,3,1507 - Soybean oil; 1521 - Vegetable waxes and beeswax; 3503 - Gelatin
+2936,Vitamins,3,1505 - Wool grease; 3001 - Heparin for therapeutic use; 3502 - Albumins
+2941,Antibiotics,3,2937 - Hormones; 3001 - Heparin for therapeutic use; 4206 - Articles of gut
+3203,Coloring matter of animal or vegetable origin,3,3201 - Vegetable tanning extracts; 3202 - Synthetic tanning substances; 4206 - Articles of gut
+3208,"Paints and varnishes, nonaqueous",3,"3307 - Toiletries; 3808 - Insecticides, rodenticides, fungicides, etc.; 3823 - Industrial monocarboxylic fatty acids"
+3813,Preparations for fire extinguishers,3,1505 - Wool grease; 3815 - Catalytic preparations; 3913 - Natural polymers
+3820,Antifreezing preparation,3,"0207 - Poultry; 1107 - Malt; 2714 - Bitumen and asphalt, natural"
+3906,Acrylic polymers,3,2832 - Sulfites; 3202 - Synthetic tanning substances; 3812 - Stabilizers for rubber or plastic
+3916,Monofilament,3,0808 - Apples & pears; 4302 - Other tanned furskins; 7106 - Silver
+3917,Plastic tubes and fittings,3,1103 - Cereal meals; 1704 - Confectionery sugar; 2522 - Quicklime
+4004,Scrap of rubber,3,"0402 - Milk, concentrated; 2713 - Petroleum coke; 7601 - Unwrought aluminum"
+4106,Tanned skins of other animals,3,0902 - Tea; 1521 - Vegetable waxes and beeswax; 2305 - Solid peanut residues
+4109,Patent leather,3,1509 - Olive oil; 2307 - Wine lees; 4206 - Articles of gut
+4406,Wooden railway ties,3,1001 - Wheat and meslin; 2303 - Starch residues; 2304 - Solid soybean residues
+4416,"Casks, barrels, etc. of wood",3,"1214 - Forage products; 2205 - Wine, flavored; 2307 - Wine lees"
+4421,Other articles of wood,3,2306 - Solid vegetable oil and fat residues; 2308 - Vegetable materials for animal feeding; 4409 - Wood shaped along its edges
+4802,Paper used for graphic purposes,3,3201 - Vegetable tanning extracts; 3805 - Turpentines; 3806 - Rosin and resin acids
+4821,Paper labels,3,1104 - Worked cereal grains; 1517 - Margarine; 2309 - Animal feed
+4901,"Books, brochures etc.",3,"1518 - Animal or vegetable fats and oils, processed; 3808 - Insecticides, rodenticides, fungicides, etc.; 3823 - Industrial monocarboxylic fatty acids"
+5603,Nonwoven textiles,3,"2827 - Chlorides, bromides, iodides etc.; 3503 - Gelatin; 8702 - Buses"
+6103,"Men's suits, knit",3,1301 - Lac; 2401 - Unmanufactured tobacco; 4402 - Wood charcoal
+6109,"T-shirts, knit",3,1701 - Sugarcane & sucrose; 2401 - Unmanufactured tobacco; 3301 - Essential oils
+6211,Activewear,3,"0813 - Fruits, dried; 2005 - Other vegetables, prepared or preserved; 3301 - Essential oils"
+6802,Worked building stone,3,"0806 - Grapes; 0809 - Peaches & cherries; 0909 - Anise, fennel, etc."
+6805,Natural or artificial abrasive powder,3,0408 - Egg yolks; 2512 - Siliceous fossil meals and earths; 2923 - Quaternary ammonium salts and hydroxides
+6808,Panels of vegetable fibers,3,"0207 - Poultry; 1107 - Malt; 7312 - Wire of iron or steel, not insulated"
+6810,"Articles of cement, of concrete or of artificial stone",3,"1518 - Animal or vegetable fats and oils, processed; 1602 - Other prepared or preserved meat; 2518 - Dolomite"
+7008,Multiple-walled insulating glass,3,0207 - Poultry; 1206 - Sunflower seeds; 6807 - Asphalt
+7010,Glass containers for conveyance,3,"1008 - Other cereals; 1209 - Seeds used for sowing; 2007 - Jams, jellies and marmalades"
+7208,"Flat-rolled iron, width > 600mm, hot-rolled, not clad",3,"2803 - Carbon; 7304 - Tubes, seamless, of iron or steel; 7605 - Aluminum wire"
+7212,"Flat-rolled iron, width < 600mm, clad",3,"2509 - Chalk; 2518 - Dolomite; 7312 - Wire of iron or steel, not insulated"
+7217,Wire of iron or nonalloy steel,3,"1507 - Soybean oil; 1512 - Sunflower seed oil; 2714 - Bitumen and asphalt, natural"
+7401,Copper mattes,3,2616 - Precious metal ores; 3201 - Vegetable tanning extracts; 7106 - Silver
+7403,Refined copper and copper alloys,3,2607 - Lead ore; 2616 - Precious metal ores; 7106 - Silver
+7407,"Copper bars, rods and profiles",3,1519 - Stearic acid; 2508 - Clays; 2607 - Lead ore
+7408,Copper wire,3,2836 - Carbonates; 7106 - Silver; 7605 - Aluminum wire
+7604,Aluminum bars,3,"2714 - Bitumen and asphalt, natural; 6809 - Plaster articles; 7601 - Unwrought aluminum"
+8438,Machinery for the industrial preparation of food or drink,3,"0406 - Cheese; 0504 - Animal guts, except fish; 2508 - Clays"
+8707,Vehicle Bodies,3,2803 - Carbon; 7224 - Other alloy steel in primary form; 8704 - Motor vehicles for transporting goods
+9306,Munitions of war,3,"2508 - Clays; 2518 - Dolomite; 7304 - Tubes, seamless, of iron or steel"
+0602,Other live plants,2,0510 - Animal products used in pharmaceuticals; 1208 - Flours of oil seeds
+0714,Tubers,2,1006 - Rice; 1202 - Peanuts
+0803,Bananas and plantains,2,0510 - Animal products used in pharmaceuticals; 1006 - Rice
+0901,Coffee,2,1521 - Vegetable waxes and beeswax; 1701 - Sugarcane & sucrose
+1522,Degras and wax residues,2,1519 - Stearic acid; 1520 - Glycerol
+2502,Unroasted iron pyrites,2,2528 - Natural borates; 2810 - Oxides of boron; boric acids
+2507,Kaolin,2,1505 - Wool grease; 1508 - Peanut oil
+2510,Natural calcium phosphates,2,3103 - Phosphatic fertilizers; 5101 - Wool
+2514,Slate,2,2307 - Wine lees; 4303 - Furskin apparel
+2517,Gravel,2,2518 - Dolomite; 6809 - Plaster articles
+2525,Mica,2,1508 - Peanut oil; 2830 - Sulfides; polysulfides
+2602,Manganese > 47% by weight,2,1007 - Grain sorghum; 2305 - Solid peanut residues
+2707,Oils etc. from high temperature coal tar,2,1519 - Stearic acid; 2713 - Petroleum coke
+2715,Bituminous mixtures,2,"2713 - Petroleum coke; 2714 - Bitumen and asphalt, natural"
+2807,"Sulfiric acid, oleum",2,2512 - Siliceous fossil meals and earths; 2830 - Sulfides; polysulfides
+2809,Phosphoric acid etc.,2,0903 - Mate; 3103 - Phosphatic fertilizers
+2815,Sodium hydroxide,2,"2509 - Chalk; 2827 - Chlorides, bromides, iodides etc."
+2819,Chromium oxides and hydroxides,2,2810 - Oxides of boron; boric acids; 2840 - Borates
+2825,"Metal base oxides, n.e.c.",2,2528 - Natural borates; 2810 - Oxides of boron; boric acids
+2829,Sodium chlorate,2,1508 - Peanut oil; 2305 - Solid peanut residues
+2843,Compounds of precious metals,2,2813 - Sulfides of nonmetals; 2937 - Hormones
+2847,Hydrogen peroxide,2,1519 - Stearic acid; 3503 - Gelatin
+2903,Halogenated derivatives of hydrocarbons,2,2813 - Sulfides of nonmetals; 3817 - Mixed alkylbenzenes
+2905,Acyclic alcohols,2,7601 - Unwrought aluminum; 7605 - Aluminum wire
+2910,Epoxides,2,2813 - Sulfides of nonmetals; 3817 - Mixed alkylbenzenes
+2911,Acetals and hemiacetals,2,1508 - Peanut oil; 2937 - Hormones
+2914,Ketones and quinones,2,1505 - Wool grease; 5803 - Gauze
+2926,Nitrile-function compounds,2,1508 - Peanut oil; 2813 - Sulfides of nonmetals
+2934,Nucleic acids and their salts,2,2813 - Sulfides of nonmetals; 2937 - Hormones
+3006,Pharmaceutical goods,2,0206 - Edible offal; 2923 - Quaternary ammonium salts and hydroxides
+3102,Nitrogenous fertilizers,2,2713 - Petroleum coke; 7601 - Unwrought aluminum
+3205,Color lakes,2,2810 - Oxides of boron; boric acids; 2840 - Borates
+3209,"Paints and varnishes, aqueous",2,"0402 - Milk, concentrated; 1901 - Malt extract"
+3212,"Pigments, nonaqueous",2,2509 - Chalk; 3211 - Prepared driers
+3215,Ink,2,1519 - Stearic acid; 3211 - Prepared driers
+3302,Mixtures of odoriferous subtances,2,0202 - Beef (frozen); 3202 - Synthetic tanning substances
+3506,Glues and adhesives,2,2512 - Siliceous fossil meals and earths; 3405 - Polishes and creams
+3603,Detonators,2,2616 - Precious metal ores; 7106 - Silver
+3803,Tall oil,2,2810 - Oxides of boron; boric acids; 2840 - Borates
+3807,Wood tar and oils,2,"2004 - Other vegetables, frozen; 2840 - Borates"
+3810,Pickling preparations for metal surfaces,2,3815 - Catalytic preparations; 8408 - Compression-ignition internal combustion piston engines
+3814,Organic composite solvents and thinners,2,2713 - Petroleum coke; 3405 - Polishes and creams
+3901,Polymers of ethylene,2,3817 - Mixed alkylbenzenes; 6807 - Asphalt
+3904,Polymers of vinyl chloride,2,2803 - Carbon; 3211 - Prepared driers
+3909,Amino-resins,2,2803 - Carbon; 3812 - Stabilizers for rubber or plastic
+3921,"Other plastic plates, sheets etc.",2,"3808 - Insecticides, rodenticides, fungicides, etc.; 3823 - Industrial monocarboxylic fatty acids"
+4009,Vulcanized rubber tubes,2,"7304 - Tubes, seamless, of iron or steel; 8702 - Buses"
+4011,New pneumatic tires of rubber,2,"1108 - Starches; 7312 - Wire of iron or steel, not insulated"
+4103,Other raw hides and skins,2,5201 - Raw cotton; 7108 - Gold
+4105,Tanned sheepskins,2,"0703 - Onions, shallots, garlic; 1301 - Lac"
+4108,Chamois leather,2,3805 - Turpentines; 4302 - Other tanned furskins
+4111,Composition leather,2,2304 - Solid soybean residues; 4302 - Other tanned furskins
+4203,Leather apparel,2,1401 - Vegetable materials used for plaiting; 4303 - Furskin apparel
+4405,Wood wool or flour,2,0505 - Feathers and down; 1214 - Forage products
+4417,Wooden tools,2,1507 - Soybean oil; 2308 - Vegetable materials for animal feeding
+4503,Articles of natural cork,2,1509 - Olive oil; 2307 - Wine lees
+4504,Agglomerated cork,2,1509 - Olive oil; 2307 - Wine lees
+4601,Products of plaiting materials,2,1401 - Vegetable materials used for plaiting; 1521 - Vegetable waxes and beeswax
+4804,Uncoated kraft paper and paperboard,2,0202 - Beef (frozen); 3805 - Turpentines
+4805,Other uncoated paper and paperboard,2,1108 - Starches; 2308 - Vegetable materials for animal feeding
+4808,Corrugated paper and paperboard,2,0406 - Cheese; 1602 - Other prepared or preserved meat
+4810,"Paper and paperboard, coated with kaolin",2,3805 - Turpentines; 3806 - Rosin and resin acids
+5006,"Silk yarn, for retail sale",2,"5103 - Wool or animal hair waste; 5105 - Wool, combed"
+5102,Animal hair,2,"5101 - Wool; 5105 - Wool, combed"
+5108,"Yarn of animal hair, not for retail sale",2,"2528 - Natural borates; 5105 - Wool, combed"
+5207,Cotton yarn for retail sale,2,1005 - Corn; 1208 - Flours of oil seeds
+5506,"Synthetic staple fibers, processed",2,3103 - Phosphatic fertilizers; 3202 - Synthetic tanning substances
+5516,Woven fabrics of artificial staple fibers,2,1509 - Olive oil; 2528 - Natural borates
+5605,Metallised yarn,2,2840 - Borates; 4206 - Articles of gut
+5606,Gimp yarn,2,0505 - Feathers and down; 5803 - Gauze
+5701,"Carpets, knotted",2,0806 - Grapes; 3103 - Phosphatic fertilizers
+5809,Woven fabric incorporating metal threads,2,2509 - Chalk; 3503 - Gelatin
+5910,"Transmission belts or belting, of textile material",2,3507 - Enzymes; 3913 - Natural polymers
+6107,"Men's undergarments, knit",2,"0711 - Vegetables, provisionally preserved; 4402 - Wood charcoal"
+6108,"Women's undergarments, knit",2,"0711 - Vegetables, provisionally preserved; 4402 - Wood charcoal"
+6114,"Other garments, knit",2,0306 - Crustaceans; 0307 - Molluscs
+6115,"Socks, stockings, etc., knit",2,"0711 - Vegetables, provisionally preserved; 4402 - Wood charcoal"
+6204,Women's suits and pants,2,1401 - Vegetable materials used for plaiting; 3301 - Essential oils
+6209,Babies' garments,2,"0812 - Fruits and nuts, provisionally preserved; 1401 - Vegetable materials used for plaiting"
+6212,Brassieres,2,1401 - Vegetable materials used for plaiting; 4402 - Wood charcoal
+6406,Parts of footwear,2,"0909 - Anise, fennel, etc.; 1005 - Corn"
+6902,"Bricks, tiles and similar refractory ceramic constructional goods",2,2830 - Sulfides; polysulfides; 7224 - Other alloy steel in primary form
+6907,Unglazed ceramic flags and pavers,2,0814 - Peel of citrus fruit or melons; 3103 - Phosphatic fertilizers
+6908,Glazed ceramic flags and pavers,2,2305 - Solid peanut residues; 3817 - Mixed alkylbenzenes
+7001,Cullet and other scraps of glass,2,1515 - Other vegetable fats and oils; 4403 - Wood in the rough
+7002,Glass balls,2,1508 - Peanut oil; 2813 - Sulfides of nonmetals
+7019,Glass fibers,2,6807 - Asphalt; 8702 - Buses
+7103,Precious stones,2,0902 - Tea; 1202 - Peanuts
+7116,Articles of precious stones,2,1006 - Rice; 3201 - Vegetable tanning extracts
+7202,Ferroalloys,2,2616 - Precious metal ores; 7601 - Unwrought aluminum
+7204,Ferrous waste and scrap,2,0511 - Animal products n.e.c.; 2302 - Cereal residues
+7207,Semifinished products of iron or nonalloy steel,2,7601 - Unwrought aluminum; 7605 - Aluminum wire
+7214,"Other bars of iron, not further worked than forged",2,1101 - Wheat or meslin flour; 2522 - Quicklime
+7219,Flat-rolled products of stainless steel of a width > 600 mm,2,2840 - Borates; 3806 - Rosin and resin acids
+7220,Flat-rolled products of stainless steel of a width < 600 mm,2,2840 - Borates; 8408 - Compression-ignition internal combustion piston engines
+7222,Other bars and rods of stainless steel,2,7224 - Other alloy steel in primary form; 8408 - Compression-ignition internal combustion piston engines
+7225,"Flat-rolled products of other alloy steel, width > 600 mm",2,2840 - Borates; 8408 - Compression-ignition internal combustion piston engines
+7227,Bars of other alloy steel,2,2305 - Solid peanut residues; 7224 - Other alloy steel in primary form
+7229,Wire of other alloy steel,2,2803 - Carbon; 7224 - Other alloy steel in primary form
+7318,Screws and similar articles of iron or steel,2,2830 - Sulfides; polysulfides; 2832 - Sulfites
+7321,Stoves and similar non-electric appliances of iron or steel,2,"0909 - Anise, fennel, etc.; 8702 - Buses"
+7404,Copper waste and scrap,2,2302 - Cereal residues; 7108 - Gold
+7409,"Copper plates, sheets and strip > 0.15 mm",2,2830 - Sulfides; polysulfides; 2832 - Sulfites
+7411,Copper tubes and pipes,2,3812 - Stabilizers for rubber or plastic; 5803 - Gauze
+7412,Copper tube or pipe fittings,2,3202 - Synthetic tanning substances; 3812 - Stabilizers for rubber or plastic
+7602,"Waste or scrap, aluminium",2,4403 - Wood in the rough; 7108 - Gold
+7607,Aluminum foil < 0.2 mm,2,2512 - Siliceous fossil meals and earths; 3211 - Prepared driers
+7611,"Aluminum containers, >300 liters",2,2832 - Sulfites; 2836 - Carbonates
+7801,Lead refined unwrought,2,2302 - Cereal residues; 7108 - Gold
+8418,"Refrigerators, freezers",2,"1702 - Other sugars; 7312 - Wire of iron or steel, not insulated"
+8427,Fork-lift trucks,2,3815 - Catalytic preparations; 8408 - Compression-ignition internal combustion piston engines
+8442,Machinery for making printing components,2,1702 - Other sugars; 3405 - Polishes and creams
+8455,Metal-rolling mills,2,2830 - Sulfides; polysulfides; 7224 - Other alloy steel in primary form
+8530,Electric signal and traffic controls,2,1107 - Malt; 8704 - Motor vehicles for transporting goods
+8606,"Railway cars, not self-propelled",2,1001 - Wheat and meslin; 1206 - Sunflower seeds
+9019,Therapy applicances,2,0101 - Horses; 3001 - Heparin for therapeutic use
+9028,"Gas, liquid or electricity meters",2,"4302 - Other tanned furskins; 7312 - Wire of iron or steel, not insulated"
+9303,Other firearms,2,0903 - Mate; 2307 - Wine lees
+9401,Seats,2,1108 - Starches; 4302 - Other tanned furskins
+9403,Other furniture and parts,2,"1108 - Starches; 1518 - Animal or vegetable fats and oils, processed"
+9404,Mattresses and bedding,2,0409 - Honey; 4402 - Wood charcoal
+9406,Prefabricated buildings,2,3101 - Animal or vegetable fertilizers; 4409 - Wood shaped along its edges
+9601,Worked animal carving material,2,0902 - Tea; 1521 - Vegetable waxes and beeswax
+0103,Swine,1,3501 - Casein
+0104,Sheep,1,2616 - Precious metal ores
+0106,Other live animals,1,4104 - Tanned hides of bovines or equines
+0301,Live Fish,1,0306 - Crustaceans
+0502,Brushmaking hair,1,0903 - Mate
+1105,Potato flour,1,"2004 - Other vegetables, frozen"
+1210,Hop cones,1,3501 - Casein
+1503,"Lard oil, tallow oil etc.",1,2305 - Solid peanut residues
+1510,"Olive oil, blended",1,1509 - Olive oil
+1511,Palm oil,1,1519 - Stearic acid
+1513,Coconut & palm kernel oil,1,1519 - Stearic acid
+1902,Pasta,1,1103 - Cereal meals
+1903,Tapioca,1,1006 - Rice
+2006,"Vegetables, fruits and nuts, preserved by sugar",1,2512 - Siliceous fossil meals and earths
+2203,Beer,1,"0402 - Milk, concentrated"
+2208,Spirits < 80% alcohol,1,3823 - Industrial monocarboxylic fatty acids
+2209,Vinegars,1,2204 - Wine
+2403,Other manufactured tobacco,1,0902 - Tea
+2504,Natural graphite,1,1201 - Soya beans
+2506,Quartz,1,1202 - Peanuts
+2511,Natural barium sulfate,1,3103 - Phosphatic fertilizers
+2516,Granite,1,3201 - Vegetable tanning extracts
+2519,Natural magnesia,1,2528 - Natural borates
+2520,Gypsum,1,6809 - Plaster articles
+2529,Feldspar,1,2607 - Lead ore
+2601,Iron ores and concentrates,1,5101 - Wool
+2604,Nickel ore,1,1007 - Grain sorghum
+2609,Tin ore,1,1007 - Grain sorghum
+2611,Tungsten ore,1,1007 - Grain sorghum
+2613,Molybdenum ore,1,2810 - Oxides of boron; boric acids
+2619,Iron or steel slag,1,7601 - Unwrought aluminum
+2701,Coal,1,5101 - Wool
+2703,Peat,1,3501 - Casein
+2706,"Tar distilled from coal, lignite etc.",1,7224 - Other alloy steel in primary form
+2709,"Petroleum oils, crude",1,7601 - Unwrought aluminum
+2710,"Petroleum oils, refined",1,2713 - Petroleum coke
+2711,Petroleum gases,1,7601 - Unwrought aluminum
+2802,"Sulfur, sublimed or precipitated",1,3817 - Mixed alkylbenzenes
+2806,Hydrochloric acid,1,"2827 - Chlorides, bromides, iodides etc."
+2812,Halides of nonmetals,1,2813 - Sulfides of nonmetals
+2814,Ammonia,1,3817 - Mixed alkylbenzenes
+2816,Hydroxides or peroxides of magnesium,1,2810 - Oxides of boron; boric acids
+2824,Lead oxides,1,2832 - Sulfites
+2828,Hyopchlorites,1,2508 - Clays
+2842,Other salts of acids,1,2830 - Sulfides; polysulfides
+2849,Carbides,1,7224 - Other alloy steel in primary form
+2902,Cyclic hydrocarbons,1,3817 - Mixed alkylbenzenes
+2909,Ethers,1,3817 - Mixed alkylbenzenes
+2912,Aldehydes,1,3913 - Natural polymers
+2916,Unsaturated acyclic monocarboxylic acids,1,3815 - Catalytic preparations
+2917,Polycarboxylic acids,1,5803 - Gauze
+2920,Esters of other inorganic acids of nonmetals,1,2813 - Sulfides of nonmetals
+2922,Oxygen-function amino-compounds,1,3001 - Heparin for therapeutic use
+2924,Carboxyamide-function compounds,1,2937 - Hormones
+2928,Organix derivatives of hydrazine,1,2937 - Hormones
+2929,Isocyanates,1,3817 - Mixed alkylbenzenes
+2931,Other organo-inorganic compounds,1,2813 - Sulfides of nonmetals
+2933,Heterocyclic compounds with nitrogen hetero-atom(s) only,1,2937 - Hormones
+2935,Sulfonamides,1,2937 - Hormones
+3003,"Medicaments, not packaged",1,"2827 - Chlorides, bromides, iodides etc."
+3105,Mixed fertilizers,1,3103 - Phosphatic fertilizers
+3204,Synthetic organic coloring matter,1,3202 - Synthetic tanning substances
+3213,Artists' colors,1,2509 - Chalk
+3406,Candles,1,0408 - Egg yolks
+3601,Propellant powders,1,1214 - Forage products
+3602,"Prepared explosives, except gunpowder",1,2616 - Precious metal ores
+3606,Ferrocerium and other pyrophoric alloys,1,"2714 - Bitumen and asphalt, natural"
+3704,"Photographic film, not developed",1,"2205 - Wine, flavored"
+3802,Activated carbon,1,1519 - Stearic acid
+3809,Finishing agents,1,3405 - Polishes and creams
+3811,Anti-knock,1,1508 - Peanut oil
+3905,Polymers of vinyl acetate,1,3211 - Prepared driers
+3912,Cellulose n.e.c.,1,2832 - Sulfites
+3920,"Other plates of plastics, noncellular and not reinforced",1,3307 - Toiletries
+3925,Plastic builders' ware,1,2102 - Yeasts
+4008,Vulcanized rubber plates,1,"7312 - Wire of iron or steel, not insulated"
+4102,Raw skins of sheep or lambs,1,5201 - Raw cotton
+4202,Trunks or cases,1,4303 - Furskin apparel
+4304,Artificial fur,1,4303 - Furskin apparel
+4414,Wooden frames,1,1520 - Glycerol
+4501,"Natural cork, raw",1,1509 - Olive oil
+4502,"Natural cork, debacked",1,1509 - Olive oil
+4602,Basketwork,1,0902 - Tea
+4704,"Chemical woodpulp, sulfite",1,2307 - Wine lees
+4705,Semichemical woodpulp,1,0903 - Mate
+4707,Paper waste,1,2309 - Animal feed
+4801,Newsprint,1,3806 - Rosin and resin acids
+4806,Transparent paper,1,8408 - Compression-ignition internal combustion piston engines
+4807,Uncoated composite paper,1,2840 - Borates
+4811,"Cellulose wadding, coated",1,3211 - Prepared driers
+4814,Wallpaper,1,2803 - Carbon
+4906,"Architectural, engineering, etc. drawings",1,1702 - Other sugars
+4911,Other printed matter,1,"3808 - Insecticides, rodenticides, fungicides, etc."
+5004,Silk yarn,1,1508 - Peanut oil
+5007,Woven silk fabrics,1,5803 - Gauze
+5110,Yarn of coarse animal hair or of horsehair,1,"5105 - Wool, combed"
+5112,Woven fabrics of combed wool,1,"5105 - Wool, combed"
+5205,Cotton yarn of > 85%,1,5201 - Raw cotton
+5305,Vegetable textile fibers,1,0903 - Mate
+5308,Yarn of other vegetable textile fibers,1,3201 - Vegetable tanning extracts
+5311,Woven fabrics of vegetable textile fibers,1,2830 - Sulfides; polysulfides
+5408,Woven fabrics of artificial filament yarn,1,4303 - Furskin apparel
+5505,Waste of man-made fibers,1,1208 - Flours of oil seeds
+5507,"Artificial staple fibers, processed",1,2528 - Natural borates
+5513,Woven fabrics of < 85% synthetic staple fibers weighing < 170 g/m2,1,1006 - Rice
+5514,Woven fabrics of < 85% synthetic staple fibers weighing > 170 g/m2,1,1006 - Rice
+5608,Nets,1,0304 - Fish fillets
+5704,Carpets of felt,1,2509 - Chalk
+5801,Woven pile fabrics,1,5803 - Gauze
+5802,Terry cloth,1,2836 - Carbonates
+5804,Lace and net fabrics,1,4303 - Furskin apparel
+5805,Hand-woven tapestries,1,2508 - Clays
+5902,Tire cord fabric,1,5803 - Gauze
+5906,Rubberized textile fabrics,1,0505 - Feathers and down
+5907,"Other textile fabrics impregnated, coated or covered",1,0101 - Horses
+5909,Textile hosepiping and similar tubing,1,3913 - Natural polymers
+5911,Textile articles for technical use,1,"7312 - Wire of iron or steel, not insulated"
+6104,"Women's suits, knit",1,"0711 - Vegetables, provisionally preserved"
+6111,"Babies' garments, knit",1,1401 - Vegetable materials used for plaiting
+6113,Garments knit with impregnated fibers,1,1401 - Vegetable materials used for plaiting
+6201,"Men's overcoats, not knit",1,1401 - Vegetable materials used for plaiting
+6202,"Womens overcoats, not knit",1,"0909 - Anise, fennel, etc."
+6208,Women's undergarments,1,"0812 - Fruits and nuts, provisionally preserved"
+6301,Blankets,1,1006 - Rice
+6501,Hat forms,1,0903 - Mate
+6505,"Hats, knit",1,1401 - Vegetable materials used for plaiting
+6701,Feathers or down,1,0505 - Feathers and down
+6704,Wigs,1,1006 - Rice
+6804,Grindstones,1,2830 - Sulfides; polysulfides
+6811,Asbestos-cement or cellulose fiber-cement,1,0510 - Animal products used in pharmaceuticals
+6813,Friction material and articles thereof,1,0202 - Beef (frozen)
+6901,"Bricks, blocks, and other ceramic goods",1,"2714 - Bitumen and asphalt, natural"
+6905,Architectural ceramic ornaments,1,2204 - Wine
+6906,Ceramic pipes,1,1505 - Wool grease
+6909,Ceramic wares for technical ware,1,3815 - Catalytic preparations
+7003,"Glass, cast or rolled",1,3817 - Mixed alkylbenzenes
+7014,Signaling glassware,1,2813 - Sulfides of nonmetals
+7113,Jewelry of precious metal,1,3201 - Vegetable tanning extracts
+7114,Goldsmith and silversmith wares,1,3812 - Stabilizers for rubber or plastic
+7118,Coin,1,"2205 - Wine, flavored"
+7211,"Flat-rolled iron, width < 600mm, not clad",1,6807 - Asphalt
+7215,Other bars and rods of iron or nonalloy steel,1,1521 - Vegetable waxes and beeswax
+7301,Sheet piling of iron or steel,1,8702 - Buses
+7313,Barbed wire of iron or steel,1,0510 - Animal products used in pharmaceuticals
+7317,Nails and similar articles of iron or steel,1,"0402 - Milk, concentrated"
+7324,Sanitary ware and parts of iron or steel,1,4302 - Other tanned furskins
+7405,Master alloys of copper,1,1508 - Peanut oil
+7413,"Copper wire, uninsulated",1,2836 - Carbonates
+7418,Household articles of copper,1,4303 - Furskin apparel
+7505,"Nickel bars, wire etc.",1,2937 - Hormones
+7506,Nickel plates,1,2813 - Sulfides of nonmetals
+7606,Aluminum plates > 0.2 mm,1,7605 - Aluminum wire
+7613,Aluminum containers for compressed or liquefied gas,1,3913 - Natural polymers
+7614,"Aluminum wire, not insulated",1,7605 - Aluminum wire
+7802,Lead waste or scrap,1,4403 - Wood in the rough
+7901,Unwrought zinc,1,2607 - Lead ore
+7902,Zinc waste and scrap,1,0511 - Animal products n.e.c.
+7905,Zinc plates and foil,1,4206 - Articles of gut
+8001,Unwrought tin,1,2528 - Natural borates
+8101,Tungsten (wolfram),1,3812 - Stabilizers for rubber or plastic
+8110,Antimony,1,2528 - Natural borates
+8112,Other metals,1,0101 - Horses
+8201,Handtools for gardening,1,3805 - Turpentines
+8202,Handsaws,1,3806 - Rosin and resin acids
+8214,Other cutlery,1,0505 - Feathers and down
+8307,Flexible tubing of base metal,1,2923 - Quaternary ammonium salts and hydroxides
+8310,Sign plates and similar plates of base metal,1,3405 - Polishes and creams
+8407,Spark-ignition reciprocating internal combustion piston engines,1,8408 - Compression-ignition internal combustion piston engines
+8409,Parts suitable for use with spark-ignition engines,1,8704 - Motor vehicles for transporting goods
+8413,Pumps for liquids,1,"7304 - Tubes, seamless, of iron or steel"
+8419,Equipment for temperature change of materials,1,"7312 - Wire of iron or steel, not insulated"
+8424,Sprays and powder dispersers,1,"2827 - Chlorides, bromides, iodides etc."
+8437,Machinery for processing grain,1,2304 - Solid soybean residues
+8439,Machinery for making paper,1,8408 - Compression-ignition internal combustion piston engines
+8450,Household- or laundry-type washing machines,1,2803 - Carbon
+8453,Machinery for preparing leather,1,4303 - Furskin apparel
+8472,Other office machines,1,5803 - Gauze
+8482,Ball or roller bearings,1,2830 - Sulfides; polysulfides
+8483,Transmission shafts,1,8408 - Compression-ignition internal combustion piston engines
+8484,Gaskets and similar joints of metal sheeting,1,8704 - Motor vehicles for transporting goods
+8524,"Tapes, cassettes, records and compact disks",1,"2827 - Chlorides, bromides, iodides etc."
+8535,Electrical apparatus for > 1k volts,1,7106 - Silver
+8544,Insulated electrical wire,1,4402 - Wood charcoal
+8545,Carbon articles for eletrical purposes,1,4206 - Articles of gut
+8604,Railway service vehicles,1,1201 - Soya beans
+8605,"Railway coaches, not self-propelled",1,5803 - Gauze
+8708,Parts of motor vehicles,1,8704 - Motor vehicles for transporting goods
+8711,Motorcycles,1,5803 - Gauze
+8902,Fishing vessels,1,0304 - Fish fillets
+8903,Pleasure or sport boats,1,2204 - Wine
+9005,Binoculars and telescopes,1,4303 - Furskin apparel
+9021,Orthopedic appliances,1,3001 - Heparin for therapeutic use
+9022,X-ray machines,1,3507 - Enzymes
+9027,Instruments for physical or chemical analysis,1,3507 - Enzymes
+9112,Clock cases,1,4303 - Furskin apparel
+9209,Parts of musical instruments,1,1520 - Glycerol
+9405,Lamps,1,4302 - Other tanned furskins
+9602,Worked vegetable or mineral carving material,1,0205 - Horse meat
+9606,Buttons,1,2832 - Sulfites
+9614,Smoking pipes,1,"0909 - Anise, fennel, etc."
+9702,Original engravings,1,0101 - Horses

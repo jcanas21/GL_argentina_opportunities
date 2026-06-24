@@ -6,12 +6,12 @@ import streamlit as st
 
 def render_guide_and_glossary() -> None:
     st.title("Argentina Export Opportunities Dashboard")
-    st.caption("Guide and glossary for the BACI-based Opportunity Analysis page (HS92 4-digit).")
+    st.caption("Guide and glossary for the BACI-based Argentina opportunity dashboard (HS92 4-digit).")
 
     st.markdown("## What This Dashboard Does")
     st.markdown(
         """
-The **Opportunity Analysis** page ranks HS92 4-digit products by combining two dimensions:
+The dashboard ranks HS92 4-digit products by combining two dimensions:
 
 - **Feasibility**: how realistic it is for Argentina to compete now.
 - **Attractiveness**: how valuable the opportunity is if Argentina expands in that product.
@@ -24,7 +24,7 @@ You can:
 - Exclude specific HS4 products from the analysis.
 - Reweight each component of feasibility and attractiveness.
 - Rebalance overall strategy between feasibility and attractiveness.
-- Explore a ranked product table and sector treemap.
+- Explore a ranked product table, sector treemap, anchored proximity network, and comparison view.
 """
     )
 
@@ -99,6 +99,8 @@ st.set_page_config(
 pages = [
     st.Page(render_guide_and_glossary, title="Guide and glossary", icon=":material/menu_book:", default=True),
     st.Page(Path("pages/1_Opportunity_Analysis.py"), title="Opportunity Analysis", icon=":material/insights:"),
+    st.Page(Path("pages/3_Anchored_Proximity_Analysis.py"), title="Anchored Proximity Analysis", icon=":material/hub:"),
+    st.Page(Path("pages/4_Comparison.py"), title="Comparison", icon=":material/compare_arrows:"),
 ]
 pg = st.navigation(pages, position="sidebar", expanded=True)
 pg.run()
